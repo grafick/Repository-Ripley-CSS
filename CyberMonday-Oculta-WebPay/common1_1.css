@@ -5168,5 +5168,5 @@ div#checkout_1_2 {display: none} */
 #shipping .info_retiro{display:none}
 
 
-/* OCULTA TARJETA RIPLEY */
+/* OCULTA WEBPAY REDCOMPRA + WEBPAY CON CUOTAS */
 .billing_method div#checkout_1_3, .billing_method div#checkout_1_4 {display: none !important}
