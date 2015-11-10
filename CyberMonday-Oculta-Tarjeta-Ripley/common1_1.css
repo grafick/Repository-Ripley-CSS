@@ -5166,3 +5166,7 @@ div#checkout_1_2 {display: none} */
 /* OCULTA RETIRO PARA TERCEROS DESDE TIENDA */
 #shipping .retiroTerceros p:last-child{display:none}
 #shipping .info_retiro{display:none}
+
+
+/* OCULTA TARJETA RIPLEY */
+.billing_method div#checkout_1_1 {display: none !important}
