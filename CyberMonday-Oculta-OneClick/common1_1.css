@@ -5158,10 +5158,10 @@ a.BtnEditDatosFact{
 .divMensajeSinDisponibilidadTiendaFisicaVisible{float:left;display:block;font-weight:bold;font-size:11px}
 
 
-/* OCULTAR BOTON ONECLICK MI CUENTA 
-.left_nav_options p.leftnav_myaccount_dotted:nth-of-type(7){display:none} */
-/* OCULTAR CHECKOUT ONECLICK 
-div#checkout_1_2 {display: none} */
+/* OCULTAR BOTON ONECLICK MI CUENTA */
+.left_nav_options p.leftnav_myaccount_dotted:nth-of-type(7){display:none} 
+/* OCULTAR CHECKOUT ONECLICK */
+div#checkout_1_2 {display: none} 
 
 /* OCULTA RETIRO PARA TERCEROS DESDE TIENDA */
 #shipping .retiroTerceros p:last-child{display:none}
