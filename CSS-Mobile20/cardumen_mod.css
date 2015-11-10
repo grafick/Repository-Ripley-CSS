@@ -1,0 +1,1305 @@
+.highlight{
+	font-size: 15px;
+}
+.department_wrapper .secondary_button, .department_wrapper select.secondary_input{ /* csepulvedage@ripley.cl */
+	background-image:none;
+	background-color: #aeaeae;
+	border: 1px solid #aeaeae;
+}
+.department_wrapper .secondary_button:hover{
+	background-image:none;
+	background-color: #aeaeae;
+	border: 1px solid #AEAEAE;
+	box-shadow: none;
+}
+.highlight .arrow_container .forward_arrow_icon{
+	background: url("../images/colors/color1/flecha_productos@2x.png") no-repeat scroll 0 0 transparent;
+	height: 26px;
+    margin-top: 0;
+    right: 5px;
+    top: 36%;
+    width: 16px;
+    background-size: 1.4em;
+}
+.department_content_wrapper .secondary_arrow{
+	border-left: none;
+}
+.department_wrapper .department_content_wrapper{
+	box-shadow: none;
+}
+div#masthead{
+	padding:5px;
+	background: url(../images/fnd-head.jpg) repeat-x 0 0 !important;
+	background-color: none;
+}
+div#masthead #mobile_home_link .header_logo{
+	background: url("../images/logo-ripley@2x.png") no-repeat scroll 0 0 transparent;
+	height: 34px;
+	width: 95px;
+	background-size: 6.2em;
+}
+div#masthead .divider{
+	display: none;
+}
+div#masthead .item{
+	padding: 0 0 0 12px !important;
+	line-height: 26px !important;
+}
+div#masthead .item a{
+	display: block;
+}
+div#masthead .item a#store_locator_link{
+	text-indent: -9999px;
+	background: url(../images/ico-home@2x.png) no-repeat 0 0;
+	width: 20px;
+	height: 23px;
+	margin-top: 8px;
+	background-size: 1.3em;
+}
+div#masthead .item a#shopping_cart_link{
+	background: url(../images/ico-carrito@2x.png) no-repeat 0 0;
+	height: 23px;
+	margin-top: 7px;
+	padding-left: 28px;
+	background-size: 1.5993em;
+}
+div#masthead .item a#cuenta_link{
+	background: url(../images/ico-cuenta.png) no-repeat 0 0;
+	height: 23px;
+	margin-top: 7px;
+	padding-left: 21px;
+	background-size: 1.28em;
+}
+div#masthead .item a#shopping_cart_link span{
+	line-height: 26px;
+}
+div#masthead .item:hover{
+	background: none !important;
+}
+div#breadcrumb.item_wrapper_gradient_mod{
+	background: url(../images/fnd-head.jpg) repeat-x 0 0;
+	border-bottom: 1px solid #EAEAEA;
+	margin-bottom: 15px;
+	font-size: 15px;
+}
+div#breadcrumb.item_wrapper_gradient_mod .back_arrow .arrow_icon{
+	background: url(../images/flecha-volver.png) no-repeat 0 0;
+	color: #999;
+	line-height: 12px;
+    padding-left: 10px;
+}
+div#breadcrumb.item_wrapper_gradient_mod .back_arrow{
+	width: auto;
+}
+div#breadcrumb.item_wrapper_gradient_mod .page_title{
+	margin: 7px 0 7px 75px;
+	border-left: 1px solid #b5b5b5;
+	padding: 1px 0 1px 8px;
+}
+div#info_bar .search_wrapper{
+	position: relative;
+}
+div#info_bar .search_functions{
+	top:0;
+	height: auto;
+}
+div#info_bar .search_function_wrapper .search_submit{
+	background: url("../images/ico-lupa@2x.png") no-repeat 0 center;
+	height: 37px;
+    margin: 0 0 0 18px;
+    width: 36px;
+    padding: 0;
+    background-size: 2em;
+    display: block;
+}
+.highlight div#info_bar {
+    background-color: #6a6a69;
+    border-bottom: 1px solid #D4D4D4;
+    border-top: 1px solid #D4D4D4;
+    height: auto;
+    padding: 5px 3px;
+    display: inline-block;
+}
+div#info_bar .product_search{
+    padding: 5px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 16px;
+    height: 37px;
+}
+.highlight div#info_bar .search_function_wrapper{
+	height: auto;
+	width: auto;
+}
+#footer div#user_panel{
+	border-top: 3px solid #cacaca;
+}
+#footer div#user_panel a {
+    color: #464646;
+}
+#footer div#privacy_policy{
+	background: url("../images/fnd-foot3.jpg");
+	padding: 3px;
+}
+#footer div#privacy_policy a {
+    font-size: 12px;
+    white-space: nowrap;
+    color: #464646;
+}
+#footer div#privacy_policy .item{
+	padding: 3px;
+    width: 33.3%;
+    margin: 0;
+}
+.leftborder {
+    border-left: 1px solid #b2b2b2;
+}
+.rightborder {
+    border-right: 1px solid #FFFFFF;
+}
+.department_content{
+	font-size: 15px;
+	text-transform: uppercase;
+}
+.department_image{
+	background-repeat: no-repeat;
+}
+p.legal{
+	color: #333;
+	font-size: 8px;
+	line-height: 10px;
+	padding: 10px 15px;
+	text-align: center;
+	background-color: #eaeaea;
+}
+#wrapper.ucp_active {
+    padding-bottom: 150px;
+}
+.highlight div.item_wrapper, .highlight div.item_wrapper div.sub_wrapper{
+	border-top:1px solid #EAEAEA;
+}
+.highlight div.item_wrapper_button{
+	border-top:none;
+}
+.dropdown_container .secondary_button,
+.dropdown_container select.secondary_input,
+.dropdown_container .secondary_button:active,
+.dropdown_container .secondary_button:hover{
+	background: none;
+	background-color: #fafafa;
+	text-shadow: none;
+	border: 1px solid #EAEAEA;
+	color: #3b4453;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.dropdown_container .secondary_button:active{
+	border: none;
+}
+
+/*******************
+
+MI CUENTA
+
+********************/
+
+.highlight div#department_categories div.sub_wrapper, .highlight div#help_categories div.sub_wrapper {
+	border-left: 1px solid #b3b3b3;
+	border-right: 1px solid #b3b3b3;
+}
+.item_wrapper div.item_wrapper_gradient {
+	background-image: none;
+	background: -webkit-linear-gradient(#f0f0f0 28.15%, #ffffff 100%);
+}
+.sub_wrapper .forward_arrow_icon{
+	padding-right: 15px;
+	color: #585858;
+	background: url('../images/colors/color1/forward_arrow.gif') no-repeat right center;
+	width: auto;
+	line-height: 12px;
+	font-size: 12px;
+	height: auto;
+	margin-top: 0;
+	top: 38%;
+}
+
+.highlight div#department_categories div.sub_wrapper:last-child, .highlight div#help_categories div.sub_wrapper:last-child {
+	border-bottom: 1px solid #b3b3b3;
+}
+.highlight div.item_wrapper div.sub_wrapper:active, .highlight div.item_wrapper div.sub_wrapper:hover, div.item_wrapper.item_wrapper_gradient {
+	background-image: none;
+	background: -moz-linear-gradient(top, #ffffff 0%, #f0f0f0 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f0f0f0));
+}
+
+
+
+#department_categories a{
+	display: block;
+}
+body a, body a:visited, body .blue_highlight {
+	color:#666;
+}
+.feature_product_info_container > div > p{
+	position: relative;
+	float: left;
+	color: #cf413d;
+}
+.feature_product_info_container > div{
+	color: #585858;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.feature_product_info_container > div > p > span.exclusivo{
+	background: url(../images/img-exclusivo-tarjeta.png) no-repeat 0 0;
+	position: absolute;
+	left: 105%;
+	bottom: -4px;
+	background-size: 3.7em;
+	width: 58px;
+	height: 21px;
+	display: block;
+}
+.product_info_container .price{
+	position: relative;
+}
+.product_info_container .price span.exclusivo2{
+	background: url(../images/img-exclusivo-tarjeta.png) no-repeat 0 0;
+	position: absolute;
+	right: -87px;
+	bottom: 0;
+	background-size: 3.7em;
+	width: 60px;
+	height: 21px;
+	display: block;
+}
+.item_wrapper .price span.exclusivo2{
+	background: url(../images/img-exclusivo-tarjeta.png) no-repeat 0 6px; /* csepulvedage@ripley.cl */
+	position: absolute;
+	left: 110%;
+	bottom: 0;
+	background-size: 3.7em;
+	width: 60px;
+	height: 21px;
+	display: block;
+}
+.product_info_container .price span.exclusivo-only{
+	background: url(../images/exclv-only1.png) no-repeat 0 0;
+	position: absolute;
+	right: -87px;
+	bottom: 0;
+	background-size: 3.7em;
+	width: 60px;
+	height: 21px;
+	display: block;
+}
+.item_wrapper .price span.exclusivo-only{
+	background: url(../images/exclv-only1.png) no-repeat 0 0;
+	position: absolute;
+	left: 100%;
+	bottom: 0;
+	background-size: 3.7em;
+	width: 60px;
+	height: 21px;
+	display: block;
+}
+
+/***************
+
+HOME
+
+*****************/
+
+.button_wrapper .secondary_button.btn_gris,
+.button_wrapper .btn_gris.secondary_button:hover,
+.button_wrapper .btn_gris.secondary_button:active,
+.secondary_button.btn_gris,
+.btn_gris.secondary_button:active,
+.btn_gris.secondary_button:hover { /* csepulvedage@ripley.cl */
+	background-image: none;
+	background-color: #666;
+	border: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	color: #fff;
+	text-shadow: none;
+	font-size: 14px; 
+	text-transform: uppercase;
+}
+/*#location_check_in_link{  para desaparecer btn productos 
+	display:none;
+}*/
+#department_categories{
+	margin-top:10px;
+}
+
+.secondaryESpotContainer .secondaryESpot{
+	height: 105px;
+}
+.primaryESpot{
+	height: 250px;
+}
+.button_wrapper.botones_llamar .secondary_button.btn_lamar{
+	background-color: #fff;
+	border: 1px solid #666;
+	color: #666;
+	background: url(../images/ico-fono.png) no-repeat 10px center;
+	background-size: 20px;
+	background-color: #f7f7f7
+}
+.button_wrapper.botones_llamar .secondary_button.btn_lamar p{
+	font-size: 1em;
+	line-height: 16px;
+	text-align: left;
+	padding-left: 33px;
+	float: left;
+	width: 85%;
+}
+.button_wrapper.botones_llamar .secondary_button.btn_lamar span{
+    float: left;
+    font-size: 1em;
+    line-height: 11px;
+    padding-left: 34px;
+    text-align: left;
+}
+.mblPageIndicatorContainer{
+	display: none;
+}
+#breadcrumb > a{
+	display: block;
+}
+
+
+
+/***************
+
+BOLSA DE COMPRA
+
+*****************/
+
+.price_details_wrapper .left_label, .product_info_container .left_label {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #333;
+}
+.product_info_container{
+	position:relative;
+}
+.price_details_wrapper .left_label.txt_rojo, .product_info_container .price.txt_rojo, .item_wrapper .price.txt_rojo{
+	color: #d40b00;
+}
+.product_info_container .price.txt_rojoTRipley{
+	color: #d40b00;
+}
+.price_details_wrapper .left_label#quantity_1{
+	font-weight: normal;
+	color: #666;
+}
+.tertiary_button.btn_gris2, .btn_gris2.tertiary_button:active, .btn_gris2.tertiary_button:hover, .secondary_button.btn_gris2, .secondary_button.btn_gris2:active, .secondary_button.btn_gris2:hover{
+	background-color: #89969f;
+	background-image: none;
+	border: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	color: #fff;
+	text-shadow: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+.primary_button.btn_rojo, .primary_button.btn_rojo:active, .primary_button.btn_rojo:hover{
+	background-color: #cf413d;
+	background-image: none;
+	border: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	color: #fff;
+	text-shadow: none;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.morado{
+	color: #a00199;
+}
+.dropdown_container select{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+#promotion_container label{
+	text-transform: uppercase;
+	color: #666;
+	font-size: 14px;
+	line-height: 16px;
+}
+#couponWallet > p{
+	text-transform: uppercase;
+	color: #666;
+	font-size: 14px;
+	line-height: 16px;
+}
+#couponWallet > p#discountDisclaimer{
+	text-transform: none;
+}
+#promotion_container .input_width_promo {
+	width: 195px;
+	margin-left: 3px;
+}
+input.primary_button.btn_gris{
+	background: -moz-linear-gradient(top, #666 0%, #666 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#666));
+	border: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow:none;
+	box-shadow: none;
+	color: #fff;
+	text-shadow: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+input.primary_button.btn_gris.button_full{
+	height: 31px;
+}
+#sign_in #forgot_password_link{
+	display: block;
+}
+.olvide_clave{
+	clear: both;
+	padding-top: 15px;
+}
+.multi_button_container.marginTop{
+	margin-top: 15px;
+}
+
+.marginBottom{
+	margin-bottom: 15px;
+}
+
+.resumen_select{
+	margin-top: 15px;
+	display: inline-block;
+}
+.resumen_select p.fecha, .resumen_select p.costo{
+	float: left;
+	font-size: 12px;
+}
+.resumen_select p.fecha{
+	margin-right: 10px;
+}
+#department_categories div.item_wrapper{ /* csepulvedage@ripley.cl */
+	padding: 5px 20px 5px 5px; 
+}
+
+#department_categories div.item_wrapper .product_info_container {
+	min-height: 100px;
+}
+
+/***************
+
+COMPARADOR
+
+*****************/
+
+.txt_verde{
+	color: #7cd20f !important;
+}
+p.status{
+	text-transform: uppercase;
+	line-height: 21px;
+	margin-top: 10px;
+}
+p.status > img{
+	margin-right: 4px;
+	float: left;
+}
+#compare_products_price span.price{
+	font-size: 19px;
+	line-height: 20px;
+	color: #d40b00;
+}
+
+.price_details_wrapper span.price.txt_rojo{
+	color: #d40b00;
+	font-size:16px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+.normal-price{
+	display:inline-block;
+	width: 100%;
+}
+.normal-price p{
+	color:#666;
+	font-size:11px;
+	margin-bottom:10px;
+}
+div.item_wrapper .column .image_container > a{
+	display: block;
+}
+#compare_products_main a.nombre_prod{
+	display: block;
+	min-height: 30px;
+}
+
+/* ------
+
+FORMULARIOS DESPACHO
+
+------ */
+
+.input_width_standard {
+    width: 150px !important;
+}
+select.input_width_standard {
+    width: 165px !important;
+	text-transform:none;
+}
+.dropdown_container select {
+    font-size: 13px !important;
+}
+input.inputfield, textarea.inputfield{
+	background-color:#f9f9f9 !important;
+	background-image:none !important;
+	border:2px #b4b6b6 solid;
+	border-radius: 5px;
+}
+textarea#wishlist_message{
+	width:158px !important;
+	box-shadow:none;
+}
+textarea{
+	font-size:0.9em;
+	font-family:Verdana, Arial, Helvetica;
+}
+input.inputfield.input_width_short{
+	width: 71px
+}
+input.input_prefij{
+	width: 22px
+}
+input.input_width_numb{
+	width: 106px
+}
+
+div.item_wrapper div.label{
+    float: left;
+    margin-right: 5px;
+    width: 125px;
+}
+div.item_wrapper div.boxInput{
+    float: left;
+    margin-right: 5px;
+}
+div.item_wrapper div.labelShort{
+	float: left;
+    line-height: 33px;
+	margin-right:5px;
+}
+div.item_wrapper div.label label, div.item_wrapper div.labelShort label{
+	font-size:12px;
+}
+span.required {
+    color: #666 !important;
+}
+input.inputfield{
+	font-size:0.9em;
+}
+.cupon-icon{
+	background:url("../images/icon-wallet.png") no-repeat left top;
+	padding-left: 25px;
+	background-size:1.3em;
+}
+
+.price_details_wrapper .left_column{
+	padding-top:0 !important;
+}
+.box-payment{
+	margin-right:20px;
+	margin-top:10px;
+}
+.box-payment label{
+	font-size:12px;
+}
+.box-payment label span{
+	display:block;
+}
+div.item_wrapper {
+    overflow: hidden;
+}
+#content-terms{
+	width:100%;
+	margin:10px 0;
+	padding:0 5px;
+}
+#content-terms #check-terms label{
+    display: block;
+    text-align: center;
+	font-size:0.8em;
+}
+#content-terms #box-maestra{
+	background:#eee;
+	border-radius:5px;
+	padding:10px;
+	overflow:hidden;
+	margin:10px 0;
+}
+#content-terms #box-maestra .center-maestra p{
+	color:#333;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+#content-terms #box-maestra .center-maestra{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 270px;
+}
+#content-terms #box-maestra a.helpMaest{
+    background: #ccc;
+    border-radius: 30px;
+    color: #fff;
+    float: left;
+    font-size: 1.6em;
+    margin: 20px 0 0;
+    padding: 3px 12px;
+    text-align: center
+}
+#content-terms #box-maestra .boxK{
+    float: left;
+    margin-right: 15px;
+    text-align: center;
+    width: 60px;
+}
+#content-terms #box-maestra .boxK:last-child{
+	margin-right:0;
+}
+#content-terms #box-maestra .boxK label{
+}
+#content-terms #box-maestra .boxK label span{
+	display:block;
+}
+#content-terms #box-maestra .boxK label input{
+	border:2px #e3e3e3 solid;
+	border-radius:4px;
+	width:98%;
+	height:30px;
+	font-size:0.9em;
+}
+#wishlist_item_wrapper .normal-price p{
+	margin-bottom:0;
+}
+.input_width_full {
+    width: 95% !important;
+}
+
+.tit_oc{ width:100%; text-align:center; color:#333333; font-weight:bold; font-size:18px;}
+.box_pedido_oc{ width:100%; background-color:#f1f1f1; padding:10px 18px 0 18px; margin:10px 0 10px 0;}
+.num_ped_res{ color:#fff; background-color:#666666; height:31px; padding-left:10px; line-height:30px;}
+.oc_rojo{ color:#d40b00; font-weight:bold;}
+.oc_model_txt{ font-size:14px;}
+.oc_tit_prod{font-size: 12px; font-weight: bold;}
+#tabla_resumen{margin: 0 auto 20px auto; font-size:13px;}
+#tabla_resumen td{ padding-left:5px;}
+
+.ancho_menu{
+	width: 75px !important;
+}
+
+#product_search_submit{
+	height: 37px !important;
+}
+
+/* FIX PAGO CAE csepulvedage@ripley.cl */
+#PaymentFormBloqueIsoSimulador .width70{
+	width: 55% !important;
+}
+/* COSTO TOTAL DESTACADO csepulvedage@ripley.cl */
+#PaymentFormBloqueIsoSimulador #montCostoTotal{
+	font-weight: bold;
+}
+/* TITULAR DESPACHO csepulvedage@ripley.cl */
+.TitularDespacho{
+	padding: 10px 5px;
+}
+/* OCULTAR BOTON FOOTER / SITE FULL csepulvedage@ripley.cl */
+/*#desktop_site_link{
+	display: none
+}*/
+/* OCULTAR BOTON CATEGORIA csepulvedage@ripley.cl */
+.multi_button_container a .secondary_button.btn_gris{
+	display: none
+}
+
+/* NEW csepulvedage@ripley.cl 29ABRIL2014 */
+div.item_wrapper .product_info_container {
+	padding: 15px 15px 0 135px;
+	min-height: 80px;
+}
+div.item_wrapper .product_image_container img { 
+	width: 120px;
+}
+div.item_wrapper .product_image_container_top {
+	position: absolute;
+	/*top: 10px;*/
+	left: 5px;
+	width: 80px;
+}
+div.item_wrapper .product_image_container_top img { 
+	width: 120px;
+}
+.item_wrapper .forward_arrow_icon.flecha_grisblanca{ /* csepulvedage@ripley.cl 29ABRIL2014 */
+	background: url("../images/fnd-flecha-grisblanca.jpg") no-repeat scroll 0 0 transparent;
+	height: 90px; 
+	margin-top: 0;
+	right: 0;
+	top: 16%;
+	width: 27px;
+	background-size: 1.2em;
+}
+.item_wrapper .forward_arrow_icon.flecha_grisblanca_int{ /* csepulvedage@ripley.cl 29ABRIL2014 */
+	background: url("../images/fnd-flecha-grisblanca.jpg") no-repeat scroll 0 0 transparent;
+	height: 90px;
+	margin-top: 0;
+	right: 0;
+	top: 9%;
+	width: 27px;
+	background-size: 1.2em;
+}
+/* NEW csepulvedage@ripley.cl 29ABRIL2014 */
+/* NEW csepulvedage@ripley.cl 02MAYO2014 */
+/* .primaryESpotContainer{
+	height: 230px;
+}
+*/
+.primaryESpotContainer {
+	position: relative;
+	overflow: hidden;
+	/* height: 191px; desde espot1.css */
+}
+
+
+
+
+
+
+
+
+
+
+/* VITRINA HOME */
+.box_vitrinas h1,
+.box_oferta_limite h1,
+.mobile_epigrafe,
+.mobile_detalle,
+.mobile_precio_oferta,
+.mobile_legal,
+.box_categorias h1,
+.thumb_categoria p,
+.thumb_categoria_final p{
+	font-family:helvetica,arial,sans-serif;
+	text-align:center;
+	text-transform:uppercase;
+}
+.box_vitrinas h1, .box_oferta_limite h1{
+	font-size:20px;
+	margin-top:10px
+}
+.mobile_epigrafe{
+	font-size:14px;
+	color:#333
+}
+.mobile_detalle{
+	font-size:12px;
+	color:#6a6a6a
+}
+.mobile_precio_oferta{
+	font-size:24px;
+	color:#cc0000;
+	font-weight:bold
+}
+.mobile_legal{
+	font-size:10px;
+	color:#333;
+	margin-top:2px;
+}
+.mobile_separador{
+	background-color:#dedede;
+	width:70%;
+	height:1px;
+	display:block;
+	margin:30px auto
+}
+.box_vitrinas .mobile_vitrina{
+	height:100%;
+	padding:98px 0;
+	margin:5px 0;
+	background-repeat: no-repeat
+}
+.box_vitrinas .mobile_vitrina_3{
+	overflow:hidden;
+	width:310px;
+	height:55px;
+	background:url(../images/mobile_home_retina_baners.jpg) 0 -10px no-repeat;
+	background-size: 100% auto;
+	margin:10px auto 0;
+	padding: 12px 60px;
+}
+.box_vitrinas .mobile_vitrina_3 h2{
+	font-size: 13px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.box_vitrinas .mobile_vitrina_1{
+	overflow:hidden;
+	width:310px;
+	height:192px;
+	background:url(../images/mobile_home_retina_baners.jpg) 0 -70px no-repeat;
+	background-size: 100% auto;
+	margin:10px auto 0
+}
+.box_vitrinas .mobile_vitrina_2{
+	overflow:hidden;
+	width:310px;
+	height:192px;
+	background:url(../images/mobile_home_retina_baners.jpg) 0 -270px no-repeat;
+	background-size: 100% auto;
+	margin:0 auto
+}
+.box_oferta_limite #mobile_oferta_limite{
+	overflow:hidden;
+	width:310px;
+	height:192px;
+	background:url(../images/mobile_home_retina_baners.jpg) 0 -465px no-repeat;
+	background-size: 100% auto;
+	margin:0 auto
+}
+/* FIN VITRINA HOME */
+/* CATEGORIAS */
+.box_categorias h1{
+	font-size:20px;
+	color:#666;
+	margin-top:10px;
+}
+.box_categorias .mobile_categorias{
+	width:100%;
+	height:100%;
+	margin:5px 0;
+	display:block
+}
+.box_categorias .mobile_categorias .thumb_categoria,
+.box_categorias .mobile_categorias .thumb_categoria_final{
+	width:32%;
+	height:100%;
+	margin:10px 6px 20px 0;
+	float:left;
+	display:block
+}
+.box_categorias .mobile_categorias .thumb_categoria_final{
+	margin:10px 0 20px 0 !important;
+}
+.box_categorias .mobile_categorias .thumb_1,
+.box_categorias .mobile_categorias .thumb_2,
+.box_categorias .mobile_categorias .thumb_3,
+.box_categorias .mobile_categorias .thumb_4,
+.box_categorias .mobile_categorias .thumb_5,
+.box_categorias .mobile_categorias .thumb_6,
+.box_categorias .mobile_categorias .thumb_7,
+.box_categorias .mobile_categorias .thumb_8,
+.box_categorias .mobile_categorias .thumb_9,
+.box_categorias .mobile_categorias .thumb_10,
+.box_categorias .mobile_categorias .thumb_11{
+	overflow:hidden;
+	width:100px;
+	height:70px;
+	margin:0 auto;
+}
+.box_categorias .mobile_categorias .thumb_1{
+	background:url(../images/mobile_home_retina_category.jpg) 0 0 no-repeat;
+	background-size: 305% auto;
+}
+.box_categorias .mobile_categorias .thumb_2{
+	background:url(../images/mobile_home_retina_category.jpg) -102px 0 no-repeat;
+	background-size: 305% auto;
+}
+.box_categorias .mobile_categorias .thumb_3{
+	background:url(../images/mobile_home_retina_category.jpg) -205px 0 no-repeat;
+	background-size: 305% auto;
+}
+.box_categorias .mobile_categorias .thumb_4{
+	background:url(../images/mobile_home_retina_category.jpg) 0 -73px no-repeat;
+	background-size: 305% auto;
+}
+.box_categorias .mobile_categorias .thumb_5{
+	background:url(../images/mobile_home_retina_category.jpg) -102px -73px no-repeat;
+	background-size: 305% auto;
+}
+.box_categorias .mobile_categorias .thumb_6{
+	background:url(../images/mobile_home_retina_category.jpg) -205px -73px no-repeat;
+	background-size: 305% auto;
+}
+.box_categorias .mobile_categorias .thumb_7{
+	background:url(../images/mobile_home_retina_category.jpg) 0 -144px no-repeat;
+	background-size: 305% auto;
+}
+.box_categorias .mobile_categorias .thumb_8{
+	background:url(../images/mobile_home_retina_category.jpg) -102px -144px no-repeat;
+	background-size: 305% auto;
+}
+.box_categorias .mobile_categorias .thumb_9{
+	background:url(../images/mobile_home_retina_category.jpg) -205px -144px no-repeat;
+	background-size: 305% auto;
+}
+.box_categorias .mobile_categorias .thumb_10{
+	background:url(../images/mobile_home_retina_category.jpg) 0 -222px no-repeat;
+	background-size: 305% auto;
+}
+.box_categorias .mobile_categorias .thumb_11{
+	background:url(../images/mobile_home_retina_category.jpg) -102px -222px no-repeat;
+	background-size: 305% auto;
+}
+.box_categorias .mobile_categorias .thumb_categoria p,
+.box_categorias .mobile_categorias .thumb_categoria_final p{
+	font-size:11px;
+	margin:4px 0 0 0;
+	color:#6a6a6a;
+}
+/* FIN CATEGORIAS */
+
+
+
+
+
+
+
+
+/* @MEDIA QUERIES ================================== */
+
+/* HORIZONTAL MOBILE DEVICE csepulvedage@ripley.cl */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.box_vitrinas{
+		width:100%;
+		float:left;
+		overflow:hidden;
+		margin:10px 0 0;
+	}
+	.box_vitrinas .mobile_vitrina_1,
+	.box_vitrinas .mobile_vitrina_2,
+	.box_oferta_limite #mobile_oferta_limite{
+		width:230px;
+		height:140px;
+		float:left;
+		margin:10px 15px 20px 0
+	}
+	.box_vitrinas .mobile_vitrina_1{
+		background-position:center -60px;
+		background-size:100%;
+	}
+	.box_vitrinas .mobile_vitrina_2{
+		background-position:center -205px;
+		background-size: 100%;
+	}
+	.box_oferta_limite #mobile_oferta_limite{
+		background-position:center -365px;
+		background-size: 100%;
+	}
+	.box_vitrinas h1,
+	.box_oferta_limite h1,
+	.mobile_epigrafe,
+	.mobile_detalle,
+	.mobile_precio_oferta,
+	.mobile_legal{
+		text-align:left;
+		float:left;
+		display:inline-block
+	}
+	.box_vitrinas h1, .box_oferta_limite h1{
+		width:45%;
+		font-size:22px;
+		margin-top:10px
+	}
+	.mobile_epigrafe{
+		width:45%;
+		font-size:16px;
+	}
+	.mobile_detalle{
+		width:45%;
+		font-size:14px;
+	}
+	.mobile_precio_oferta{
+		width:45%;
+		font-size:26px;
+	}
+	.mobile_legal{
+		width:45%;
+		font-size:12px;
+		margin-top:2px;
+	}
+	.mobile_separador{
+		width:100%;
+		margin:10px 0;
+		float:left
+	}
+	.box_categorias .mobile_categorias .thumb_1,
+	.box_categorias .mobile_categorias .thumb_2,
+	.box_categorias .mobile_categorias .thumb_3,
+	.box_categorias .mobile_categorias .thumb_4,
+	.box_categorias .mobile_categorias .thumb_5,
+	.box_categorias .mobile_categorias .thumb_6,
+	.box_categorias .mobile_categorias .thumb_7,
+	.box_categorias .mobile_categorias .thumb_8,
+	.box_categorias .mobile_categorias .thumb_9,
+	.box_categorias .mobile_categorias .thumb_10,
+	.box_categorias .mobile_categorias .thumb_11{
+		width:145px;
+		height:95px;
+		background-size: 300%;
+		margin:0 auto;
+	}
+	.box_categorias .mobile_categorias .thumb_1{
+		background-position:0 -5px;
+	}
+	.box_categorias .mobile_categorias .thumb_2{
+		background-position:-145px -5px;
+	}
+	.box_categorias .mobile_categorias .thumb_3{
+		background-position:-290px -5px;
+	}
+	.box_categorias .mobile_categorias .thumb_4{
+		background-position:0 -105px;
+	}
+	.box_categorias .mobile_categorias .thumb_5{
+		background-position:-145px -105px;
+	}
+	.box_categorias .mobile_categorias .thumb_6{
+		background-position:-290px -105px;
+	}
+	.box_categorias .mobile_categorias .thumb_7{
+		background-position:0 -205px;
+	}
+	.box_categorias .mobile_categorias .thumb_8{
+		background-position:-145px -205px;
+	}
+	.box_categorias .mobile_categorias .thumb_9{
+		background-position:-290px -205px;
+	}
+	.box_categorias .mobile_categorias .thumb_10{
+		background-position:0 -310px;
+	}
+	.box_categorias .mobile_categorias .thumb_11{
+		background-position:-145px -310px;
+	}
+	.box_categorias .mobile_categorias .thumb_categoria:first-child p{
+		margin-left:30px;
+	}
+	.box_categorias .mobile_categorias .thumb_categoria p,
+	.box_categorias .mobile_categorias .thumb_categoria_final p{
+		font-size:0.9em;
+		margin:4px 10px 0 0;
+	}
+}
+
+
+
+
+
+
+/* VERTICAL TABLET DEVICE csepulvedage@ripley.cl */
+@media only screen and (min-width: 768px) and (max-width: 959px){
+	.box_vitrinas .mobile_vitrina_1,
+	.box_vitrinas .mobile_vitrina_2,
+	.box_oferta_limite #mobile_oferta_limite{
+		width:540px;
+		height:228px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position:center -90px;
+		background-size: 68%;
+		margin:0 auto
+	}
+	.box_vitrinas .mobile_vitrina_2{
+		background-position:center -320px
+	}
+	.box_oferta_limite #mobile_oferta_limite{
+		background-position:center -550px
+	}
+	.box_vitrinas h1, .box_oferta_limite h1{
+		font-size:26px;
+		margin-top:15px
+	}
+	.mobile_epigrafe{
+		font-size:18px;
+	}
+	.mobile_detalle{
+		font-size:16px;
+	}
+	.mobile_precio_oferta{
+		font-size:28px;
+	}
+	.mobile_legal{
+		font-size:14px;
+		margin-top:2px;
+	}
+	.box_categorias .mobile_categorias .thumb_1,
+	.box_categorias .mobile_categorias .thumb_2,
+	.box_categorias .mobile_categorias .thumb_3,
+	.box_categorias .mobile_categorias .thumb_4,
+	.box_categorias .mobile_categorias .thumb_5,
+	.box_categorias .mobile_categorias .thumb_6,
+	.box_categorias .mobile_categorias .thumb_7,
+	.box_categorias .mobile_categorias .thumb_8,
+	.box_categorias .mobile_categorias .thumb_9,
+	.box_categorias .mobile_categorias .thumb_10,
+	.box_categorias .mobile_categorias .thumb_11{
+		width:145px;
+		height:95px;
+		background-size: 300%;
+		margin:0 auto;
+	}
+	.box_categorias .mobile_categorias .thumb_1{
+		background-position:0 -5px;
+	}
+	.box_categorias .mobile_categorias .thumb_2{
+		background-position:-145px -5px;
+	}
+	.box_categorias .mobile_categorias .thumb_3{
+		background-position:-290px -5px;
+	}
+	.box_categorias .mobile_categorias .thumb_4{
+		background-position:0 -105px;
+	}
+	.box_categorias .mobile_categorias .thumb_5{
+		background-position:-145px -105px;
+	}
+	.box_categorias .mobile_categorias .thumb_6{
+		background-position:-290px -105px;
+	}
+	.box_categorias .mobile_categorias .thumb_7{
+		background-position:0 -205px;
+	}
+	.box_categorias .mobile_categorias .thumb_8{
+		background-position:-145px -205px;
+	}
+	.box_categorias .mobile_categorias .thumb_9{
+		background-position:-290px -205px;
+	}
+	.box_categorias .mobile_categorias .thumb_10{
+		background-position:0 -310px;
+	}
+	.box_categorias .mobile_categorias .thumb_11{
+		background-position:-145px -310px;
+	}
+	.box_categorias .mobile_categorias .thumb_categoria:first-child p{
+		margin-left:30px;
+	}
+	.box_categorias .mobile_categorias .thumb_categoria p,
+	.box_categorias .mobile_categorias .thumb_categoria_final p{
+		font-size:0.9em;
+		margin:4px 10px 0 0;
+	}
+}
+
+
+
+
+
+/* HORIZONTAL TABLET DEVICE csepulvedage@ripley.cl */
+@media only screen and (min-width: 960px) and (max-width: 3000px){
+	.box_vitrinas .mobile_vitrina_1,
+	.box_vitrinas .mobile_vitrina_2,
+	.box_oferta_limite #mobile_oferta_limite{
+		width:540px;
+		height:228px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position:center -90px;
+		background-size: 68%;
+		margin:0 auto
+	}
+	.box_vitrinas .mobile_vitrina_2{
+		background-position:center -320px
+	}
+	.box_oferta_limite #mobile_oferta_limite{
+		background-position:center -550px
+	}
+	.box_vitrinas h1, .box_oferta_limite h1{
+		font-size:26px;
+		margin-top:15px
+	}
+	.mobile_epigrafe{
+		font-size:18px;
+	}
+	.mobile_detalle{
+		font-size:16px;
+	}
+	.mobile_precio_oferta{
+		font-size:28px;
+	}
+	.mobile_legal{
+		font-size:14px;
+		margin-top:2px;
+	}
+	.box_categorias .mobile_categorias .thumb_1,
+	.box_categorias .mobile_categorias .thumb_2,
+	.box_categorias .mobile_categorias .thumb_3,
+	.box_categorias .mobile_categorias .thumb_4,
+	.box_categorias .mobile_categorias .thumb_5,
+	.box_categorias .mobile_categorias .thumb_6,
+	.box_categorias .mobile_categorias .thumb_7,
+	.box_categorias .mobile_categorias .thumb_8,
+	.box_categorias .mobile_categorias .thumb_9,
+	.box_categorias .mobile_categorias .thumb_10,
+	.box_categorias .mobile_categorias .thumb_11{
+		width:145px;
+		height:95px;
+		background-size: 300%;
+		margin:0 auto;
+	}
+	.box_categorias .mobile_categorias .thumb_1{
+		background-position:0 -5px;
+	}
+	.box_categorias .mobile_categorias .thumb_2{
+		background-position:-145px -5px;
+	}
+	.box_categorias .mobile_categorias .thumb_3{
+		background-position:-290px -5px;
+	}
+	.box_categorias .mobile_categorias .thumb_4{
+		background-position:0 -105px;
+	}
+	.box_categorias .mobile_categorias .thumb_5{
+		background-position:-145px -105px;
+	}
+	.box_categorias .mobile_categorias .thumb_6{
+		background-position:-290px -105px;
+	}
+	.box_categorias .mobile_categorias .thumb_7{
+		background-position:0 -205px;
+	}
+	.box_categorias .mobile_categorias .thumb_8{
+		background-position:-145px -205px;
+	}
+	.box_categorias .mobile_categorias .thumb_9{
+		background-position:-290px -205px;
+	}
+	.box_categorias .mobile_categorias .thumb_10{
+		background-position:0 -310px;
+	}
+	.box_categorias .mobile_categorias .thumb_11{
+		background-position:-145px -310px;
+	}
+	.box_categorias .mobile_categorias .thumb_categoria:first-child p{
+		margin-left:30px;
+	}
+	.box_categorias .mobile_categorias .thumb_categoria p,
+	.box_categorias .mobile_categorias .thumb_categoria_final p{
+		font-size:0.9em;
+		margin:4px 10px 0 0;
+	}
+}
+/* FIN @MEDIA QUERIES */
+/* NEW csepulvedage@ripley.cl 02MAYO2014 */
