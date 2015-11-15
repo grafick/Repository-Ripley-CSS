@@ -949,33 +949,52 @@ header {
       border: none; }
 
 #top-header {
-  padding: 0; }
+  padding: 0
+}
+  @media only screen and (min-width: 375px){
+    #top-header .container{
+      height: 38px;
+    }
+    #top-header #header-logo a {
+      background: transparent url(../images/tileset.png) 0 0 no-repeat;
+      background-size: 145px;
+      height: 30px;
+      width: 100px;
+    }
+  }
   @media only screen and (min-width: 991px) {
-    #top-header {
+  #top-header {
       padding: 10px 0;
-      height: 68px; } }
+      height: 68px; }
+    }
   #top-header #header-logo {
     height: 48px;
     overflow: hidden;
     display: table;
-    margin: 10px auto; }
-    @media only screen and (min-width: 991px) {
-      #top-header #header-logo {
-        margin: 0 15px 0 0;
-        float: left; } }
-    #top-header #header-logo a {
-      background: transparent url(../images/tileset.png) 0 0 no-repeat;
-      background-size: 225px;
-      height: 47px;
-      width: 155px;
-      display: block;
-      overflow: hidden;
-      text-indent: -9999px;
-      margin: 0;
-      padding: 0; }
-      @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-        #top-header #header-logo a {
-          background-image: url(../images/tileset@2x.png); } }
+    margin: 10px auto
+  }
+  #top-header #header-logo a{
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    margin: 0;
+    padding: 0;
+  }
+  #top-header #header-logo {
+      height: 30px;
+      margin: 0 15px 0 0;
+      float: left; }
+    }
+  #top-header #header-logo a {
+    background: url(../images/tileset.png) no-repeat;
+    background-size: 225px;
+    height: 47px;
+    width: 155px;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+  #top-header #header-logo a {
+      background-image: url(../images/tileset@2x.png); }
+  }
   #top-header #header-form {
     height: 36px;
     display: block;
@@ -3252,7 +3271,6 @@ nav.menu {
     display: block;
     position: relative;
     min-height: 290px;
-    z-index: -1;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
