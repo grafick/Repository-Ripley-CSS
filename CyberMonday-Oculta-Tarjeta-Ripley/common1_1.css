@@ -5163,6 +5163,13 @@ a.BtnEditDatosFact{
 /* OCULTAR CHECKOUT ONECLICK 
 div#checkout_1_2 {display: none} */
 
+/* OCULTA WEBPAY REDCOMPRA + WEBPAY CON CUOTAS 
+.billing_method div#checkout_1_3, .billing_method div#checkout_1_4 {display: none !important} */
+
+/* OCULTA TARJETA RIPLEY 
+.billing_method div#checkout_1_1 {display: none !important} */
+
+
 /* OCULTA RETIRO PARA TERCEROS DESDE TIENDA */
 #shipping .retiroTerceros p:last-child{display:none}
 #shipping .info_retiro{display:none}
