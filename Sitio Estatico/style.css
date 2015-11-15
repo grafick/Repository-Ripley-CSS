@@ -590,7 +590,9 @@ hr {
   height: 34px;
   display: block;
   overflow: hidden;
-  text-indent: -9999px; }
+  text-indent: -9999px;
+  z-index:1px;
+}
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
     .cyber-icon {
       background-image: url(../images/sprite-cyber@2x.png);
@@ -3250,6 +3252,7 @@ nav.menu {
     display: block;
     position: relative;
     min-height: 290px;
+    z-index: -1;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;

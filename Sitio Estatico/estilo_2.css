@@ -184,36 +184,42 @@
 
 
 @media only screen and (min-width: 480px){
-#main-slider .slide .slide-image img.back {
-    top: 0;
-    bottom: 0;
-    min-width: 45%;
-}
+	#main-slider .slide .slide-image img.back {
+	    top: 0;
+	    bottom: 0;
+	    min-width: 45%;
+	}
 
-#main-slider .slide .slide-image img.front {
-    bottom: 5%;
-    min-width: 40%;
-}
+	#main-slider .slide .slide-image img.front {
+	    bottom: 5%;
+	    min-width: 40%;
+	}
 
-.header-content h1{
-	margin: 17px 0 0 0;
-}
-#main-slider .slide .slide-info .contPrecio .precio{
-	font-size: 1.5em;
-}
-.header-content h1{
-	max-width: 180px;
-	margin-top: 10px;
-	margin-bottom: 0;
-}
-.header-content h2{
-	max-width: 180px;
-	margin: 20px 0 0 0 !important;
-}
-#main-slider .divider{
-	height: 10px;
-}
-
+	.header-content h1{
+		margin: 17px 0 0 0;
+	}
+	#main-slider .slide .slide-info .contPrecio .precio{
+		font-size: 1.5em;
+	}
+	.header-content h1{
+		max-width: 180px;
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+	.header-content h2{
+		max-width: 180px;
+		margin: 20px 0 0 0 !important;
+	}
+	#main-slider .divider{
+		height: 10px;
+	}
+	.morado{
+		width:100%;
+		padding:0;
+	}
+	.news-slide.amarillo_webpay.webpaytxt{
+        width:100%;
+    }
 }
 
 @media only screen and (min-width: 720px){
@@ -270,9 +276,19 @@
 		    padding: 30px 0 75px;
 	}
 	.header-content h1{
-	max-width: 240px;
-	margin: 10px 20px 0 0;
+		max-width: 200px;
+		background: url(../images/sprite-cyber@2x.png) 0 0 no-repeat;
+		background-size: 190px;
+		height: 70px;
 	}
+	.header-content h2{
+		max-width: 226px;
+		margin: 16px 0 0;
+		background: url(../images/sprite-cyber@2x.png) 0 -84px no-repeat;
+		background-size: 220px;
+		height: 36px;
+	}
+
 	#main-slider .slide .slide-info h4{
 	    font-size: 1.2em;
 	}
