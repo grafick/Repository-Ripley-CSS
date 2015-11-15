@@ -2400,6 +2400,14 @@ nav.menu {
       color: #222;
       border-right: solid 1px #f7f7f7;
       margin-bottom: 20px; }
+      @media only screen and (min-width: 320px){
+        #categories #product-holder .product {
+          padding: 0 10px 20px;
+          border-right: none;
+          border-bottom: 1px dotted #DADADA;
+          margin-bottom: 20px
+        }
+      }
       #categories #product-holder .product:nth-child(2n+1) {
         clear: left; }
       #categories #product-holder .product:nth-child(2n) {
@@ -2479,18 +2487,34 @@ nav.menu {
         display: block;
         margin: 0 0 2px;
         padding: 0; }
+        @media only screen and (min-width: 320px){
+          #categories #product-holder .product h4{
+            font-size: 12px !important;
+          }
+        }
         @media only screen and (min-width: 720px) {
           #categories #product-holder .product h4 {
-            margin: 0 0 15px; } }
+            margin: 0 0 15px;
+            font-size: 14px;
+            }
+          }
       #categories #product-holder .product .descr {
         display: block;
         margin: 0 0 4px;
         color: #999;
-        font-size: 11px; }
+        font-size: 11px;
+      }
+        @media only screen and (min-width: 320px){
+          #categories #product-holder .product .descr{
+            font-size: 11px !important;
+          }
+        }
         @media only screen and (min-width: 720px) {
           #categories #product-holder .product .descr {
             margin: 0 0 15px;
-            font-size: 12px; } }
+            font-size: 12px;
+          }
+        }
       #categories #product-holder .product .variations {
         font-size: 12px;
         font-family: "Open Sans", sans-serif;
@@ -2544,11 +2568,11 @@ nav.menu {
       #categories #product-holder .product .stock {
         font-size: 11px;
         display: block;
-        margin: 10px 0;
+        margin: 14px 0;
         clear: both; }
         @media only screen and (min-width: 991px) {
           #categories #product-holder .product .stock {
-            margin: 15px 0; } }
+            margin: 8px 0; } }
       #categories #product-holder .product .shipping-info {
         overflow: hidden;
         text-align: left; }
@@ -2577,7 +2601,19 @@ nav.menu {
     #categories #discounts #discounts-inner {
       border: solid 1px #f7f7f7;
       padding: 20px;
-      overflow: hidden; }
+      overflow: hidden;
+    }
+    @media only screen and (min-width: 320px){
+      #categories #discounts h3{
+        max-width: 100%;
+      }
+      #categories #discounts #discounts-inner {
+        width:100%;
+        border:none;
+        padding:0;
+      }
+    }
+
     #categories #discounts .discount {
       background: #f7f7f7;
       color: #222;
@@ -2591,6 +2627,12 @@ nav.menu {
       text-align: center; }
       #categories #discounts .discount:nth-child(2n+1) {
         clear: left; }
+      @media only screen and (min-width: 320px){
+      #categories #discounts .discount{
+        width: 46%;
+        min-height: 130px;
+        }
+      }
       @media only screen and (min-width: 991px) {
         #categories #discounts .discount {
           width: 100%;
@@ -3318,6 +3360,11 @@ nav.menu {
       -moz-transition: all 0.1s ease-in-out;
       -ms-transition: all 0.1s ease-in-out;
       -o-transition: all 0.1s ease-in-out; }
+      @media only screen and (min-width: 320px){
+        .pagination li a {
+          padding: 10px 12px;
+        }
+      }
       .pagination li a:hover {
         background: #ef5456;
         color: #fff; }
@@ -3468,6 +3515,11 @@ nav.menu {
     margin: 0;
     padding: 30px 0;
     font-family: "Open Sans", sans-serif; }
+    @media only screen and (min-width: 320px){
+      #prefooter p {
+        font-size: 16px;
+      }
+    }
     @media only screen and (min-width: 991px) {
       #prefooter p {
         width: 430px;
@@ -3520,6 +3572,17 @@ footer {
       margin: 0 auto 20px;
       font-weight: 600;
       white-space: pre; }
+      @media only screen and (min-width: 320px){
+        footer #pre p.phone {
+          font-size: 15px;
+          line-height:32px;
+        }
+        footer #pre .col-25 :nth-child(3),
+        footer #pre .col-25 :nth-child(4),
+        footer #footer .container .col-25{
+          display: none;
+        }
+      }
       @media only screen and (min-width: 991px) {
         footer #pre p.phone {
           display: block;

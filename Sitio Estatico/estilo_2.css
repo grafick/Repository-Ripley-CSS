@@ -113,11 +113,7 @@
 }
 
 
-@media only screen and (min-width: 320px){
-	.header-content h2{
-	max-width: 150px;
-	margin: 37px 0 0 0;
-	}	
+@media only screen and (min-width: 320px){	
 	#main-slider .slide .slide-image img.back {
 	    top: 4%;
 	    left: 54%;
@@ -137,11 +133,22 @@
 	#main-slider .slide .slide-info h4{
 		    font-size: 1em;
 	}
-
 	.header-content h1{
-		max-width: 140px;
+		max-width: 115px;
 		margin-top: 0;
 		margin-bottom: 0;
+		background: url(../images/sprite-cyber@2x.png) 0 0 no-repeat;
+		background-size: 130px;
+		height: 48px;
+		text-indent: -9999px;
+	}
+	.header-content h2{
+		max-width: 150px;
+		margin: 8px 0 0;
+		background: url(../images/sprite-cyber@2x.png) 0 -55px no-repeat;
+		background-size: 146px;
+		height: 24px;
+		text-indent: -9999px;
 	}
 
 	#main-slider .slide .slide-info .stock{
@@ -201,7 +208,7 @@
 }
 .header-content h2{
 	max-width: 180px;
-	margin: 57px 0 0 0 !important;
+	margin: 20px 0 0 0 !important;
 }
 #main-slider .divider{
 	height: 10px;
