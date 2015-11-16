@@ -995,9 +995,9 @@ header {
       background-size: 185px;
       height: 38px;
       width: 130px;
-      margin: 5px 0 0}
+      margin: 8px 0 0}
     }
-    
+
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
       #top-header #header-logo a {
         background-image: url(../images/tileset@2x.png);
@@ -1007,7 +1007,7 @@ header {
         display: block;
         overflow: hidden;
         text-indent: -9999px;
-        margin: 5px 0 0;
+        margin: 8px 0 0;
         padding: 0}
       }
 
@@ -2380,9 +2380,12 @@ nav.menu {
 		#categories .is-sticky nav {
 	    width: 100% !important;
 	    position:fixed !important;
-		top:0;
-		left:0;
-		z-index: 9999;}
+      top:0;
+      left:0;
+      z-index: 9999;
+      box-shadow: 0 1px 20px #b3b3b3;
+      -webkit-box-shadow: 0 1px 20px #b3b3b3;
+      -moz-box-shadow:0 1px 20px #b3b3b3;}
 	}
     #categories nav ul {
       margin: 0;
