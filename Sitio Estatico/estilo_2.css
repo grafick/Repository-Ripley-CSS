@@ -261,7 +261,7 @@
 @media only screen and (min-width: 991px){
 	.header-content h2{
 		max-width: 240px;
-		margin: 67px 20px 0 0 !important;
+		margin: 20px 20px 0 0 !important;
 	}
 
 	#main-slider .slide .slide-image img.back {
