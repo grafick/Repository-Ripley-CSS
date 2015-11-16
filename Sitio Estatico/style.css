@@ -590,9 +590,7 @@ hr {
   height: 34px;
   display: block;
   overflow: hidden;
-  text-indent: -9999px;
-  z-index:1px;
-}
+  text-indent: -9999px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
     .cyber-icon {
       background-image: url(../images/sprite-cyber@2x.png);
@@ -949,12 +947,20 @@ header {
       border: none; }
 
 #top-header {
-  padding: 0
-}
-  @media only screen and (min-width: 375px){
-    #top-header .container{
-      height: 38px;
-    }
+  padding: 0; }
+  @media only screen and (min-width: 991px) {
+    #top-header {
+      padding: 10px 0;
+      height: 68px; } }
+  #top-header #header-logo {
+    height: 48px;
+    overflow: hidden;
+    display: table;
+    margin: 10px auto; }
+    @media only screen and (min-width: 991px) {
+      #top-header #header-logo {
+        margin: 0 15px 0 0;
+        float: left; } }
     #top-header #header-logo a {
       background: transparent url(../images/tileset.png) 0 0 no-repeat;
       background-size: 225px;
@@ -965,41 +971,9 @@ header {
       text-indent: -9999px;
       margin: 0;
       padding: 0; }
-    }
-  }
-  @media only screen and (min-width: 991px) {
-  #top-header {
-      padding: 10px 0;
-      height: 68px; }
-    }
-  #top-header #header-logo {
-    height: 48px;
-    overflow: hidden;
-    display: table;
-    margin: 10px auto
-  }
-  #top-header #header-logo a{
-    display: block;
-    overflow: hidden;
-    text-indent: -9999px;
-    margin: 0;
-    padding: 0;
-  }
-  #top-header #header-logo {
-      height: 30px;
-      margin: 0 15px 0 0;
-      float: left; }
-    }
-  #top-header #header-logo a {
-    background: url(../images/tileset.png) no-repeat;
-    background-size: 225px;
-    height: 47px;
-    width: 155px;
-  }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-  #top-header #header-logo a {
-      background-image: url(../images/tileset@2x.png); }
-  }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+        #top-header #header-logo a {
+          background-image: url(../images/tileset@2x.png); } }
   #top-header #header-form {
     height: 36px;
     display: block;
@@ -2325,7 +2299,7 @@ nav.menu {
     text-transform: uppercase;
     display: block;
     text-align: center;
-    max-width: 90%; }
+    max-width: 100%; }
   #categories nav {
     background: #ebebeb;
     overflow: hidden;
@@ -2426,7 +2400,7 @@ nav.menu {
       color: #222;
       border-right: solid 1px #f7f7f7;
       margin-bottom: 20px; }
-      @media only screen and (min-width: 320px){
+      @media only screen and (max-width: 376px){
         #categories #product-holder .product {
           padding: 0 10px 20px;
           border-right: none;
@@ -2653,7 +2627,7 @@ nav.menu {
       text-align: center; }
       #categories #discounts .discount:nth-child(2n+1) {
         clear: left; }
-      @media only screen and (min-width: 320px){
+      @media only screen and (max-width: 376px){
       #categories #discounts .discount{
         width: 46%;
         min-height: 130px;
@@ -3593,12 +3567,12 @@ footer {
           text-align: left; } }
     footer #pre p.phone {
       color: #969696;
-      font-size: 20px;
+      font-size: 15px;
       display: table;
       margin: 0 auto 20px;
       font-weight: 600;
       white-space: pre; }
-      @media only screen and (min-width: 320px){
+      @media only screen and (max-width: 376px){
         footer #pre p.phone {
           font-size: 15px;
           line-height:32px;
