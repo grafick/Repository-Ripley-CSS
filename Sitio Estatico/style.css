@@ -821,10 +821,6 @@ header {
     background: #1c1c1c url(../images/no-search-bg.jpg) repeat; }
     header#no-search .container > a {
       display: block;
-      background: #3e3e3e;
-      padding: 10px;
-      height: 40px;
-      width: 42px;
       position: absolute;
       top: 4px;
       left: 0;
@@ -835,9 +831,23 @@ header {
       -moz-transition: all 0.1s ease-in-out;
       -ms-transition: all 0.1s ease-in-out;
       -o-transition: all 0.1s ease-in-out; }
+      @media only screen and (min-width: 375px) {
+        header#no-search .container > a{
+          height: 32px;
+          width: 32px;
+          background:none!important;
+          padding:0 10px 0 0;
+        }
+        header#no-search .container > a:hover{
+          background:none!important;
+        }
+      }
+        
       @media only screen and (min-width: 991px) {
         header#no-search .container > a {
+          background: #3e3e3e;
           height: 48px;
+          width: 42px;
           width: auto;
           background: none;
           float: left;
@@ -951,10 +961,26 @@ header {
 #top-header {
   padding: 0
 }
+#top-header #header-logo {
+  overflow: hidden;
+  display: table;
+  margin: 10px auto
+}
+#top-header #header-logo a{
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
+  margin: 0;
+  padding: 0;
+}
   @media only screen and (min-width: 375px){
     #top-header .container{
       height: 38px;
     }
+    #top-header #header-logo {
+        height: 30px;
+        margin: 0 auto;
+      }
     #top-header #header-logo a {
       background: transparent url(../images/tileset.png) 0 0 no-repeat;
       background-size: 145px;
@@ -963,33 +989,20 @@ header {
     }
   }
   @media only screen and (min-width: 991px) {
-  #top-header {
-      padding: 10px 0;
-      height: 68px; }
+    #top-header {
+        padding: 10px 0;
+        height: 68px
+      }
+    #top-header #header-logo {
+      height: 48px;
     }
-  #top-header #header-logo {
-    height: 48px;
-    overflow: hidden;
-    display: table;
-    margin: 10px auto
-  }
-  #top-header #header-logo a{
-    display: block;
-    overflow: hidden;
-    text-indent: -9999px;
-    margin: 0;
-    padding: 0;
-  }
-  #top-header #header-logo {
-      height: 30px;
-      margin: 0 15px 0 0;
-      float: left; }
+    
+    #top-header #header-logo a {
+      background: url(../images/tileset.png) no-repeat;
+      background-size: 225px;
+      height: 47px;
+      width: 155px;
     }
-  #top-header #header-logo a {
-    background: url(../images/tileset.png) no-repeat;
-    background-size: 225px;
-    height: 47px;
-    width: 155px;
   }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
   #top-header #header-logo a {
@@ -1123,6 +1136,15 @@ header {
       -o-transition: all 0.1s ease-in-out; }
       #user-info #shopping-bag a:hover {
         background: #ef5456; }
+      @media only screen and (min-width: 375px){
+        #user-info #shopping-bag a {
+          padding:0;
+          background:none !important;
+        }
+        #user-info #shopping-bag a:hover {
+          background:none !important;
+        }
+      }
     #user-info #shopping-bag .icon-shopping-bag {
       background: transparent url(../images/tileset.png) 0 -62px no-repeat;
       background-size: 225px;
