@@ -731,7 +731,7 @@ hr {
       margin: 0 5px 0 0; }
     #news-slider .news-slide p {
       display: block;
-      margin: 0 0 10px; }
+      margin: 0}
       @media only screen and (min-width: 991px) {
         #news-slider .news-slide p {
           display: inline-block;
@@ -831,8 +831,8 @@ header {
     background: #1c1c1c url(../images/no-search-bg.jpg) repeat; }
     header#no-search .container > a {
       display: block;
-      background: #3e3e3e;
-      padding: 10px;
+      /* background: #3e3e3e; */
+      padding: 0 0 10px 0;
       height: 40px;
       width: 42px;
       position: absolute;
@@ -862,7 +862,13 @@ header {
           border-right: solid 1px #333;
           -webkit-border-radius: 0;
           -moz-border-radis: 0;
-          -border-radius: 0; } }
+          -border-radius: 0; }
+        header#no-search #user-info #shopping-bag a {
+          padding: 10px 12px;
+          background: #3e3e3e}
+        header#no-search #user-info #shopping-bag a:hover {
+            background: #ef5456}
+        }
       header#no-search .container > a:hover {
         background: #1c1c1c; }
       header#no-search .container > a span {
@@ -873,10 +879,7 @@ header {
       header#no-search .container > a .icon-cyber-bag {
         float: left;
         margin: 0 5px 0 0; }
-    header#no-search #user-info #shopping-bag a {
-      background: #3e3e3e; }
-      header#no-search #user-info #shopping-bag a:hover {
-        background: #ef5456; }
+
 
 .country-select {
   display: table;
@@ -959,33 +962,46 @@ header {
       border: none; }
 
 #top-header {
-  padding: 0; }
+  padding:0}
+
   @media only screen and (min-width: 991px) {
     #top-header {
       padding: 10px 0;
-      height: 68px; } }
-  #top-header #header-logo {
-    height: 48px;
-    overflow: hidden;
-    display: table;
-    margin: 10px auto; }
-    @media only screen and (min-width: 991px) {
-      #top-header #header-logo {
-        margin: 0 15px 0 0;
-        float: left; } }
-    #top-header #header-logo a {
+      height: 68px} }
+
+#top-header #header-logo {
+  height: 28px;
+  overflow: hidden;
+  display: table;
+  margin: 10px auto}
+
+#top-header #header-logo a {
       background: transparent url(../images/tileset.png) 0 0 no-repeat;
-      background-size: 225px;
-      height: 47px;
-      width: 155px;
+      background-size: 135px;
+      height: 28px;
+      width: 94px;
       display: block;
       overflow: hidden;
       text-indent: -9999px;
-      margin: 0;
-      padding: 0; }
+      margin: 5px 0 0;
+      padding: 0}
+
+  @media only screen and (min-width: 991px) {
+    #top-header #header-logo {
+      height:48px;
+      margin: 0 15px 0 0;
+      float: left} }
+    #top-header #header-logo a {
+      background-size: 185px;
+      height: 38px;
+      width: 130px;
+      margin: 5px 0 0}
+    }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
         #top-header #header-logo a {
-          background-image: url(../images/tileset@2x.png); } }
+          background-image: url(../images/tileset@2x.png)} }
+
+
   #top-header #header-form {
     height: 36px;
     display: block;
@@ -1103,17 +1119,17 @@ header {
     #user-info #shopping-bag a {
       display: block;
       overflow: hidden;
-      background: #222;
-      padding: 10px 12px;
-      -webkit-border-radius: 4px;
-      -moz-border-radis: 4px;
-      -border-radius: 4px;
       -webkit-transition: all 0.1s ease-in-out;
       -moz-transition: all 0.1s ease-in-out;
       -ms-transition: all 0.1s ease-in-out;
       -o-transition: all 0.1s ease-in-out; }
-      #user-info #shopping-bag a:hover {
-        background: #ef5456; }
+      @media only screen and (min-width: 991px) {
+        #user-info #shopping-bag a {
+          -webkit-border-radius: 4px;
+          -moz-border-radis: 4px;
+          -border-radius: 4px;
+        }
+      }
     #user-info #shopping-bag .icon-shopping-bag {
       background: transparent url(../images/tileset.png) 0 -62px no-repeat;
       background-size: 225px;
@@ -3650,8 +3666,7 @@ footer {
           line-height:32px;
         }
         footer #pre .col-25 :nth-child(3),
-        footer #pre .col-25 :nth-child(4),
-        footer #footer .container .col-25{
+        footer #pre .col-25 :nth-child(4){
           display: none;
         }
       }

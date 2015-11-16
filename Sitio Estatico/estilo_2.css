@@ -46,7 +46,7 @@
     font-size: 16px;
     font-weight: lighter;
     font-family: "open_sanscondensed_light",sans-serif;
-    padding: 10px;
+    padding: 2px 0;
 }
 /*
 #news-slider .news-slide a {
@@ -58,7 +58,7 @@
 	color: #dd2b4d;
 	text-transform: uppercase;
 	display: inline-block;
-	padding-top: 5px;
+	padding-top: 2px;
 }
 .morado{
 	color: #654974;
