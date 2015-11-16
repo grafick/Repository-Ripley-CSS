@@ -45,9 +45,12 @@ strong, h1, h2, h3, h4, h5 {
       float: left; } }
 
 .col-25 {
-  width: 50%;
+  width: 100%;
   box-sizing: border-box;
   float: left; }
+  @media only screen and (min-width: 480px) {
+    .col-25 {
+      width: 50%; } }
   @media only screen and (min-width: 991px) {
     .col-25 {
       width: 25%; } }
@@ -260,7 +263,8 @@ hr {
 
 #error > img {
   display: block;
-  margin: 70px auto 20px; }
+  margin: 70px auto 20px;
+  border:0; }
 #error h3 {
   font-size: 24px;
   text-align: center;
@@ -790,6 +794,10 @@ header {
   header #top-header a {
     text-decoration: none;
     color: #fff; }
+  header #top-header .container{
+  	display: block;
+    overflow: hidden;
+  }
   header #top-header-content {
     position: relative; }
   header #corporative-header {
@@ -828,7 +836,7 @@ header {
       height: 40px;
       width: 42px;
       position: absolute;
-      top: 4px;
+      top: 14px;
       left: 0;
       -webkit-border-radius: 6px;
       -moz-border-radis: 6px;
@@ -1057,7 +1065,7 @@ header {
   display: block;
   margin: 0;
   position: absolute;
-  top: 4px;
+  top: 14px;
   right: 0; }
   @media only screen and (min-width: 991px) {
     #user-info {
@@ -1685,7 +1693,8 @@ nav.menu {
         height: 100%;
         width: auto;
         max-width: 1000%;
-        margin: 0 0 0 -50%; }
+        margin: 0 0 0 -50%; 
+    	border:0;}
 
 .rp-menu li:hover:not(.active) > .header-hidden {
   visibility: visible;
@@ -1749,7 +1758,11 @@ nav.menu {
 
 #header-cyber {
   overflow: hidden;
-  padding: 30px 0; }
+  padding: 15px 0; }
+  @media only screen and (min-width: 991px) {
+  	#header-cyber {
+  		padding:30px 0;}
+  }
 
 .header-content {
   width: 90%;
@@ -1770,7 +1783,7 @@ nav.menu {
     float: left;
     overflow: hidden;
     text-indent: -9999px;
-    margin: 0 0 30px; }
+    margin: 0; }
     @media only screen and (min-width: 991px) {
       .header-content h1 {
         background: transparent url(../images/sprite-cyber.png) 0 0 no-repeat;
@@ -1791,7 +1804,7 @@ nav.menu {
     float: right;
     overflow: hidden;
     text-indent: -9999px;
-    margin: 25px auto 30px; }
+    margin: 25px auto 0; }
     @media only screen and (min-width: 991px) {
       .header-content h2 {
         background: transparent url(../images/sprite-cyber.png) 0 -118px no-repeat;
@@ -1914,13 +1927,15 @@ nav.menu {
         display: block;
         overflow: hidden;
         padding: 0;
-        margin: 0; }
+        margin: 0;
+        border:0; }
         #main-slider .slide .slide-image img.front {
           width: 48%;
           position: absolute;
           bottom: 0;
           right: 0;
-          z-index: 20; }
+          z-index: 20;
+          border:0; }
           @media only screen and (min-width: 480px) {
             #main-slider .slide .slide-image img.front {
               bottom: -20px; } }
@@ -1940,7 +1955,8 @@ nav.menu {
           position: absolute;
           bottom: 20%;
           right: 50px;
-          z-index: 10; }
+          z-index: 10;
+          border:0; }
           @media only screen and (min-width: 480px) {
             #main-slider .slide .slide-image img.back {
               right: 90px; } }
@@ -2095,7 +2111,8 @@ nav.menu {
         padding: 0;
         width: 100%;
         height: auto;
-        border: none; }
+        border: none;
+        border:0; }
         @media only screen and (min-width: 991px) {
           #oferta-limite .featured-product figure img {
             -webkit-transform: scale(1) translateZ(0);
@@ -2125,6 +2142,11 @@ nav.menu {
         display: block;
         font-size: 16px;
         font-weight: bold; }
+      #oferta-limite .featured-product .product-info h4 .discount{
+      	font-size: 50px;
+      	display: inline-block;
+      	vertical-align: middle;
+      }
       #oferta-limite .featured-product .product-info .descr {
         display: block;
         margin: 0 0 15px;
@@ -2215,7 +2237,8 @@ nav.menu {
         margin: 0 auto;
         padding: 0;
         max-width: 100%;
-        border: none; }
+        border: none;
+        border:0; }
     #ripley-info #webpay-side .info {
       width: 70%;
       display: block;
@@ -2231,6 +2254,7 @@ nav.menu {
         color: #fff;
         text-decoration: none;
         padding: 5px 12px;
+        display:inline-block;
         -webkit-transition: all 0.1s ease-in-out;
         -moz-transition: all 0.1s ease-in-out;
         -ms-transition: all 0.1s ease-in-out;
@@ -2270,7 +2294,8 @@ nav.menu {
         padding: 0;
         max-width: 100%;
         height: auto;
-        border: none; }
+        border: none;
+        border:0; }
     #ripley-info #stable-side .info {
       width: 70%;
       float: left;
@@ -2285,6 +2310,7 @@ nav.menu {
         color: #fff;
         text-decoration: none;
         padding: 5px 12px;
+        display: inline-block;
         -webkit-transition: all 0.1s ease-in-out;
         -moz-transition: all 0.1s ease-in-out;
         -ms-transition: all 0.1s ease-in-out;
@@ -2304,6 +2330,12 @@ nav.menu {
     display: block;
     text-align: center;
     max-width: 100%; }
+  #categories #sticker-sticky-wrapper{
+  	margin:0 0 30px;
+  }
+  #categories #sticker-sticky-wrapper.is-sticky{
+  	margin:0;
+  }
   #categories nav {
     background: #ebebeb;
     overflow: hidden;
@@ -2311,7 +2343,21 @@ nav.menu {
     display: table;
     width: 100%;
     font-weight: 700;
-    margin: 0 0 30px; }
+    margin: 0; }
+    #categories .is-sticky nav {
+    width: 100% !important;
+    position:inherit !important;
+	top:inherit;
+	left:inherit;
+	z-index: 9999;}
+	@media only screen and (min-width: 991px) {
+		#categories .is-sticky nav {
+	    width: 100% !important;
+	    position:fixed !important;
+		top:0;
+		left:0;
+		z-index: 9999;}
+	}
     #categories nav ul {
       margin: 0;
       padding: 0;
@@ -2320,8 +2366,14 @@ nav.menu {
       #categories nav ul li {
         list-style-type: none;
         display: block;
-        width: 50%;
-        float: left; }
+        width: 100%;
+        float: none; }
+        @media only screen and (min-width: 480px) {
+        	#categories nav ul li {
+        		width:50%;
+        		float:left;
+        	}
+        }
         @media only screen and (min-width: 991px) {
           #categories nav ul li {
             display: table-cell;
@@ -2339,6 +2391,7 @@ nav.menu {
           text-align: center;
           padding: 0 15px;
           color: #727272;
+          cursor: pointer;
           font-size: 14px;
           line-height: 55px;
           border-right: solid 1px #fff;
@@ -2359,21 +2412,21 @@ nav.menu {
             display: inline-block;
             vertical-align: middle;
             margin: 0 5px 0 0; }
-          #categories nav ul li a:hover .tecno-icon {
+          #categories nav ul li a:hover .tecno-icon, #categories nav ul .active a .tecno-icon {
             background-position: 0 -403px; }
-          #categories nav ul li a:hover .furniture-icon {
+          #categories nav ul li a:hover .furniture-icon, #categories nav ul .active a .furniture-icon {
             background-position: -25px -403px; }
-          #categories nav ul li a:hover .bedroom-icon {
+          #categories nav ul li a:hover .bedroom-icon, #categories nav ul .active a .bedroom-icon {
             background-position: -46px -403px; }
-          #categories nav ul li a:hover .electro-icon {
+          #categories nav ul li a:hover .electro-icon, #categories nav ul .active a .electro-icon {
             background-position: -72px -402px; }
-          #categories nav ul li a:hover .bear-icon {
+          #categories nav ul li a:hover .bear-icon, #categories nav ul .active a.bear-icon {
             background-position: -104px -403px; }
-          #categories nav ul li a:hover .lamp-icon {
+          #categories nav ul li a:hover .lamp-icon, #categories nav ul .active a .lamp-icon {
             background-position: -86px -403px; }
-          #categories nav ul li a:hover .dress-icon {
+          #categories nav ul li a:hover .dress-icon, #categories nav ul .active a .dress-icon {
             background-position: -127px -402px; }
-          #categories nav ul li a:hover .ball-icon {
+          #categories nav ul li a:hover .ball-icon, #categories nav ul .active a .ball-icon {
             background-position: -147px -403px; }
         #categories nav ul li:last-child a {
           border-right: none; }
@@ -2442,7 +2495,8 @@ nav.menu {
           padding: 0;
           width: 100%;
           height: auto;
-          border: none; }
+          border: none;
+          border:0; }
           @media only screen and (min-width: 991px) {
             #categories #product-holder .product figure img {
               -webkit-transform: scale(1) translateZ(0);
@@ -2466,7 +2520,8 @@ nav.menu {
         -moz-opacity: 0.4;
         -webkit-opacity: 0.4;
         filter: alpha(opacity=40);
-        border: none; }
+        border: none;
+        border:0; }
       #categories #product-holder .product.no-stock .no-stock-alert {
         background: #ef5456;
         color: #fff;
@@ -2629,6 +2684,9 @@ nav.menu {
       float: left;
       box-sizing: border-box;
       text-align: center; }
+      #categories #discounts .discount:nth-child(2n){
+      	margin-right:0;
+      }
       #categories #discounts .discount:nth-child(2n+1) {
         clear: left; }
       @media only screen and (max-width: 376px){
@@ -2642,6 +2700,9 @@ nav.menu {
           width: 100%;
           float: left;
           float: none; }
+          #categories #discounts .discount:nth-child(2n){
+          	margin-right:0;
+          }
           #categories #discounts .discount:nth-child(2n+1) {
             clear: inherit; } }
       #categories #discounts .discount h4 {
@@ -2699,10 +2760,12 @@ nav.menu {
     #single-product #item-preview #slider-item {
       border: solid 1px #eee; }
       #single-product #item-preview #slider-item .item img {
-        display: table;
+        display: block;
         margin: 0 auto;
         max-width: 100%;
-        height: auto; }
+        width:100%;
+        height: auto;
+        border:0;}
       #single-product #item-preview #slider-item .view-larger {
         display: block;
         background: #fff;
@@ -2771,7 +2834,8 @@ nav.menu {
             margin: 0;
             padding: 0;
             width: 100%;
-            height: auto; }
+            height: auto;
+            border:0; }
           #single-product #item-preview #slider-item .carousel-indicators li:hover, #single-product #item-preview #slider-item .carousel-indicators li.active {
             border-color: #ef5456; }
   #single-product #avaible-shipping {
@@ -2929,7 +2993,8 @@ nav.menu {
           width: 100%;
           height: auto;
           min-height: 100%;
-          display: block; }
+          display: block; 
+          border:0;}
         #single-product #item-info #item-buying-form .select-color label:hover {
           border-color: #ef5456; }
     #single-product #item-info #item-buying-form .btn {
@@ -2952,7 +3017,8 @@ nav.menu {
         #single-product #item-info #item-buying-form .btn#purchase-btn.disabled {
           font-size: 14px;
           background-color: #f7f7f7;
-          width: 100%; }
+          width: 100%;
+          padding:10px 15px; }
           #single-product #item-info #item-buying-form .btn#purchase-btn.disabled > .content {
             padding: 8px 25px; }
         #single-product #item-info #item-buying-form .btn#purchase-btn > .content {
@@ -3263,7 +3329,8 @@ nav.menu {
         min-height: 330px; } }
   .product-item img {
     display: block;
-    margin: 0 0 15px; }
+    margin: 0 0 15px;
+    border:0; }
     @media only screen and (min-width: 991px) {
       .product-item img {
         -webkit-transform: scale(1) translateZ(0);
@@ -3506,7 +3573,8 @@ nav.menu {
   #prefooter img {
     display: none;
     margin: 0;
-    padding: 0; }
+    padding: 0; 
+	border:0;}
     @media only screen and (min-width: 991px) {
       #prefooter img {
         display: block;
@@ -3769,3 +3837,40 @@ footer {
         margin: 0; }
         footer #footer .country-select li a {
           line-height: 14pt; }
+
+#go-up{
+	display: block;
+	background:transparent url(../images/sprite-cyber.png) -105px -273px no-repeat;
+	overflow:hidden;
+	height:49px;
+	width:42px;
+	position:fixed;
+	bottom:20px;
+	right: 20px;
+	color:#fff;
+	z-index: 9999;
+	-ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    opacity:0.5;
+    -webkit-opacity:0.5;
+    -moz-opacity:0.5;
+    -ms-opacity:0.5;
+    filter:alpha(opacity=50);
+    -moz-transition: 0.1s ease-in-out all;
+    -webkit-transition: 0.1s ease-in-out all;
+    -ms-transition: 0.1s ease-in-out all;
+    transition: 0.1s ease-in-out all;
+}
+	#go-up:hover{
+		opacity:1;
+	    -webkit-opacity:1;
+	    -moz-opacity:1;
+	    -ms-opacity:1;
+	    filter:alpha(opacity=100);
+	}
+	@media only screen and (min-width: 991px) {
+		#go-up{
+			display: none !important;
+		}
+	}
