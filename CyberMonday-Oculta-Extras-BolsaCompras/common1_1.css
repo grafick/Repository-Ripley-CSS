@@ -5182,5 +5182,7 @@ div#checkout_1_2 {display: none} */
 #breadcrumb,
 .carruselBajoShopBag #box.small_box,
 .carruselBajoShopBag .contentBtn,
-#content_footer{
-display:none}
+#content_footer,
+#header-search,
+#contentHeader #inicioCliente
+{display:none !important}
