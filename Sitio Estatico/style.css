@@ -419,14 +419,14 @@ hr {
     .icon-store {
       background-image: url(../images/sprite-cyber@2x.png);
       background-size: 315px; } }
-
 .icon-tip {
   background: transparent url(../images/sprite-cyber.png) -154px -328px no-repeat;
   height: 20px;
   width: 17px;
-  display: block;
+  display: inline-block;
   overflow: hidden;
-  text-indent: -9999px; }
+  margin:0 2px 0 0;
+  text-indent: -9999px;}
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
     .icon-tip {
       background-image: url(../images/sprite-cyber@2x.png);
@@ -590,7 +590,11 @@ hr {
   height: 34px;
   display: block;
   overflow: hidden;
-  text-indent: -9999px; }
+  text-indent: -9999px;
+  position: relative;
+  top: 5px;
+  z-index: 2;
+}
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
     .cyber-icon {
       background-image: url(../images/sprite-cyber@2x.png);
