@@ -997,9 +997,19 @@ header {
       width: 130px;
       margin: 5px 0 0}
     }
-      @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-        #top-header #header-logo a {
-          background-image: url(../images/tileset@2x.png)} }
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+      #top-header #header-logo a {
+        background-image: url(../images/tileset@2x.png);
+        background-size: 135px;
+        height: 28px;
+        width: 94px;
+        display: block;
+        overflow: hidden;
+        text-indent: -9999px;
+        margin: 5px 0 0;
+        padding: 0}
+      }
 
 
   #top-header #header-form {
@@ -2382,8 +2392,8 @@ nav.menu {
       #categories nav ul li {
         list-style-type: none;
         display: block;
-        width: 100%;
-        float: none; }
+        width: 50%;
+        float: left}
         @media only screen and (min-width: 480px) {
         	#categories nav ul li {
         		width:50%;
