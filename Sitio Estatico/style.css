@@ -795,7 +795,7 @@ header {
     text-decoration: none;
     color: #fff; }
   header #top-header .container{
-  	display: block;
+    display: block;
     overflow: hidden;
   }
   header #top-header-content {
@@ -880,38 +880,38 @@ header {
         float: left;
         margin: 0 5px 0 0; }
       header#no-search .container > #categories-nav{
-      	list-style-type: none;
-      	margin:0;
-      	padding:0;
+        list-style-type: none;
+        margin:0;
+        padding:0;
       }
       header#no-search .container > #categories-nav li{
-      	display: block;
-      	float:left;
-      	overflow: hidden;
-      	border-right:solid 1px #333;
+        display: block;
+        float:left;
+        overflow: hidden;
+        border-right:solid 1px #333;
       }
       header#no-search .container > #categories-nav li:last-child{
-      	border-right:none;
+        border-right:none;
       }
       header#no-search .container > #categories-nav li a{
-      	height:48px;
-      	width:auto;
-      	padding:12px 15px;
-      	font-size: 14px;
-      	color:#fff;
-      	display: block;
-      	transition:0.1s ease-in-out all;
-      	-moz-transition:0.1s ease-in-out all;
-      	-webkit-transition:0.1s ease-in-out all;
-      	-ms-transition:0.1s ease-in-out all;
+        height:48px;
+        width:auto;
+        padding:12px 15px;
+        font-size: 14px;
+        color:#fff;
+        display: block;
+        transition:0.1s ease-in-out all;
+        -moz-transition:0.1s ease-in-out all;
+        -webkit-transition:0.1s ease-in-out all;
+        -ms-transition:0.1s ease-in-out all;
       }
       header#no-search .container > #categories-nav li a:hover{
-      	background: #1c1c1c;
+        background: #1c1c1c;
       }
       header#no-search .container > #categories-nav li a span{
-      	display: inline-block;
-      	margin:0 5px 0 0;
-      	vertical-align: middle;
+        display: inline-block;
+        margin:0 5px 0 0;
+        vertical-align: middle;
       }
       header#no-search .container > #categories-nav li a .tecno-icon {
             background-position: 0 -403px; }
@@ -930,7 +930,7 @@ header {
       header#no-search .container > #categories-nav li a .ball-icon {
         background-position: -147px -403px; }
 .is-sticky header#no-search {
-	z-index: 9999;
+  z-index: 9999;
 }
 
 
@@ -1040,15 +1040,15 @@ header {
       padding: 0}
 
   @media only screen and (min-width: 991px) {
-	    #top-header #header-logo {
-	      height:48px;
-	      margin: 0 15px 0 0;
-	      float: left}
-	    #top-header #header-logo a {
-	      background-size: 185px;
-	      height: 38px;
-	      width: 130px;
-	      margin: 8px 0 0}
+      #top-header #header-logo {
+        height:48px;
+        margin: 0 15px 0 0;
+        float: left}
+      #top-header #header-logo a {
+        background-size: 185px;
+        height: 38px;
+        width: 130px;
+        margin: 8px 0 0}
     }
 
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
@@ -1773,7 +1773,7 @@ nav.menu {
         width: auto;
         max-width: 1000%;
         margin: 0 0 0 -50%; 
-    	border:0;}
+      border:0;}
 
 .rp-menu li:hover:not(.active) > .header-hidden {
   visibility: visible;
@@ -1839,8 +1839,8 @@ nav.menu {
   overflow: hidden;
   padding: 15px 0; }
   @media only screen and (min-width: 991px) {
-  	#header-cyber {
-  		padding:30px 0;}
+    #header-cyber {
+      padding:30px 0;}
   }
 
 .header-content {
@@ -2222,9 +2222,9 @@ nav.menu {
         font-size: 16px;
         font-weight: bold; }
       #oferta-limite .featured-product .product-info h4 .discount{
-      	font-size: 50px;
-      	display: inline-block;
-      	vertical-align: middle;
+        font-size: 50px;
+        display: inline-block;
+        vertical-align: middle;
       }
       #oferta-limite .featured-product .product-info .descr {
         display: block;
@@ -2410,10 +2410,10 @@ nav.menu {
     text-align: center;
     max-width: 100%; }
   #categories #sticker-sticky-wrapper{
-  	margin:0 0 30px;
+    margin:0 0 30px;
   }
   #categories #sticker-sticky-wrapper.is-sticky{
-  	margin:0;
+    margin:0;
   }
   #categories nav {
     background: #ebebeb;
@@ -2426,20 +2426,20 @@ nav.menu {
     #categories .is-sticky nav {
     width: 100% !important;
     position:inherit !important;
-	top:inherit;
-	left:inherit;
-	z-index: 9999;}
-	@media only screen and (min-width: 991px) {
-		#categories .is-sticky nav {
-	    width: 100% !important;
-	    position:fixed !important;
+  top:inherit;
+  left:inherit;
+  z-index: 9999;}
+  @media only screen and (min-width: 991px) {
+    #categories .is-sticky nav {
+      width: 100% !important;
+      position:fixed !important;
       top:0;
       left:0;
       z-index: 9999;
       box-shadow: 0 1px 20px #b3b3b3;
       -webkit-box-shadow: 0 1px 20px #b3b3b3;
       -moz-box-shadow:0 1px 20px #b3b3b3;}
-	}
+  }
     #categories nav ul {
       margin: 0;
       padding: 0;
@@ -2451,10 +2451,10 @@ nav.menu {
         width: 50%;
         float: left}
         @media only screen and (min-width: 480px) {
-        	#categories nav ul li {
-        		width:50%;
-        		float:left;
-        	}
+          #categories nav ul li {
+            width:50%;
+            float:left;
+          }
         }
         @media only screen and (min-width: 991px) {
           #categories nav ul li {
@@ -2622,10 +2622,10 @@ nav.menu {
         margin: -20px 0 0;
         z-index: 20; }
         @media only screen and (min-width: 479px) {
-        	#categories #product-holder .product.no-stock .no-stock-alert {
-        		height:30px;
-        		font-size: 16px;
-        	}
+          #categories #product-holder .product.no-stock .no-stock-alert {
+            height:30px;
+            font-size: 16px;
+          }
         }
       #categories #product-holder .product h4 {
         font-weight: 700;
@@ -2773,7 +2773,7 @@ nav.menu {
       box-sizing: border-box;
       text-align: center; }
       #categories #discounts .discount:nth-child(2n){
-      	margin-right:0;
+        margin-right:0;
       }
       #categories #discounts .discount:nth-child(2n+1) {
         clear: left; }
@@ -2789,7 +2789,7 @@ nav.menu {
           float: left;
           float: none; }
           #categories #discounts .discount:nth-child(2n){
-          	margin-right:0;
+            margin-right:0;
           }
           #categories #discounts .discount:nth-child(2n+1) {
             clear: inherit; } }
@@ -3662,7 +3662,7 @@ nav.menu {
     display: none;
     margin: 0;
     padding: 0; 
-	border:0;}
+  border:0;}
     @media only screen and (min-width: 991px) {
       #prefooter img {
         display: block;
@@ -3926,17 +3926,17 @@ footer {
           line-height: 14pt; }
 
 #go-up{
-	display: block;
-	background:transparent url(../images/sprite-cyber.png) -105px -273px no-repeat;
-	overflow:hidden;
-	height:49px;
-	width:42px;
-	position:fixed;
-	bottom:20px;
-	right: 20px;
-	color:#fff;
-	z-index: 9999;
-	-ms-transform: rotate(180deg);
+  display: block;
+  background:transparent url(../images/sprite-cyber.png) -105px -273px no-repeat;
+  overflow:hidden;
+  height:49px;
+  width:42px;
+  position:fixed;
+  bottom:20px;
+  right: 20px;
+  color:#fff;
+  z-index: 9999;
+  -ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
     opacity:0.5;
@@ -3949,15 +3949,15 @@ footer {
     -ms-transition: 0.1s ease-in-out all;
     transition: 0.1s ease-in-out all;
 }
-	#go-up:hover{
-		opacity:1;
-	    -webkit-opacity:1;
-	    -moz-opacity:1;
-	    -ms-opacity:1;
-	    filter:alpha(opacity=100);
-	}
-	@media only screen and (min-width: 991px) {
-		#go-up{
-			display: none !important;
-		}
-	}
+  #go-up:hover{
+    opacity:1;
+      -webkit-opacity:1;
+      -moz-opacity:1;
+      -ms-opacity:1;
+      filter:alpha(opacity=100);
+  }
+  @media only screen and (min-width: 991px) {
+    #go-up{
+      display: none !important;
+    }
+  }
