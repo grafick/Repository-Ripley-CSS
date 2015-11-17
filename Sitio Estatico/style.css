@@ -879,6 +879,59 @@ header {
       header#no-search .container > a .icon-cyber-bag {
         float: left;
         margin: 0 5px 0 0; }
+      header#no-search .container > #categories-nav{
+      	list-style-type: none;
+      	margin:0;
+      	padding:0;
+      }
+      header#no-search .container > #categories-nav li{
+      	display: block;
+      	float:left;
+      	overflow: hidden;
+      	border-right:solid 1px #333;
+      }
+      header#no-search .container > #categories-nav li:last-child{
+      	border-right:none;
+      }
+      header#no-search .container > #categories-nav li a{
+      	height:48px;
+      	width:auto;
+      	padding:12px 15px;
+      	font-size: 14px;
+      	color:#fff;
+      	display: block;
+      	transition:0.1s ease-in-out all;
+      	-moz-transition:0.1s ease-in-out all;
+      	-webkit-transition:0.1s ease-in-out all;
+      	-ms-transition:0.1s ease-in-out all;
+      }
+      header#no-search .container > #categories-nav li a:hover{
+      	background: #1c1c1c;
+      }
+      header#no-search .container > #categories-nav li a span{
+      	display: inline-block;
+      	margin:0 5px 0 0;
+      	vertical-align: middle;
+      }
+      header#no-search .container > #categories-nav li a .tecno-icon {
+            background-position: 0 -403px; }
+      header#no-search .container > #categories-nav li a .furniture-icon {
+        background-position: -25px -403px; }
+      header#no-search .container > #categories-nav li a .bedroom-icon {
+        background-position: -46px -403px; }
+      header#no-search .container > #categories-nav li a .electro-icon {
+        background-position: -72px -402px; }
+      header#no-search .container > #categories-nav li a .bear-icon {
+        background-position: -104px -403px; }
+      header#no-search .container > #categories-nav li a .lamp-icon {
+        background-position: -86px -403px; }
+      header#no-search .container > #categories-nav li a .dress-icon {
+        background-position: -127px -402px; }
+      header#no-search .container > #categories-nav li a .ball-icon {
+        background-position: -147px -403px; }
+.is-sticky header#no-search {
+	z-index: 9999;
+}
 
 
 .country-select {
@@ -983,19 +1036,19 @@ header {
       display: block;
       overflow: hidden;
       text-indent: -9999px;
-      margin: 5px 0 0;
+      margin: 0;
       padding: 0}
 
   @media only screen and (min-width: 991px) {
-    #top-header #header-logo {
-      height:48px;
-      margin: 0 15px 0 0;
-      float: left} }
-    #top-header #header-logo a {
-      background-size: 185px;
-      height: 38px;
-      width: 130px;
-      margin: 8px 0 0}
+	    #top-header #header-logo {
+	      height:48px;
+	      margin: 0 15px 0 0;
+	      float: left}
+	    #top-header #header-logo a {
+	      background-size: 185px;
+	      height: 38px;
+	      width: 130px;
+	      margin: 8px 0 0}
     }
 
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
@@ -1007,7 +1060,7 @@ header {
         display: block;
         overflow: hidden;
         text-indent: -9999px;
-        margin: 8px 0 0;
+        margin: 0;
         padding: 0}
       }
 
@@ -2369,7 +2422,7 @@ nav.menu {
     display: table;
     width: 100%;
     font-weight: 700;
-    margin: 0; }
+    margin: 0 0 20px; }
     #categories .is-sticky nav {
     width: 100% !important;
     position:inherit !important;
@@ -2559,15 +2612,21 @@ nav.menu {
         text-align: center;
         display: block;
         overflow: hidden;
-        font-size: 16px;
+        font-size: 10px;
         line-height: 30px;
-        height: 30px;
+        height: auto;
         width: 100%;
         position: absolute;
         top: 50%;
         left: 0;
         margin: -20px 0 0;
         z-index: 20; }
+        @media only screen and (min-width: 479px) {
+        	#categories #product-holder .product.no-stock .no-stock-alert {
+        		height:30px;
+        		font-size: 16px;
+        	}
+        }
       #categories #product-holder .product h4 {
         font-weight: 700;
         font-size: 12px;
