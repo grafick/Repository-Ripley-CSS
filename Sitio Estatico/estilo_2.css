@@ -330,20 +330,20 @@
 }
 
 .HuinchaLegal{
-    background:#fff url(320-ResCyber.jpg) no-repeat;
+    background:#fff url(../../marketing/huincha/320-ResCyber.jpg) no-repeat;
     background-position: center;
     height:440px
 }
 @media only screen and (min-width: 480px) {
     .HuinchaLegal{
-    background:#fff url(568-ResCyber.jpg) no-repeat;
+    background:#fff url(../../marketing/huincha/568-ResCyber.jpg) no-repeat;
     background-size:568px;
     background-position: center;
     height:375px
 }
 @media only screen and (min-width: 991px) {
     .HuinchaLegal{
-    background:#fff url(full-ResCyber.jpg) no-repeat;
+    background:#fff url(../../marketing/huincha/full-ResCyber.jpg) no-repeat;
     background-size:1000px;
     background-position: center;
     height:418px
