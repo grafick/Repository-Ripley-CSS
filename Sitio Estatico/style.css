@@ -1199,7 +1199,7 @@ header {
       height: 40px;
       float: right;
       padding: 10px;
-      width: 10%;
+      width: 7%;
       margin: 5px 0 0;
       padding: 0;
       position: inherit;
@@ -2561,7 +2561,7 @@ nav.menu {
         #categories nav ul li:last-child a {
           border-right: none; }
         #categories nav ul li:nth-child(2n+1) a {
-          border-right: none; }
+          border-right: solid 1px #fff }
           @media only screen and (min-width: 991px) {
             #categories nav ul li:nth-child(2n+1) a {
               border-right: solid 1px #fff; } }
@@ -2645,7 +2645,8 @@ nav.menu {
           -webkit-transform: scale(1.1) translateZ(0);
           transform: scale(1.1) translateZ(0);
           -moz-transform: scale(1.1) translateZ(0); } }
-      #categories #product-holder .product.no-stock figure img {
+      #categories #product-holder .product.no-stock figure img, 
+      .product a.no-stock img.img-responsive {
         opacity: 0.4;
         -moz-opacity: 0.4;
         -webkit-opacity: 0.4;
@@ -2668,7 +2669,7 @@ nav.menu {
         top: 50%;
         left: 0;
         margin: -20px 0 0;
-        z-index: 20; }
+        z-index: 19; }
         @media only screen and (min-width: 479px) {
           #categories #product-holder .product.no-stock .no-stock-alert {
             height:30px;
@@ -3440,12 +3441,13 @@ nav.menu {
       float: left; } }
 
 .product-item {
-  padding: 20px;
+  padding: 15px 8px;
   width: 50%;
   display: block;
   float: left; }
   @media only screen and (min-width: 720px) {
     .product-item {
+      padding: 20px;
       width: 33%; } }
   @media only screen and (min-width: 991px) {
     .product-item {
@@ -4036,4 +4038,40 @@ footer {
     #VerCyberMobile{
       display: none !important;
     }
+  }
+
+
+/* CORRIGE AGOTADO EN CATALOGOS */
+
+.row span.no-stock-alert {
+    background: #ef5456;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    font-size: 10px;
+    line-height: 30px;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: -90px 0 0;
+    z-index: 20;
+}
+@media only screen and (min-width: 375px) {
+    .row span.no-stock-alert{
+      margin: -80px 0 0;}
+  }
+@media only screen and (min-width: 568px) {
+    .row span.no-stock-alert{
+      font-size: 16px;
+      margin: -80px 0 0;}
+  }
+@media only screen and (min-width: 991px) {
+    .row span.no-stock-alert{
+      font-size: 16px;
+      margin: -70px 0 0;}
   }
