@@ -5167,8 +5167,10 @@ div#checkout_1_2 {display: none} */
 .billing_method div#checkout_1_3, .billing_method div#checkout_1_4 {display: none !important} */
 
 
-/* OCULTA TARJETA RIPLEY */
-.billing_method div#checkout_1_1 {display: none !important} 
+/* OCULTA TARJETA RIPLEY 
+.billing_method div#checkout_1_1 {display: none !important} */
+/*  .atributos_tarjeta_ripley {display: none !important} tarjeta en catalogos y carruseles */
+/* .purchase_price.price.bold.productPrice{display:none !important}  precio tarjeta ficha de producto */
 
 
 /* OCULTA RETIRO PARA TERCEROS DESDE TIENDA */
