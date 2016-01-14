@@ -5129,8 +5129,6 @@ a.BtnEditDatosFact{
 
 
 
-
-
 .divOculto{display:none}
 /* OCULTAR BAZZARVOICE */
 .atributos_tarjeta_ripley input, .atributos_tarjeta_ripley > div > img{display:none}
@@ -5138,6 +5136,7 @@ a.BtnEditDatosFact{
 #Description span.productName, #Description span#descAttributeValue_1{display:none}
 /* OCULTAR TOOLTIP BOLSA DE COMPRA CITYBOX */
 #conoceServicioCorreos{display:none}
+
 
 
 /* OCULTAR BOTON MI CUENTA FACTURA ELECTRÓNICA
@@ -5153,6 +5152,7 @@ a.BtnEditDatosFact{
 /* AGRANDA BOTÓN DE COMPRAR EN ORDEN DE COMPRA */
 #content759 .contentBtn .btnContinuarShopBag{width: 220px; height:50px; font-size:20px; line-height:50px}
 
+
 /* MENSAJE DE RETIRO TIENDA */
 .divMensajeSinDisponibilidadTiendaFisicaOculto{float:left;display:none;font-weight:bold;font-size:11px}
 .divMensajeSinDisponibilidadTiendaFisicaVisible{float:left;display:block;font-weight:bold;font-size:11px}
@@ -5166,8 +5166,9 @@ div#checkout_1_2 {display: none} */
 /* OCULTA WEBPAY REDCOMPRA + WEBPAY CON CUOTAS 
 .billing_method div#checkout_1_3, .billing_method div#checkout_1_4 {display: none !important} */
 
-/* OCULTA TARJETA RIPLEY 
-.billing_method div#checkout_1_1 {display: none !important} */
+
+/* OCULTA TARJETA RIPLEY */
+.billing_method div#checkout_1_1 {display: none !important} 
 
 
 /* OCULTA RETIRO PARA TERCEROS DESDE TIENDA */
