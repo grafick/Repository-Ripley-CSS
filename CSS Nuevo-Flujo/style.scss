@@ -39,7 +39,7 @@ $print: "only print";
 @mixin border-radius ($radius){
 -webkit-border-radius: $radius;
 -moz-border-radis: $radius;
--border-radius: $radius;
+border-radius: $radius;
 }
 
 @mixin box-shadow ($string) {
