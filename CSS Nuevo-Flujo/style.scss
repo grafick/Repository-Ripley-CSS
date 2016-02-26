@@ -90,6 +90,73 @@ body{
     box-shadow:none;
   }
 }
+.loading{
+  background:rgba(255,255,255,0.9);
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:99999;
+  overflow:hidden;
+  .loading-inner{
+    width:110px;
+    height:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-20px 0 0 -55px;
+    span{
+        position:absolute;
+        width:20px;
+        height:20px;
+        background:#bf0122;
+        opacity:0.5;
+        @include border-radius(20px);
+        animation: Cuncuna 1s infinite ease-in-out;
+        -moz-animation: Cuncuna 1s infinite ease-in-out;
+        -webkit-animation: Cuncuna 1s infinite ease-in-out;
+        &:nth-child(2){
+          left:30px;
+          background: #dbdcdd;
+          animation-delay: .2s;
+          -moz-animation-delay: .2s;
+          -webkit-animation-delay: .2s;
+      }
+      &:nth-child(3){
+          left:60px;
+          background: #fcd32f;
+          animation-delay: .4s;
+          -webkit-animation-delay: .4s;
+          -moz-animation-delay: .4s;
+      }
+      &:nth-child(4){
+          left:90px;
+          background: #782769;
+          animation-delay: .6s;
+          -webkit-animation-delay: .6s;
+          -moz-animation-delay: .6s;
+      }
+    }
+  }
+}
+@keyframes Cuncuna {
+    0% {opacity: 0.3; transform:translateY(0px);    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);}
+    50% {opacity: 1; transform: translateY(-10px); background:$primary-color;  box-shadow: 0px 20px 3px rgba(0, 0, 0, 0.05);}
+    100%  {opacity: 0.3; transform:translateY(0px); box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);}
+}
+@-moz-keyframes Cuncuna {
+    0% {opacity: 0.3; transform:translateY(0px);    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);}
+    50% {opacity: 1; transform: translateY(-10px); background:$primary-color;  box-shadow: 0px 20px 3px rgba(0, 0, 0, 0.05);}
+    100%  {opacity: 0.3; transform:translateY(0px); box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);}
+}
+@-webkit-keyframes Cuncuna {
+    0% {opacity: 0.3; transform:translateY(0px);    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);}
+    50% {opacity: 1; transform: translateY(-10px); background:$primary-color;  box-shadow: 0px 20px 3px rgba(0, 0, 0, 0.05);}
+    100%  {opacity: 0.3; transform:translateY(0px); box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);}
+}
 strong{
   font-weight:normal;
 }
@@ -1566,7 +1633,7 @@ dl.subtotal-price{
     #discount-code-btn, #discount-code-input{
       width: 80%;
       margin: 0 10px 15px 0;
-      height: 50px;
+      min-height: 50px;
       @media #{$desktop}{
         width: 65%
       }
@@ -3323,7 +3390,7 @@ dl.subtotal-price{
     background:transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) 0 -167px no-repeat;
     height:33px;
     width:34px;
-    display: block;
+    display: inline-block;
     float:left;
     margin:0 10px 0 0;
   }
@@ -3341,10 +3408,12 @@ dl.subtotal-price{
     padding:10px;
     line-height: 14pt;
     text-align: left;
+    background: $lighten-primary-color;
     @include border-radius(0);
   }
   .alert-icon{
     margin:0 10px 25px 0;
+    display: inline-block;
   }
   h4{
     display: block;
@@ -3406,7 +3475,7 @@ dl.subtotal-price{
     }
   }
   &.no-avaible-shipping-sidebar{
-    border:solid 1px #cc3b3b;
+    border:solid 1px $lighten-primary-color;
     padding:0 0 15px;
     > p{
       clear: both;
@@ -5177,3 +5246,83 @@ body.error{
 #conoceServicioCorreos, #MessageArea{
   display: none;
 }
+#MessageArea{
+  display:none;
+  position:fixed;
+  z-index:9999;
+  padding:0;
+  width: 100% !important; 
+  top:0 !important; 
+  left:0 !important;
+  div#msgpopup_content_wrapper div#msgpopup1_content div#msgpopup1_txt span#ErrorMessageText, div#MessageArea div#msgpopup_content_wrapper div#msgpopup2_content div#msgpopup2_txt span#ErrorMessageText{color:#fff;font-size:14px;border:none}
+.error_msg:focus, .error_msg:focus{
+    outline-style:none
+  }
+}
+#content_wrapper #MessageArea{
+  padding:0;
+  float:left;
+  width:588px;
+}
+#msgpopup_close_text{
+  vertical-align:top;
+  a#clickableErrorMessage{
+    display:none;
+  }
+}
+div.msgpopup1, div.msgpopup2{
+  display:none;
+  min-height:55px;
+  left:0;
+  position:absolute;
+  top:0;
+  width:100%;
+  .msgpopup_content_wrapper{
+    width:100%;
+    min-height:60px;
+    padding:0;
+    margin:0;
+    position:relative;
+    .left, .right{
+      display: none;
+    }
+  }
+  .content{
+    background:#54b268;
+    min-height:26px;
+    padding:17px 0;
+    margin:0;
+    width:100%;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.6);
+    text-align:center;
+    white-space:nowrap;
+    .icon{
+      display:inline-block; 
+      vertical-align:middle;
+      .exc{
+        width:24px;
+        height:24px;
+        margin:0 15px 0 0;
+      }
+    }
+    .message_text{
+      display:inline-block;
+      padding:0;
+      margin:0;
+      vertical-align:middle;
+    }
+    .close{
+      max-height:50px;
+      position: absolute;
+      right:20px;
+      top:23px;
+      .msgpopup1_x{
+        margin:0;
+      }
+    }
+  }
+}
+div.msgpopup2 .msgpopup_content_wrapper .content{background: #dd4748;}
+div.msgpopup1 .msgpopup_content_wrapper .content .icon .exc{background:transparent url('../images/colors/color1/msgpopup1_exc.png') no-repeat scroll 0 0}
+div.msgpopup2 .msgpopup_content_wrapper .content .icon .exc{background:transparent url('../images/colors/color1/msgpopup2_exc.png') no-repeat scroll 0 0}
+#msgpopup_close_text a.clickableErrorMessage{color:#622f6e !important}
