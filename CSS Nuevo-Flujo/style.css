@@ -1180,9 +1180,9 @@ div.msgpopup1 .content .close .msgpopup1_x, div.msgpopup2 .content .close .msgpo
 
 div.msgpopup2 .msgpopup_content_wrapper .content { background: #dd4748; }
 
-div.msgpopup1 .msgpopup_content_wrapper .content .icon .exc { background: transparent url("../images/colors/color1/msgpopup1_exc.png") no-repeat scroll 0 0; }
+div.msgpopup1 .msgpopup_content_wrapper .content .icon .exc { background: transparent url("../../images/colors/color1/msgpopup1_exc.png") no-repeat scroll 0 0; }
 
-div.msgpopup2 .msgpopup_content_wrapper .content .icon .exc { background: transparent url("../images/colors/color1/msgpopup2_exc.png") no-repeat scroll 0 0; }
+div.msgpopup2 .msgpopup_content_wrapper .content .icon .exc { background: transparent url("../../images/colors/color1/msgpopup2_exc.png") no-repeat scroll 0 0; }
 
 #msgpopup_close_text a.clickableErrorMessage { color: #622f6e !important; }
 
