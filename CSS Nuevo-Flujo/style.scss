@@ -29,6 +29,7 @@ $bold-primary-font: "montserratsemi_bold";
 $primary-color: #6E357C;
 $lighten-primary-color: #79568e;
 $secondary-color: #000;
+$no-shipping-color: #a9a9a9;
 
 $wide: "only screen and (min-width: 1280px)";
 $desktop: "only screen and (min-width: 960px)";
@@ -280,12 +281,12 @@ h4{
   padding:20px;
   text-align:center;
   &.alert-error{
-    background:#da3a3a;
+    background:#a9a9a9;
     color:#fff;
     .general-alert-btn:hover{
-      background:#fff;
-      color:#da3a3a;
-      border-color:#da3a3a;
+      background:#a9a9a9;
+      color:#333;
+      border-color:#333;
     }
   }
   p{
@@ -3408,7 +3409,7 @@ dl.subtotal-price{
     padding:10px;
     line-height: 14pt;
     text-align: left;
-    background: $lighten-primary-color;
+    background: $no-shipping-color;
     @include border-radius(0);
   }
   .alert-icon{
@@ -3475,7 +3476,7 @@ dl.subtotal-price{
     }
   }
   &.no-avaible-shipping-sidebar{
-    border:solid 1px $lighten-primary-color;
+    border:solid 1px $no-shipping-color;
     padding:0 0 15px;
     > p{
       clear: both;
