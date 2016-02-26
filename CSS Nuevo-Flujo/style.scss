@@ -5327,3 +5327,8 @@ div.msgpopup2 .msgpopup_content_wrapper .content{background: #dd4748;}
 div.msgpopup1 .msgpopup_content_wrapper .content .icon .exc{background:transparent url('../../images/colors/color1/msgpopup1_exc.png') no-repeat scroll 0 0}
 div.msgpopup2 .msgpopup_content_wrapper .content .icon .exc{background:transparent url('../../images/colors/color1/msgpopup2_exc.png') no-repeat scroll 0 0}
 #msgpopup_close_text a.clickableErrorMessage{color:#622f6e !important}
+
+/* OCULTAR RETIRO POR TERCERO */
+section#correoschile-shipping-modal div.modal-header{border:0px; padding:0; margin:0}
+section#correoschile-shipping-modal div.account-recipient-info{display: none}
+/* FIN OCULTAR RETIRO POR TERCERO */

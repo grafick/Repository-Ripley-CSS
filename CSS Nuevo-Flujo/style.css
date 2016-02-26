@@ -1187,3 +1187,9 @@ div.msgpopup2 .msgpopup_content_wrapper .content .icon .exc { background: transp
 #msgpopup_close_text a.clickableErrorMessage { color: #622f6e !important; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* OCULTAR RETIRO POR TERCERO */
+section#correoschile-shipping-modal div.modal-header{border:0px; padding:0; margin:0}
+section#correoschile-shipping-modal div.account-recipient-info{display: none}
+/* FIN OCULTAR RETIRO POR TERCERO */
