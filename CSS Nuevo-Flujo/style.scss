@@ -1504,6 +1504,7 @@ body.shopping-order #shopping-bag-header h1, body.error #shopping-bag-header h1{
       margin: 0 2px;
       width: 30px;
       height: 30px;
+      min-height: 30px;
       display: block;
       float:left;
       padding:6px 0;
@@ -1953,6 +1954,11 @@ dl.subtotal-price{
 #gift-code-modal, #discount-code-modal, .modal-gift{
   .modal-body{
     padding: 25px 0 0;
+    iframe{
+      width: 100% !important;
+      -webkit-overflow-scrolling: touch;
+      height: auto;
+    }
   }
   .col-50{
     padding-top:20px;
@@ -2606,6 +2612,10 @@ dl.subtotal-price{
   }
   .choose-shipping{
     margin-bottom: 30px;
+  }
+  .billing label.radio > span.name{
+    float: left;
+    max-width:50%;
   }
   h3{
     font-size: 20px;
@@ -3413,7 +3423,6 @@ dl.subtotal-price{
     @include border-radius(0);
   }
   .alert-icon{
-    margin:0 10px 25px 0;
     display: inline-block;
   }
   h4{
@@ -3764,6 +3773,7 @@ ul#payment-document{
         padding: 10px 20px;
         display: block;
         text-align: center;
+        color:#333;
         @include border-radius(6px 0 0 6px);
         @include transition(all);
         @media #{$desktop}{
@@ -5328,7 +5338,16 @@ div.msgpopup1 .msgpopup_content_wrapper .content .icon .exc{background:transpare
 div.msgpopup2 .msgpopup_content_wrapper .content .icon .exc{background:transparent url('../../images/colors/color1/msgpopup2_exc.png') no-repeat scroll 0 0}
 #msgpopup_close_text a.clickableErrorMessage{color:#622f6e !important}
 
-/* OCULTAR RETIRO POR TERCERO */
+
+.nodisplay{display:none}
+
+
+/* OCULTAR RETIRO POR TERCERO CITYBOX */
 section#correoschile-shipping-modal div.modal-header{border:0px; padding:0; margin:0}
 section#correoschile-shipping-modal div.account-recipient-info{display: none}
-/* FIN OCULTAR RETIRO POR TERCERO */
+/* FIN OCULTAR RETIRO POR TERCERO CITYBOX */
+
+/* OCULTAR RETIRO POR TERCERO TIENDA */
+section#store-shipping-modal div.modal-header{border:0px; padding:0; margin:0}
+section#store-shipping-modal div.account-recipient-info{display: none}
+/* FIN OCULTAR RETIRO POR TERCERO TIENDA */
