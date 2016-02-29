@@ -91,6 +91,7 @@ body{
     box-shadow:none;
   }
 }
+.nodisplay{display:none;}
 .loading{
   background:rgba(255,255,255,0.9);
   width:100%;
@@ -314,6 +315,9 @@ hr{
   margin-bottom: 10px;
   border: none;
   height: 1px;
+}
+#loginPrincipal, #store-shipping-modal_error, #mensajesErrorVal, #errorFrmUserGuest, #errorCodEvento{
+  display: none;
 }
 .alert{
   text-align:center;
@@ -1951,7 +1955,7 @@ dl.subtotal-price{
   }
 }
 
-#gift-code-modal, #discount-code-modal, .modal-gift{
+#gift-code-modal, #discount-code-modal, .modal-gift, #gift-code-modal-s4{
   .modal-body{
     padding: 25px 0 0;
     iframe{
@@ -5338,9 +5342,7 @@ div.msgpopup1 .msgpopup_content_wrapper .content .icon .exc{background:transpare
 div.msgpopup2 .msgpopup_content_wrapper .content .icon .exc{background:transparent url('../../images/colors/color1/msgpopup2_exc.png') no-repeat scroll 0 0}
 #msgpopup_close_text a.clickableErrorMessage{color:#622f6e !important}
 
-
 .nodisplay{display:none}
-
 
 /* OCULTAR RETIRO POR TERCERO CITYBOX */
 section#correoschile-shipping-modal div.modal-header{border:0px; padding:0; margin:0}
@@ -5351,3 +5353,175 @@ section#correoschile-shipping-modal div.account-recipient-info{display: none}
 section#store-shipping-modal div.modal-header{border:0px; padding:0; margin:0}
 section#store-shipping-modal div.account-recipient-info{display: none}
 /* FIN OCULTAR RETIRO POR TERCERO TIENDA */
+
+/* FONOCOMPRAS */
+#agentFonoComp {
+  width: 934px;
+    display: block;
+    min-height: 115px;
+    overflow: hidden;
+    margin: 8px auto;
+    padding: 14px;
+    border: 1px dashed #DADADA;
+    background: #fff;
+}
+.datAge {
+    float: left;
+    width: 335px;
+}
+#agentFonoComp .datAge > p > strong {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4C4C4C;
+    padding: 0 0 5px;
+    display: block;
+}
+.contDatAg {
+    display: block;
+    margin: 5px 0;
+    overflow: hidden
+}
+.groupDat {
+    float: left;
+    margin: 0 0 10px;
+    width: 204px;
+}
+#agentFonoComp .contDatAg p:last-child {
+    color: #791369;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    padding: 0;
+}
+label.labelClie {
+    float: left;
+}
+input.rClie {
+    float: left;
+    margin: 0 2px 0 12px;
+    width: 100px;
+}
+/* BOTONES */
+a.linkRegCliFC {
+  font-size: 14px;
+    display: inline-block;
+    width: 124px;
+    text-align: center;
+    background: #79568e;
+    color: #fff;
+    padding: 8px 13px;
+    margin: 0 0 0 38px;
+}
+
+
+.btnAccFonocom {
+    background:#666;
+    clear: right;
+    color: #fff;
+    float: right;
+    font-size: 13px;
+    margin: 4px 0;
+    padding: 3px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 150px;
+    text-decoration: none;
+}
+.btnGenFonoComp {
+    background:#666;
+    color: #fff;
+    float: left;
+    font-size: 13px;
+    margin: 0 6px 8px 0;
+    padding: 2px 8px;
+    text-decoration: none;
+}
+#agentFonoComp a.btnRegCliFon{
+  background:#79568e;
+    color: #fff;
+    float: left;
+    font-size: 13px;
+    margin: 0 6px 8px 0;
+    padding: 2px 8px;
+    text-decoration: none;
+}
+.btnAccFonocom {
+    background:#666;
+    clear: right;
+    color: #FFF;
+    float: right;
+    font-size: 13x;
+    margin: 5px 0;
+    padding: 3px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 150px;
+    text-decoration: none;
+}
+.btnRegCliFon:hover,
+.btnAccFonocom:hover,
+.btnGenFonoComp:hover {
+    background: #7a7a7a;
+}
+
+#facturaLi2 {
+   opacity: .48;
+   -moz-opacity: .48;
+   filter:alpha(opacity=48);
+   float: left;
+}
+.NoCityBoxFactura{
+opacity: .48;
+   -moz-opacity: .48;
+   filter:alpha(opacity=48);
+   float: left;
+}
+
+/* FANCYBOX */
+#fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 9999;
+  outline: none;
+  display: none;
+}
+
+#fancybox-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: url(../javascript/Miscellaneous/fancybox/btnClose.jpg) no-repeat 0 0;
+  cursor: pointer;
+  z-index: 1103;
+}
+
+.dijitTooltip{position:absolute;z-index:99999;display:block;left:50%;top:-10000px;overflow:visible} 
+.dijitTooltipContainer{border:solid #000 2px;background:#b8b5b5;color:#000;font-size:small}
+.dijitTooltipFocusNode{padding:2px 2px 2px 2px}
+.dijitTooltipConnector{position:absolute}
+.dijit_a11y .dijitTooltipContainer{opacity:1 !important;background-color:#fff !important}
+.dj_safari .tundra .dijitPopup{-webkit-box-shadow:0 5px 10px #adadad}
+.dijitTooltip, .dijitTooltipDialog{opacity:0.95;background:transparent}
+.dijitTooltipBelow{padding-top:13px}
+.dijitTooltipAbove{padding-bottom:13px}
+.dijitTooltipContainer{background-color:#fafafa;border:1px solid #b6c7d5;padding:.45em;border-radius:6px;-moz-border-radius:7px;-webkit-border-radius:6px;width:300px;font-size:12px}
+.dijitTooltipConnector{border:0;z-index:2}
+.dijitTooltipABRight .dijitTooltipConnector{left:auto !important;right:3px}
+.dijitTooltipBelow .dijitTooltipConnector{top:0;left:3px;background:url("../../images/colors/color1/tooltipConnectorUp.png") no-repeat top left;width:16px;height:14px}
+.dj_ie6 .dijitTooltipBelow .dijitTooltipConnector{background-image:url("../../images/colors/color1/tooltipConnectorUp.gif")}
+.dijitTooltipAbove .dijitTooltipConnector{bottom:0;left:3px;background:url("../images/colors/color1/tooltipConnectorDown.png") no-repeat top left;width:16px;height:14px}
+.dj_ie6 .dijitTooltipAbove .dijitTooltipConnector{background-image:url("../images/colors/color1/tooltipConnectorDown.gif")}
+.dijitTooltipLeft{padding-right:13px}
+.dj_ie6 .dijitTooltipLeft{padding-right:15px}
+.dijitTooltipLeft .dijitTooltipConnector{right:0;bottom:7px;background:url("../../images/colors/color1/tooltipConnectorRight.png") no-repeat top left;width:16px;height:14px}
+.dj_ie6 .dijitTooltipLeft .dijitTooltipConnector{background-image:url("../../images/colors/color1/tooltipConnectorRight.gif")}
+.dijitTooltipRight{padding-left:13px}
+.dijitTooltipRight .dijitTooltipConnector{left:0;bottom:7px;background:url("../../images/colors/color1/tooltipConnectorLeft.png") no-repeat top left;width:16px;height:14px}
+.dj_ie6 .dijitTooltipRight .dijitTooltipConnector{background-image:url("../../images/colors/color1/tooltipConnectorLeft.gif")}
+.dj_ie .dijitRtl .dijitTooltipLeft{margin-right:0;margin-left:13px}
+.dj_ie .dijitRtl .dijitTooltipRight{margin-left:26px;margin-right:-13px}
+.dijitBackgroundIframe{display:none}
