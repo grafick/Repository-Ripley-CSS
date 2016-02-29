@@ -17,6 +17,9 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px; }
+body[onload="cambiaDatosEvento()"]{
+  padding:10px
+}
 select{
 	width:100%;
 	height:34px;
@@ -54,7 +57,7 @@ label{
   border: solid 1px #e4e4e4;
   padding: 8px 12px;
   background: #fff;
-  min-height: 34px;
+  height: 34px;
   text-decoration: none;
   display: table;
   margin:0 auto;
@@ -69,7 +72,7 @@ label{
   -o-transition: all 0.1s ease-in-out;
   -webkit-border-radius: 6px;
   -moz-border-radis: 6px;
-  border-radius: 6px; }
+  -border-radius: 6px; }
   .btn.btn-primary {
     background: #da3a3a;
     color: #fff;
@@ -83,22 +86,3 @@ label{
     .btn.btn-primary:hover {
       background: #6E357C;
       border-color: #6E357C; }
-  .btn.btn-default {
-    padding: 10px 20px;
-    min-height: 50px;
-    border-color: #757575;
-    color: #757575;
-    background: transparent;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out; }
-    .btn.btn-default:hover {
-      background: #6E357C;
-      color: #fff;
-      border-color: #6E357C; }
-#event-name{
-  display: block;
-  overflow: hidden;
-  margin:0 0 15px;
-}
