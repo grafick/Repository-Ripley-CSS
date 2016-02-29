@@ -286,7 +286,7 @@ hr {
   border: none;
   height: 1px; }
 
-#loginPrincipal, #store-shipping-modal_error, #mensajesErrorVal, #errorFrmUserGuest, #errorCodEvento{
+#loginPrincipal, #store-shipping-modal_error, #mensajesErrorVal, #errorFrmUserGuest, #errorCodEvento {
   display: none; }
 
 .alert {
@@ -1771,74 +1771,74 @@ dl.subtotal-price {
   .underline-link .fa {
     margin-right: 6px; }
 
-#gift-code-modal .modal-body, #discount-code-modal .modal-body, .modal-gift .modal-body {
+#gift-code-modal .modal-body, #discount-code-modal .modal-body, .modal-gift .modal-body, #gift-code-modal-s4 .modal-body {
   padding: 25px 0 0; }
   #gift-code-modal .modal-body iframe, #discount-code-modal .modal-body iframe, .modal-gift .modal-body iframe, #gift-code-modal-s4 .modal-body iframe {
     width: 100% !important;
     -webkit-overflow-scrolling: touch;
     height: auto; }
-#gift-code-modal .col-50, #discount-code-modal .col-50, .modal-gift .col-50 {
+#gift-code-modal .col-50, #discount-code-modal .col-50, .modal-gift .col-50, #gift-code-modal-s4 .col-50 {
   padding-top: 20px; }
   @media only screen and (min-width: 960px) {
-    #gift-code-modal .col-50, #discount-code-modal .col-50, .modal-gift .col-50 {
+    #gift-code-modal .col-50, #discount-code-modal .col-50, .modal-gift .col-50, #gift-code-modal-s4 .col-50 {
       padding-top: 0;
       padding-bottom: 0; } }
-#gift-code-modal form, #discount-code-modal form, .modal-gift form {
+#gift-code-modal form, #discount-code-modal form, .modal-gift form, #gift-code-modal-s4 form {
   overflow: hidden; }
-  #gift-code-modal form label, #discount-code-modal form label, .modal-gift form label {
+  #gift-code-modal form label, #discount-code-modal form label, .modal-gift form label, #gift-code-modal-s4 form label {
     text-align: left;
     display: block;
     font-family: "montserratsemi_bold";
     margin-bottom: 15px; }
-  #gift-code-modal form input, #discount-code-modal form input, .modal-gift form input {
+  #gift-code-modal form input, #discount-code-modal form input, .modal-gift form input, #gift-code-modal-s4 form input {
     width: 100%;
     font-size: 14px;
     font-family: "montserratlight", sans-serif;
     height: 50px; }
     @media only screen and (min-width: 960px) {
-      #gift-code-modal form input, #discount-code-modal form input, .modal-gift form input {
+      #gift-code-modal form input, #discount-code-modal form input, .modal-gift form input, #gift-code-modal-s4 form input {
         width: 100%;
         display: table;
         margin: 15px auto; } }
-  #gift-code-modal form .btn, #discount-code-modal form .btn, .modal-gift form .btn {
+  #gift-code-modal form .btn, #discount-code-modal form .btn, .modal-gift form .btn, #gift-code-modal-s4 form .btn {
     display: table;
     margin: 0 auto; }
-    #gift-code-modal form .btn .fa, #discount-code-modal form .btn .fa, .modal-gift form .btn .fa {
+    #gift-code-modal form .btn .fa, #discount-code-modal form .btn .fa, .modal-gift form .btn .fa, #gift-code-modal-s4 form .btn .fa {
       font-size: 18px; }
-  #gift-code-modal form textarea, #discount-code-modal form textarea, .modal-gift form textarea {
+  #gift-code-modal form textarea, #discount-code-modal form textarea, .modal-gift form textarea, #gift-code-modal-s4 form textarea {
     width: 100%;
     height: 250px;
     margin-bottom: 20px; }
-  #gift-code-modal form select, #discount-code-modal form select, .modal-gift form select {
+  #gift-code-modal form select, #discount-code-modal form select, .modal-gift form select, #gift-code-modal-s4 form select {
     width: 100%;
     height: 45px;
     margin-bottom: 20px;
     display: block;
     border: solid 1px #e4e4e4;
     background: #fff; }
-#gift-code-modal hr, #discount-code-modal hr, .modal-gift hr {
+#gift-code-modal hr, #discount-code-modal hr, .modal-gift hr, #gift-code-modal-s4 hr {
   border: none;
   outline: none;
   box-shadow: none;
   background-color: #e4e4e4;
   height: 1px;
   margin-bottom: 15px; }
-#gift-code-modal #event-name, #discount-code-modal #event-name, .modal-gift #event-name {
+#gift-code-modal #event-name, #discount-code-modal #event-name, .modal-gift #event-name, #gift-code-modal-s4 #event-name {
   display: block;
   margin-bottom: 20px;
   text-transform: uppercase;
   color: #79568e; }
-  #gift-code-modal #event-name strong, #discount-code-modal #event-name strong, .modal-gift #event-name strong {
+  #gift-code-modal #event-name strong, #discount-code-modal #event-name strong, .modal-gift #event-name strong, #gift-code-modal-s4 #event-name strong {
     display: block;
     font-family: "montserratsemi_bold"; }
-#gift-code-modal #add-points, #discount-code-modal #add-points, .modal-gift #add-points {
+#gift-code-modal #add-points, #discount-code-modal #add-points, .modal-gift #add-points, #gift-code-modal-s4 #add-points {
   margin-bottom: 10px; }
-#gift-code-modal #coupon-list, #discount-code-modal #coupon-list, .modal-gift #coupon-list {
+#gift-code-modal #coupon-list, #discount-code-modal #coupon-list, .modal-gift #coupon-list, #gift-code-modal-s4 #coupon-list {
   display: block;
   margin: 0 auto 20px; }
-  #gift-code-modal #coupon-list ul, #discount-code-modal #coupon-list ul, .modal-gift #coupon-list ul {
+  #gift-code-modal #coupon-list ul, #discount-code-modal #coupon-list ul, .modal-gift #coupon-list ul, #gift-code-modal-s4 #coupon-list ul {
     list-style-type: none; }
-    #gift-code-modal #coupon-list ul li, #discount-code-modal #coupon-list ul li, .modal-gift #coupon-list ul li {
+    #gift-code-modal #coupon-list ul li, #discount-code-modal #coupon-list ul li, .modal-gift #coupon-list ul li, #gift-code-modal-s4 #coupon-list ul li {
       list-style-type: none;
       display: block;
       overflow: hidden;
@@ -1850,10 +1850,10 @@ dl.subtotal-price {
       border-bottom: solid 1px #e4e4e4;
       text-align: center; }
       @media only screen and (min-width: 720px) {
-        #gift-code-modal #coupon-list ul li, #discount-code-modal #coupon-list ul li, .modal-gift #coupon-list ul li {
+        #gift-code-modal #coupon-list ul li, #discount-code-modal #coupon-list ul li, .modal-gift #coupon-list ul li, #gift-code-modal-s4 #coupon-list ul li {
           text-align: left;
           line-height: 26pt; } }
-      #gift-code-modal #coupon-list ul li dl, #discount-code-modal #coupon-list ul li dl, .modal-gift #coupon-list ul li dl {
+      #gift-code-modal #coupon-list ul li dl, #discount-code-modal #coupon-list ul li dl, .modal-gift #coupon-list ul li dl, #gift-code-modal-s4 #coupon-list ul li dl {
         overflow: hidden;
         display: table;
         margin: 0 auto;
@@ -1861,23 +1861,23 @@ dl.subtotal-price {
         float: left;
         text-align: left; }
         @media only screen and (min-width: 720px) {
-          #gift-code-modal #coupon-list ul li dl, #discount-code-modal #coupon-list ul li dl, .modal-gift #coupon-list ul li dl {
+          #gift-code-modal #coupon-list ul li dl, #discount-code-modal #coupon-list ul li dl, .modal-gift #coupon-list ul li dl, #gift-code-modal-s4 #coupon-list ul li dl {
             width: 85%; } }
         @media only screen and (min-width: 960px) {
-          #gift-code-modal #coupon-list ul li dl, #discount-code-modal #coupon-list ul li dl, .modal-gift #coupon-list ul li dl {
+          #gift-code-modal #coupon-list ul li dl, #discount-code-modal #coupon-list ul li dl, .modal-gift #coupon-list ul li dl, #gift-code-modal-s4 #coupon-list ul li dl {
             width: 70%; } }
         @media only screen and (min-width: 720px) {
-          #gift-code-modal #coupon-list ul li dl .coupon-name, #discount-code-modal #coupon-list ul li dl .coupon-name, .modal-gift #coupon-list ul li dl .coupon-name {
+          #gift-code-modal #coupon-list ul li dl .coupon-name, #discount-code-modal #coupon-list ul li dl .coupon-name, .modal-gift #coupon-list ul li dl .coupon-name, #gift-code-modal-s4 #coupon-list ul li dl .coupon-name {
             display: table;
             float: left;
             max-width: 200px; } }
-        #gift-code-modal #coupon-list ul li dl .discount, #discount-code-modal #coupon-list ul li dl .discount, .modal-gift #coupon-list ul li dl .discount {
+        #gift-code-modal #coupon-list ul li dl .discount, #discount-code-modal #coupon-list ul li dl .discount, .modal-gift #coupon-list ul li dl .discount, #gift-code-modal-s4 #coupon-list ul li dl .discount {
           display: block; }
           @media only screen and (min-width: 720px) {
-            #gift-code-modal #coupon-list ul li dl .discount, #discount-code-modal #coupon-list ul li dl .discount, .modal-gift #coupon-list ul li dl .discount {
+            #gift-code-modal #coupon-list ul li dl .discount, #discount-code-modal #coupon-list ul li dl .discount, .modal-gift #coupon-list ul li dl .discount, #gift-code-modal-s4 #coupon-list ul li dl .discount {
               display: table;
               float: right; } }
-      #gift-code-modal #coupon-list ul li .btn, #discount-code-modal #coupon-list ul li .btn, .modal-gift #coupon-list ul li .btn {
+      #gift-code-modal #coupon-list ul li .btn, #discount-code-modal #coupon-list ul li .btn, .modal-gift #coupon-list ul li .btn, #gift-code-modal-s4 #coupon-list ul li .btn {
         text-decoration: none;
         display: table;
         float: right;
@@ -1887,15 +1887,18 @@ dl.subtotal-price {
         font-size: 11px;
         text-transform: uppercase; }
         @media only screen and (min-width: 720px) {
-          #gift-code-modal #coupon-list ul li .btn, #discount-code-modal #coupon-list ul li .btn, .modal-gift #coupon-list ul li .btn {
+          #gift-code-modal #coupon-list ul li .btn, #discount-code-modal #coupon-list ul li .btn, .modal-gift #coupon-list ul li .btn, #gift-code-modal-s4 #coupon-list ul li .btn {
             display: table;
             float: right;
             margin-left: 10px; } }
-        #gift-code-modal #coupon-list ul li .btn + .btn, #discount-code-modal #coupon-list ul li .btn + .btn, .modal-gift #coupon-list ul li .btn + .btn {
+        #gift-code-modal #coupon-list ul li .btn + .btn, #discount-code-modal #coupon-list ul li .btn + .btn, .modal-gift #coupon-list ul li .btn + .btn, #gift-code-modal-s4 #coupon-list ul li .btn + .btn {
           margin-top: 15px; }
           @media only screen and (min-width: 720px) {
-            #gift-code-modal #coupon-list ul li .btn + .btn, #discount-code-modal #coupon-list ul li .btn + .btn, .modal-gift #coupon-list ul li .btn + .btn {
+            #gift-code-modal #coupon-list ul li .btn + .btn, #discount-code-modal #coupon-list ul li .btn + .btn, .modal-gift #coupon-list ul li .btn + .btn, #gift-code-modal-s4 #coupon-list ul li .btn + .btn {
               margin-top: 0; } }
+
+#gift-code-modal-s4 .modal-body {
+  overflow: auto !important; }
 
 #sent-as-gift-modal #event-search-results, .modal-gift #event-search-results {
   max-height: 300px;
@@ -4628,7 +4631,8 @@ div.msgpopup2 .msgpopup_content_wrapper .content .icon .exc {
 #msgpopup_close_text a.clickableErrorMessage {
   color: #622f6e !important; }
 
-.nodisplay{display:none}
+.nodisplay {
+  display: none; }
 
 /* OCULTAR RETIRO POR TERCERO CITYBOX */
 section#correoschile-shipping-modal div.modal-header {
@@ -4650,7 +4654,6 @@ section#store-shipping-modal div.account-recipient-info {
   display: none; }
 
 /* FIN OCULTAR RETIRO POR TERCERO TIENDA */
-
 /* FONOCOMPRAS */
 #agentFonoComp {
   width: 934px;
