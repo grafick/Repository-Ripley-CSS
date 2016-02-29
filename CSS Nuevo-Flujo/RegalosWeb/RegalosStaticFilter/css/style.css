@@ -616,5 +616,5 @@ td {
 }
 
 /* AGREGADO PASO PRODUCCION 24FEB2016 csepulvedage@ripley.cl */
-.tituloBusquedaEventos, .tablaBuscarFiltros, .tablaBuscar > tbody > tr:first-child, .tablaBuscar > tbody > tr:nth-child(2), .tablaBuscar > tbody > tr:nth-child(3), .tablaBuscar > tbody > tr:nth-child(4){display:none;}
-.tablalin {background-color: none;}
+.tituloBusquedaEventos, .tablaBuscarFiltros, .tablaBuscar > tbody > tr:first-child, .tablaBuscar > table > tbody > tr:nth-child(2), .tablaBuscar > table > tbody > tr:nth-child(3), .tablaBuscar table > tbody > tr:nth-child(4){display:none;}
+.tablalin {background-color: transparent;}
