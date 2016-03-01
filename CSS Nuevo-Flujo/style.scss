@@ -706,7 +706,7 @@ hr{
       border-color: $primary-color;
     }
   }
-  &.btn-info{
+  &.btn-info, &#WC_ShippingAddressSelectSingle_btnSel, &#choose-shipping-place-seleccionar.btn{
     background: $lighten-primary-color;
     color:#fff;
     padding:10px 18px;
@@ -1014,12 +1014,15 @@ select{
     border-bottom: solid 1px #e4e4e4;
     overflow: hidden;
     h3{
-      font-size: 18px;
+      font-size: 16px;
       display: block;
       padding: 0;
       clear: both;
       text-align: center;
       font-family: $bold-primary-font;
+      @media #{$tablet}{
+        font-size: 18px;
+      }
     }
     button.close{
       border:none;
@@ -2620,17 +2623,24 @@ dl.subtotal-price{
   .choose-shipping{
     margin-bottom: 30px;
   }
-  .billing label.radio > span.name{
-    float: left;
-    max-width:50%;
+  .billing label.radio{
+    overflow: hidden;
+    > span.name{
+      float: left;
+      max-width:50%;
+    }
   }
   h3{
-    font-size: 20px;
+    font-size: 16px;
     font-family: $primary-font;
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     text-align: left;
     overflow: hidden;
+    @media #{$tablet}{
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
     span{
       display: block;
       margin: 0 0 15px;
@@ -3596,7 +3606,7 @@ img.maps{
     }
   }
 }
-#payment-options{
+#payment-options, .billing{
   display:block;
   margin: 0 0 30px;
   .form-group{
@@ -3821,12 +3831,12 @@ ul#payment-document{
         }
       }
     }
-    li#facturaLi a{
-      @include border-radius(0 6px 6px 0);
-      border-left:none;
-      @media #{$desktop}{
-        @include border-radius(0);
-      }
+  }
+  &#facturaLi a{
+    @include border-radius(0 6px 6px 0);
+    border-left:none;
+    @media #{$desktop}{
+      @include border-radius(0);
     }
   }
 }
@@ -4683,6 +4693,12 @@ ul#payment-document{
         &:last-child{
           padding-right:0;
           border-right:none;
+        }
+        .btn-md{
+          width:100%;
+          @media #{$tablet}{
+            width:auto;
+          }
         }
       }
       h4{

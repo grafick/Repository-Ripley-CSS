@@ -650,7 +650,7 @@ hr {
     .btn.btn-secondary:hover {
       background: #6E357C;
       border-color: #6E357C; }
-  .btn.btn-info {
+  .btn.btn-info, .btn#WC_ShippingAddressSelectSingle_btnSel, .btn#choose-shipping-place-seleccionar.btn {
     background: #79568e;
     color: #fff;
     padding: 10px 18px;
@@ -661,7 +661,7 @@ hr {
     -moz-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out; }
-    .btn.btn-info:hover {
+    .btn.btn-info:hover, .btn#WC_ShippingAddressSelectSingle_btnSel:hover, .btn#choose-shipping-place-seleccionar.btn:hover {
       background: #6E357C;
       border-color: #6E357C; }
   .btn.btn-gift {
@@ -942,12 +942,15 @@ select {
     border-bottom: solid 1px #e4e4e4;
     overflow: hidden; }
     .modal .modal-header h3 {
-      font-size: 18px;
+      font-size: 16px;
       display: block;
       padding: 0;
       clear: both;
       text-align: center;
       font-family: "montserratsemi_bold"; }
+      @media only screen and (min-width: 720px) {
+        .modal .modal-header h3 {
+          font-size: 18px; } }
     .modal .modal-header button.close {
       border: none;
       background: none;
@@ -2325,16 +2328,22 @@ dl.subtotal-price {
       width: 830px; } }
   #shipping-method .choose-shipping, #payment-method .choose-shipping, #confirmation-step .choose-shipping {
     margin-bottom: 30px; }
-  #shipping-method .billing label.radio > span.name, #payment-method .billing label.radio > span.name, #confirmation-step .billing label.radio > span.name {
-    float: left;
-    max-width: 50%; }
+  #shipping-method .billing label.radio, #payment-method .billing label.radio, #confirmation-step .billing label.radio {
+    overflow: hidden; }
+    #shipping-method .billing label.radio > span.name, #payment-method .billing label.radio > span.name, #confirmation-step .billing label.radio > span.name {
+      float: left;
+      max-width: 50%; }
   #shipping-method h3, #payment-method h3, #confirmation-step h3 {
-    font-size: 20px;
+    font-size: 16px;
     font-family: "montserratlight", sans-serif;
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     text-align: left;
     overflow: hidden; }
+    @media only screen and (min-width: 720px) {
+      #shipping-method h3, #payment-method h3, #confirmation-step h3 {
+        font-size: 18px;
+        margin-bottom: 25px; } }
     #shipping-method h3 span, #payment-method h3 span, #confirmation-step h3 span {
       display: block;
       margin: 0 0 15px; }
@@ -3160,86 +3169,86 @@ img.maps {
       .avaible-shipping-method ul li .fa.fa-times-circle {
         color: #ec3a40; }
 
-#payment-options {
+#payment-options, .billing {
   display: block;
   margin: 0 0 30px; }
-  #payment-options .form-group {
+  #payment-options .form-group, .billing .form-group {
     margin: 0;
     padding: 15px;
     border-bottom: solid 1px #ddd; }
-    #payment-options .form-group label {
+    #payment-options .form-group label, .billing .form-group label {
       display: block;
       overflow: hidden;
       line-height: 22pt;
       padding: 3px; }
-      #payment-options .form-group label.radio::before {
+      #payment-options .form-group label.radio::before, .billing .form-group label.radio::before {
         margin-top: 5px; }
-      #payment-options .form-group label .name {
+      #payment-options .form-group label .name, .billing .form-group label .name {
         width: auto;
         max-width: 50%;
         display: table;
         float: left; }
-      #payment-options .form-group label .tripley-icon, #payment-options .form-group label .webpayo-icon, #payment-options .form-group label .webpay-icon, #payment-options .form-group label .webpayc-icon, #payment-options .form-group label .giftcard-icon, #payment-options .form-group label .mripley-icon {
+      #payment-options .form-group label .tripley-icon, #payment-options .form-group label .webpayo-icon, #payment-options .form-group label .webpay-icon, #payment-options .form-group label .webpayc-icon, #payment-options .form-group label .giftcard-icon, #payment-options .form-group label .mripley-icon, .billing .form-group label .tripley-icon, .billing .form-group label .webpayo-icon, .billing .form-group label .webpay-icon, .billing .form-group label .webpayc-icon, .billing .form-group label .giftcard-icon, .billing .form-group label .mripley-icon {
         float: right; }
-    #payment-options .form-group.associated {
+    #payment-options .form-group.associated, .billing .form-group.associated {
       overflow: hidden; }
-      #payment-options .form-group.associated label {
+      #payment-options .form-group.associated label, .billing .form-group.associated label {
         line-height: 16pt;
         display: block;
         margin-bottom: 15px; }
         @media only screen and (min-width: 960px) {
-          #payment-options .form-group.associated label {
+          #payment-options .form-group.associated label, .billing .form-group.associated label {
             display: table;
             float: left;
             margin-bottom: 0;
             width: 60%; } }
-        #payment-options .form-group.associated label .name {
+        #payment-options .form-group.associated label .name, .billing .form-group.associated label .name {
           margin-right: 15px; }
-          #payment-options .form-group.associated label .name strong {
+          #payment-options .form-group.associated label .name strong, .billing .form-group.associated label .name strong {
             display: block;
             font-family: "montserratsemi_bold"; }
-      #payment-options .form-group.associated .visa-icon, #payment-options .form-group.associated .mastercard-icon, #payment-options .form-group.associated .american-icon, #payment-options .form-group.associated .discover-icon, #payment-options .form-group.associated .magna-icon, #payment-options .form-group.associated .dinners-icon {
+      #payment-options .form-group.associated .visa-icon, #payment-options .form-group.associated .mastercard-icon, #payment-options .form-group.associated .american-icon, #payment-options .form-group.associated .discover-icon, #payment-options .form-group.associated .magna-icon, #payment-options .form-group.associated .dinners-icon, .billing .form-group.associated .visa-icon, .billing .form-group.associated .mastercard-icon, .billing .form-group.associated .american-icon, .billing .form-group.associated .discover-icon, .billing .form-group.associated .magna-icon, .billing .form-group.associated .dinners-icon {
         margin: 0 10px 0 0; }
-      #payment-options .form-group.associated .tripley-icon, #payment-options .form-group.associated .webpayo-icon, #payment-options .form-group.associated .webpay-icon, #payment-options .form-group.associated .webpayc-icon, #payment-options .form-group.associated .giftcard-icon, #payment-options .form-group.associated .mripley-icon {
+      #payment-options .form-group.associated .tripley-icon, #payment-options .form-group.associated .webpayo-icon, #payment-options .form-group.associated .webpay-icon, #payment-options .form-group.associated .webpayc-icon, #payment-options .form-group.associated .giftcard-icon, #payment-options .form-group.associated .mripley-icon, .billing .form-group.associated .tripley-icon, .billing .form-group.associated .webpayo-icon, .billing .form-group.associated .webpay-icon, .billing .form-group.associated .webpayc-icon, .billing .form-group.associated .giftcard-icon, .billing .form-group.associated .mripley-icon {
         float: right;
         margin-bottom: 5px; }
         @media only screen and (min-width: 960px) {
-          #payment-options .form-group.associated .tripley-icon, #payment-options .form-group.associated .webpayo-icon, #payment-options .form-group.associated .webpay-icon, #payment-options .form-group.associated .webpayc-icon, #payment-options .form-group.associated .giftcard-icon, #payment-options .form-group.associated .mripley-icon {
+          #payment-options .form-group.associated .tripley-icon, #payment-options .form-group.associated .webpayo-icon, #payment-options .form-group.associated .webpay-icon, #payment-options .form-group.associated .webpayc-icon, #payment-options .form-group.associated .giftcard-icon, #payment-options .form-group.associated .mripley-icon, .billing .form-group.associated .tripley-icon, .billing .form-group.associated .webpayo-icon, .billing .form-group.associated .webpay-icon, .billing .form-group.associated .webpayc-icon, .billing .form-group.associated .giftcard-icon, .billing .form-group.associated .mripley-icon {
             float: left;
             margin-bottom: 0; } }
-      #payment-options .form-group.associated .btn {
+      #payment-options .form-group.associated .btn, .billing .form-group.associated .btn {
         float: none;
         width: 100%; }
         @media only screen and (min-width: 960px) {
-          #payment-options .form-group.associated .btn {
+          #payment-options .form-group.associated .btn, .billing .form-group.associated .btn {
             float: right;
             width: auto; } }
-    #payment-options .form-group.selected label.radio::before {
+    #payment-options .form-group.selected label.radio::before, .billing .form-group.selected label.radio::before {
       content: "\f058";
       font-size: 24px;
       font-family: "FontAwesome";
       color: #54b268;
       text-shadow: none; }
-    #payment-options .form-group.selected label + .alert {
+    #payment-options .form-group.selected label + .alert, .billing .form-group.selected label + .alert {
       margin-top: 15px; }
-    #payment-options .form-group #total-details {
+    #payment-options .form-group #total-details, .billing .form-group #total-details {
       padding: 20px 0 0;
       overflow: hidden;
       clear: both; }
-      #payment-options .form-group #total-details dl {
+      #payment-options .form-group #total-details dl, .billing .form-group #total-details dl {
         overflow: hidden;
         clear: both;
         margin-bottom: 10px; }
         @media only screen and (min-width: 960px) {
-          #payment-options .form-group #total-details dl {
+          #payment-options .form-group #total-details dl, .billing .form-group #total-details dl {
             width: 300px; } }
-        #payment-options .form-group #total-details dl.tripley {
+        #payment-options .form-group #total-details dl.tripley, .billing .form-group #total-details dl.tripley {
           font-family: "montserratsemi_bold"; }
-        #payment-options .form-group #total-details dl dt {
+        #payment-options .form-group #total-details dl dt, .billing .form-group #total-details dl dt {
           width: 60%;
           float: left;
           display: block; }
-        #payment-options .form-group #total-details dl dd {
+        #payment-options .form-group #total-details dl dd, .billing .form-group #total-details dl dd {
           width: 40%;
           float: right;
           display: block;
@@ -3364,16 +3373,16 @@ ul#payment-document {
           font-family: "FontAwesome";
           color: #54b268;
           text-shadow: none; } }
-    ul#payment-document li li#facturaLi a {
-      -webkit-border-radius: 0 6px 6px 0;
-      -moz-border-radis: 0 6px 6px 0;
-      border-radius: 0 6px 6px 0;
-      border-left: none; }
-      @media only screen and (min-width: 960px) {
-        ul#payment-document li li#facturaLi a {
-          -webkit-border-radius: 0;
-          -moz-border-radis: 0;
-          border-radius: 0; } }
+  ul#payment-document#facturaLi a {
+    -webkit-border-radius: 0 6px 6px 0;
+    -moz-border-radis: 0 6px 6px 0;
+    border-radius: 0 6px 6px 0;
+    border-left: none; }
+    @media only screen and (min-width: 960px) {
+      ul#payment-document#facturaLi a {
+        -webkit-border-radius: 0;
+        -moz-border-radis: 0;
+        border-radius: 0; } }
 
 #payment-document-detail p strong {
   font-family: "montserratsemi_bold";
@@ -4078,6 +4087,11 @@ ul#payment-document {
       #select-store ul li .section:last-child, #change-shipping-store ul li .section:last-child {
         padding-right: 0;
         border-right: none; }
+      #select-store ul li .section .btn-md, #change-shipping-store ul li .section .btn-md {
+        width: 100%; }
+        @media only screen and (min-width: 720px) {
+          #select-store ul li .section .btn-md, #change-shipping-store ul li .section .btn-md {
+            width: auto; } }
     #select-store ul li h4, #change-shipping-store ul li h4 {
       display: block;
       border-bottom: solid 1px #dcc4ea;
