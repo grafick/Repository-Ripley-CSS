@@ -1876,3 +1876,11 @@ div #configErrorDiv {
 .fancybox-ie #fancybox-bg-sw{filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../javascript/Miscellaneous/fancybox/corner-lb.png', sizingMethod='scale'); }
 .fancybox-ie #fancybox-bg-w{filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../javascript/Miscellaneous/fancybox/left.png', sizingMethod='scale'); }
 .fancybox-ie #fancybox-bg-nw{filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../javascript/Miscellaneous/fancybox/corner-lt.png', sizingMethod='scale'); }
+
+
+
+/* FIX FONOCOMPRAS AVATAR */
+
+.loading{
+	display: none;
+}
