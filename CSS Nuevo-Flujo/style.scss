@@ -3698,6 +3698,12 @@ img.maps{
       }
     }
   }
+  .address-store{
+    margin-bottom: 15px;
+    @media #{$desktop}{
+      margin-bottom: 0;
+    }
+  }
 }
 #payment-options, .billing{
   display:block;

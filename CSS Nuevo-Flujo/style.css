@@ -3260,6 +3260,11 @@ img.maps {
         color: #54b268; }
       .avaible-shipping-method ul li .fa.fa-times-circle {
         color: #ec3a40; }
+.avaible-shipping-method .address-store {
+  margin-bottom: 15px; }
+  @media only screen and (min-width: 960px) {
+    .avaible-shipping-method .address-store {
+      margin-bottom: 0; } }
 
 #payment-options, .billing {
   display: block;
