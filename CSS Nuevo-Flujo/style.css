@@ -257,7 +257,8 @@ h4 {
   text-align: center; }
   .general-alert.alert-error {
     background: #a9a9a9;
-    color: #fff; }
+    color: #fff;
+    display: none !important; }
     .general-alert.alert-error .general-alert-btn:hover {
       background: #a9a9a9;
       color: #333;
@@ -650,7 +651,7 @@ hr {
     .btn.btn-secondary:hover {
       background: #6E357C;
       border-color: #6E357C; }
-  .btn.btn-info, .btn#WC_ShippingAddressSelectSingle_btnSel, .btn#choose-shipping-place-seleccionar.btn {
+  .btn.btn-info {
     background: #79568e;
     color: #fff;
     padding: 10px 18px;
@@ -661,9 +662,23 @@ hr {
     -moz-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out; }
-    .btn.btn-info:hover, .btn#WC_ShippingAddressSelectSingle_btnSel:hover, .btn#choose-shipping-place-seleccionar.btn:hover {
+    .btn.btn-info:hover {
       background: #6E357C;
       border-color: #6E357C; }
+  .btn#WC_ShippingAddressSelectSingle_btnSel, .btn#choose-shipping-place-seleccionar.btn {
+    background: #54b268;
+    color: #fff;
+    padding: 10px 18px;
+    border-color: transparent;
+    min-height: 50px;
+    height: auto;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out; }
+    .btn#WC_ShippingAddressSelectSingle_btnSel:hover, .btn#choose-shipping-place-seleccionar.btn:hover {
+      background: #3b9a4f;
+      border-color: #3b9a4f; }
   .btn.btn-gift {
     border-color: #79568e;
     color: #79568e;
@@ -950,7 +965,8 @@ select {
       font-family: "montserratsemi_bold"; }
       @media only screen and (min-width: 720px) {
         .modal .modal-header h3 {
-          font-size: 18px; } }
+          font-size: 18px;
+          margin: 0 0 15px; } }
     .modal .modal-header button.close {
       border: none;
       background: none;
@@ -1692,7 +1708,8 @@ dl.subtotal-price {
       margin-top: 15px; } }
   #shopping-bag-total .shopping-total {
     overflow: hidden;
-    font-size: 14px; }
+    font-size: 14px;
+    display: table-footer-group; }
     @media only screen and (min-width: 720px) {
       #shopping-bag-total .shopping-total {
         display: table;
@@ -2475,7 +2492,18 @@ dl.subtotal-price {
 #shipping-sidebar {
   background: #f4f4f4;
   padding: 15px 15px 30px;
-  overflow: hidden; }
+  overflow: hidden;
+  display: -webkit-flexbox;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: -o-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  width: 100%; }
   @media only screen and (min-width: 960px) {
     #shipping-sidebar {
       padding: 0;
@@ -2485,17 +2513,48 @@ dl.subtotal-price {
   @media only screen and (min-width: 1280px) {
     #shipping-sidebar {
       width: 360px; } }
-  @media only screen and (min-width: 960px) {
-    #shipping-sidebar .shopping-sidebar-wrapper {
-      width: 260px;
-      background: #fff;
-      padding: 0 15px 15px; } }
-  @media only screen and (min-width: 1280px) {
-    #shipping-sidebar .shopping-sidebar-wrapper {
-      width: 360px; } }
+  #shipping-sidebar .shopping-sidebar-wrapper {
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -o-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    width: 100%; }
+    @media only screen and (min-width: 960px) {
+      #shipping-sidebar .shopping-sidebar-wrapper {
+        width: 260px;
+        background: #fff;
+        padding: 0 15px 15px; } }
+    @media only screen and (min-width: 1280px) {
+      #shipping-sidebar .shopping-sidebar-wrapper {
+        width: 360px; } }
+  #shipping-sidebar .dijitContentPane {
+    width: 100%;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -o-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    width: 100%; }
   #shipping-sidebar .shopping-total {
     overflow: hidden;
-    font-size: 14px; }
+    font-size: 14px;
+    display: block;
+    -ms-flex-order: 3;
+    -webkit-order: 3;
+    -o-order: 3;
+    -moz-order: 3;
+    order: 3; }
     #shipping-sidebar .shopping-total dl {
       overflow: hidden;
       margin: 0 0 6px; }
@@ -2528,12 +2587,19 @@ dl.subtotal-price {
   #shipping-sidebar .btn {
     margin: 0 auto 20px;
     display: block;
-    width: 100%; }
+    width: 100%;
+    -ms-flex-order: 4;
+    -webkit-order: 4;
+    -o-order: 4;
+    -moz-order: 4;
+    order: 4; }
     @media only screen and (min-width: 960px) {
       #shipping-sidebar .btn {
         width: 100%;
         display: block;
         margin: 0 0 20px; } }
+  #shipping-sidebar .underline-link {
+    order: 5; }
   #shipping-sidebar form label.checkbox {
     text-align: center; }
   #shipping-sidebar form .underline-link {
@@ -2992,11 +3058,14 @@ dl.subtotal-price {
   margin-top: 15px; }
 
 #no-avaible-shipping, .no-avaible-shipping-sidebar {
-  background: #fff;
+  background: transparent;
   padding: 35px 15px;
   border-bottom: solid 1px #ddd;
   margin-bottom: 20px;
   text-align: center; }
+  @media only screen and (min-width: 960px) {
+    #no-avaible-shipping, .no-avaible-shipping-sidebar {
+      background: #fff; } }
   #no-avaible-shipping img, .no-avaible-shipping-sidebar img {
     display: block;
     margin: 0 auto 15px;
@@ -3027,56 +3096,48 @@ dl.subtotal-price {
     #no-avaible-shipping .alert-danger strong, .no-avaible-shipping-sidebar .alert-danger strong {
       font-family: "montserratsemi_bold"; }
 
-.no-avaible-shipping-sidebar {
-  padding: 15px 0; }
-  .no-avaible-shipping-sidebar .alert-danger {
-    padding: 10px;
-    line-height: 14pt;
-    text-align: left;
-    background: #a9a9a9;
-    -webkit-border-radius: 0;
-    -moz-border-radis: 0;
-    border-radius: 0; }
-  .no-avaible-shipping-sidebar .alert-icon {
-    display: inline-block; }
-  .no-avaible-shipping-sidebar h4 {
-    display: block;
-    font-size: 13px;
-    font-family: "montserratsemi_bold";
-    margin-bottom: 10px;
-    text-align: left; }
-
 .shopping-item-sidebar {
   display: block;
   overflow: hidden;
   padding: 0 0 15px;
   border-bottom: solid 1px #ddd;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  -o-order: 1;
+  -moz-order: 1;
+  order: 1; }
   .shopping-item-sidebar .shopping-item-image {
-    width: 30%;
-    display: block;
-    float: left;
-    padding-right: 10px; }
+    width: 28%;
+    display: inline-block;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    vertical-align: top; }
     .shopping-item-sidebar .shopping-item-image img {
       display: block;
       padding: 0;
       width: 100%;
-      height: auto; }
+      height: auto;
+      margin: 0; }
   .shopping-item-sidebar .shopping-item-info {
-    display: block;
-    float: right;
-    width: 70%;
-    text-align: left; }
+    display: inline-block;
+    width: 68%;
+    text-align: left;
+    margin-bottom: 15px;
+    vertical-align: top; }
     .shopping-item-sidebar .shopping-item-info h3 {
       font-size: 16px;
       display: block;
-      width: 100%;
+      max-width: 160px;
       text-transform: uppercase;
       font-family: "montserratlight", sans-serif;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       margin-bottom: 5px; }
+      @media only screen and (min-width: 480px) {
+        .shopping-item-sidebar .shopping-item-info h3 {
+          max-width: 100%; } }
     .shopping-item-sidebar .shopping-item-info h4 {
       text-transform: uppercase;
       color: #79568e; }
@@ -3090,16 +3151,47 @@ dl.subtotal-price {
         display: table;
         float: right; }
   .shopping-item-sidebar.no-avaible-shipping-sidebar {
-    border: solid 1px #a9a9a9;
-    padding: 0 0 15px; }
+    padding: 15px 0;
+    display: block;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    -o-order: 2;
+    -moz-order: 2;
+    order: 2; }
+    .shopping-item-sidebar.no-avaible-shipping-sidebar .alert-danger {
+      padding: 10px;
+      line-height: 14pt;
+      text-align: left;
+      background: #a9a9a9;
+      margin: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radis: 0;
+      border-radius: 0; }
+    .shopping-item-sidebar.no-avaible-shipping-sidebar .alert-icon {
+      display: inline-block; }
+    .shopping-item-sidebar.no-avaible-shipping-sidebar h4 {
+      display: block;
+      font-size: 13px;
+      font-family: "montserratsemi_bold";
+      margin-bottom: 10px;
+      text-align: left; }
+    .shopping-item-sidebar.no-avaible-shipping-sidebar .shopping-item-sidebar {
+      padding: 15px 10px;
+      display: block;
+      border: solid 1px #ddd;
+      margin: 0;
+      border-top: none; }
     .shopping-item-sidebar.no-avaible-shipping-sidebar > p {
       clear: both;
       font-size: 12px;
-      padding: 10px 15px 0; }
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      border: solid 1px #ddd;
+      border-top: none; }
     .shopping-item-sidebar.no-avaible-shipping-sidebar .shopping-item-image {
-      padding: 0 10px 0 15px; }
+      width: 28%; }
     .shopping-item-sidebar.no-avaible-shipping-sidebar .shopping-item-info {
-      padding: 0 15px 0 0; }
+      width: 68%; }
 
 #change-shipping-date p {
   margin-bottom: 30px; }
@@ -3373,16 +3465,16 @@ ul#payment-document {
           font-family: "FontAwesome";
           color: #54b268;
           text-shadow: none; } }
-  ul#payment-document#facturaLi a {
-    -webkit-border-radius: 0 6px 6px 0;
-    -moz-border-radis: 0 6px 6px 0;
-    border-radius: 0 6px 6px 0;
-    border-left: none; }
-    @media only screen and (min-width: 960px) {
-      ul#payment-document#facturaLi a {
-        -webkit-border-radius: 0;
-        -moz-border-radis: 0;
-        border-radius: 0; } }
+    ul#payment-document li#facturaLi a {
+      -webkit-border-radius: 0 6px 6px 0;
+      -moz-border-radis: 0 6px 6px 0;
+      border-radius: 0 6px 6px 0;
+      border-left: none; }
+      @media only screen and (min-width: 960px) {
+        ul#payment-document li#facturaLi a {
+          -webkit-border-radius: 0;
+          -moz-border-radis: 0;
+          border-radius: 0; } }
 
 #payment-document-detail p strong {
   font-family: "montserratsemi_bold";
