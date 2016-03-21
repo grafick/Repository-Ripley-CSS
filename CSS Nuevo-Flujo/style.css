@@ -184,7 +184,6 @@ a {
     display: none !important; } }
 
 .content {
-  width: 100%;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
@@ -706,7 +705,8 @@ hr {
   .btn.btn-small {
     padding: 5px 12px;
     height: auto;
-    line-height: 12pt; }
+    line-height: 12pt;
+    min-height: 20px; }
   .btn.btn-md {
     padding: 10px 15px;
     min-height: 50px;
@@ -866,6 +866,11 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; }
+  .custom-select.no-margin {
+    margin-bottom: 20px !important; }
+    @media only screen and (min-width: 960px) {
+      .custom-select.no-margin {
+        margin-bottom: 0 !important; } }
 
 .tab-pane {
   display: none; }
@@ -965,8 +970,7 @@ select {
       font-family: "montserratsemi_bold"; }
       @media only screen and (min-width: 720px) {
         .modal .modal-header h3 {
-          font-size: 18px;
-          margin: 0 0 15px; } }
+          font-size: 18px; } }
     .modal .modal-header button.close {
       border: none;
       background: none;
@@ -1021,10 +1025,12 @@ select {
   .modal .modal-footer {
     padding: 15px 0 0; }
     .modal .modal-footer .btn {
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 20px; }
       @media only screen and (min-width: 720px) {
         .modal .modal-footer .btn {
-          width: auto; } }
+          width: auto;
+          margin-bottom: 0; } }
 
 .modal-backdrop {
   background: #fff;
@@ -1191,11 +1197,12 @@ body.shopping-order #shopping-bag-header h1, body.error #shopping-bag-header h1 
     #shopping-bag-items ul > li .shopping-item-holder {
       display: block;
       overflow: hidden;
-      padding: 15px; }
+      padding: 15px 0; }
       @media only screen and (min-width: 960px) {
         #shopping-bag-items ul > li .shopping-item-holder {
           display: table;
-          width: 100%; } }
+          width: 100%;
+          padding: 15px; } }
       #shopping-bag-items ul > li .shopping-item-holder + .alert {
         margin: 15px 0 0; }
       #shopping-bag-items ul > li .shopping-item-holder + .alert-gift {
@@ -1478,7 +1485,7 @@ dl.subtotal-price {
 
 #shopping-bag-total {
   background: #f4f4f4;
-  padding: 35px 15px;
+  padding: 35px 0;
   margin-top: 35px; }
   @media only screen and (min-width: 960px) {
     #shopping-bag-total {
@@ -1709,10 +1716,9 @@ dl.subtotal-price {
   #shopping-bag-total .shopping-total {
     overflow: hidden;
     font-size: 14px;
-    display: table-footer-group; }
+    display: block; }
     @media only screen and (min-width: 720px) {
       #shopping-bag-total .shopping-total {
-        display: table;
         margin: 0 auto;
         width: 50%; } }
     @media only screen and (min-width: 960px) {
@@ -1744,6 +1750,12 @@ dl.subtotal-price {
       margin-bottom: 10px;
       border: none;
       height: 1px; }
+
+#shipping-sidebar .shopping-total {
+  display: table-footer-group; }
+  @media only screen and (min-width: 720px) {
+    #shipping-sidebar .shopping-total {
+      display: table; } }
 
 #shopping-bag-actions {
   padding: 15px; }
@@ -1792,7 +1804,7 @@ dl.subtotal-price {
     margin-right: 6px; }
 
 #gift-code-modal .modal-body, #discount-code-modal .modal-body, .modal-gift .modal-body, #gift-code-modal-s4 .modal-body {
-  padding: 25px 0 0; }
+  padding: 0; }
   #gift-code-modal .modal-body iframe, #discount-code-modal .modal-body iframe, .modal-gift .modal-body iframe, #gift-code-modal-s4 .modal-body iframe {
     width: 100% !important;
     -webkit-overflow-scrolling: touch;
@@ -2330,7 +2342,7 @@ dl.subtotal-price {
 
 #shipping-method, #payment-method, #confirmation-step {
   background: #fff;
-  padding: 15px;
+  padding: 15px 0;
   overflow: hidden;
   margin: 0 0 15px; }
   @media only screen and (min-width: 960px) {
@@ -2354,7 +2366,7 @@ dl.subtotal-price {
     font-size: 16px;
     font-family: "montserratlight", sans-serif;
     display: block;
-    margin-bottom: 0;
+    margin-bottom: 15px;
     text-align: left;
     overflow: hidden; }
     @media only screen and (min-width: 720px) {
@@ -2371,12 +2383,8 @@ dl.subtotal-price {
           max-width: 70%;
           margin: 0; } }
     #shipping-method h3 .btn, #payment-method h3 .btn, #confirmation-step h3 .btn {
-      display: block;
-      margin: 0; }
-      @media only screen and (min-width: 960px) {
-        #shipping-method h3 .btn, #payment-method h3 .btn, #confirmation-step h3 .btn {
-          display: table;
-          float: right; } }
+      display: table;
+      float: right; }
   #shipping-method > ul, #payment-method > ul, #confirmation-step > ul {
     margin: 0 0 25px;
     list-style-type: none;
@@ -2478,6 +2486,15 @@ dl.subtotal-price {
             display: table-cell;
             vertical-align: middle;
             text-align: left; } }
+
+.billing_address h3 {
+  margin-bottom: 15px; }
+
+#billingAddress1 .highlight #colorMoradoCorreo {
+  color: #6E357C;
+  display: block;
+  padding: 10px 0;
+  font-weight: 700; }
 
 #shipping-method h3 {
   text-align: center; }
@@ -3458,7 +3475,7 @@ ul#payment-document {
           line-height: 16pt; } }
     ul#payment-document li.active a {
       background: #54b268;
-      color: #fff; }
+      color: #fff !important; }
       @media only screen and (min-width: 960px) {
         ul#payment-document li.active a {
           background: none;
@@ -3474,7 +3491,8 @@ ul#payment-document {
       -webkit-border-radius: 0 6px 6px 0;
       -moz-border-radis: 0 6px 6px 0;
       border-radius: 0 6px 6px 0;
-      border-left: none; }
+      border-left: none;
+      color: #ccc; }
       @media only screen and (min-width: 960px) {
         ul#payment-document li#facturaLi a {
           -webkit-border-radius: 0;
@@ -4589,10 +4607,12 @@ ul#payment-document {
   text-transform: uppercase;
   font-size: 13px; }
 #master-key-modal .modal-footer .btn {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px; }
   @media only screen and (min-width: 720px) {
     #master-key-modal .modal-footer .btn {
-      width: auto; } }
+      width: auto;
+      margin-bottom: 0; } }
 #master-key-modal .modal-footer .btn.pull-left {
   float: none;
   margin: 0 0 15px;
