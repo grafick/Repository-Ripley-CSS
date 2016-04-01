@@ -5176,3 +5176,118 @@ div#checkout_1_2 {display: none} */
 /* OCULTA RETIRO PARA TERCEROS DESDE TIENDA */
 #shipping .retiroTerceros p:last-child{display:none}
 #shipping .info_retiro{display:none}
+
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body { font-family: 'Montserrat', sans-serif !important; background: #fff; font-size: 14px !important; }
+
+a, fieldset, form, p, li, ol, ul, body, html, tr, td, img { font-size: 14px; font-family: "Montserrat", sans-serif; }
+
+#MessageArea, #espotTop, .menu_enlaces, #WC_ContentAreaESpot_div_1_10770, #contentHeader #header-search, #shopping-cart .number, #shopping-cart .text, #quick_cart_container, #inicioCliente #welcUser, #inicioCliente .MiCuenta, #NavDepto, .NavProduct #dropdown-clubes-parent, .NavProduct #dropdown-shipping, .NavProduct a, #inicioCliente #SesionUsuarioTop { display: none !important; }
+
+#page, #contentHeader, #MenuPrincipal { width: 100%; padding: 10px 15px; overflow: hidden; box-sizing: border-box; }
+@media only screen and (min-width: 544px) { #page, #contentHeader, #MenuPrincipal { max-width: 576px; } }
+@media only screen and (min-width: 768px) { #page, #contentHeader, #MenuPrincipal { max-width: 720px; } }
+@media only screen and (min-width: 992px) { #page, #contentHeader, #MenuPrincipal { max-width: 940px; } }
+@media only screen and (min-width: 1200px) { #page, #contentHeader, #MenuPrincipal { max-width: 1140px; } }
+
+div.content_wrapper > div.content_left_shadow, div.content_wrapper > div.content_left_shadow > div.content_right_shadow > div.main_content, div.content_wrapper > div.content_left_shadow > div.content_right_shadow, div.content_wrapper > div.content_left_shadow { width: 100%; overflow: hidden; box-sizing: border-box; }
+@media only screen and (min-width: 544px) { div.content_wrapper > div.content_left_shadow, div.content_wrapper > div.content_left_shadow > div.content_right_shadow > div.main_content, div.content_wrapper > div.content_left_shadow > div.content_right_shadow, div.content_wrapper > div.content_left_shadow { max-width: 576px; } }
+@media only screen and (min-width: 768px) { div.content_wrapper > div.content_left_shadow, div.content_wrapper > div.content_left_shadow > div.content_right_shadow > div.main_content, div.content_wrapper > div.content_left_shadow > div.content_right_shadow, div.content_wrapper > div.content_left_shadow { max-width: 720px; } }
+@media only screen and (min-width: 992px) { div.content_wrapper > div.content_left_shadow, div.content_wrapper > div.content_left_shadow > div.content_right_shadow > div.main_content, div.content_wrapper > div.content_left_shadow > div.content_right_shadow, div.content_wrapper > div.content_left_shadow { max-width: 940px; } }
+@media only screen and (min-width: 1200px) { div.content_wrapper > div.content_left_shadow, div.content_wrapper > div.content_left_shadow > div.content_right_shadow > div.main_content, div.content_wrapper > div.content_left_shadow > div.content_right_shadow, div.content_wrapper > div.content_left_shadow { max-width: 1140px; } }
+
+#header { height: 50px; line-height: 50px; max-height: 50px; background: #1a1a1a; float: none; width: auto; }
+@media only screen and (min-width: 992px) { #header { height: 68px; line-height: 68px; max-height: 68px; } }
+#header #contentHeader { height: auto; }
+#header #contentHeader #header_logo a#LogoRipley, #header #contentHeader #header_logo_FC a#LogoRipley { background: transparent url("http://www.ripley.cl/ripley-chile/minisitios/repositorio/ripley-logo.svg") center center no-repeat; width: 80px; height: 30px; background-size: 100%; }
+@media only screen and (min-width: 992px) { #header #contentHeader #header_logo a#LogoRipley, #header #contentHeader #header_logo_FC a#LogoRipley { width: 120px; height: 46px; } }
+#header #contentHeader #outerCartContainer { display: table; float: right; }
+#header #contentHeader #shopping-cart, #header #contentHeader #shopping-cart #MiniShoppingCart, #header #contentHeader #shopping-cart #shopcartContainer { width: auto; height: auto; margin: 0; padding: 0; }
+#header #contentHeader #shopping-cart #shopcartContainer a#shoppingCartBar { width: 24px; height: 28px; display: block; background: transparent; text-indent: -9999px; float: none; margin: 0 0 0 20px; }
+@media only screen and (min-width: 992px) { #header #contentHeader #shopping-cart #shopcartContainer a#shoppingCartBar { margin: 5px 0 0 20px; width: 36px; height: 36px; } }
+#header #contentHeader #shopping-cart .left_corner { display: block; height: 28px; width: 24px; background: transparent url("http://www.ripley.cl/ripley-chile/minisitios/repositorio/bolsa-compras.svg") center center no-repeat; background-size: 100%; padding: 0; margin: 0; }
+@media only screen and (min-width: 992px) { #header #contentHeader #shopping-cart .left_corner { height: 36px; width: 30px; } }
+#header #contentHeader #inicioCliente { width: auto; height: auto; float: right; padding: 0; border: none; }
+#header #contentHeader #inicioCliente ul { width: auto; padding: 0; float: none; display: table; margin: 5px 0 0; }
+#header #contentHeader #inicioCliente ul li { display: table; width: auto; float: none; }
+#header #contentHeader #inicioCliente ul li #SesionUsuario { background: transparent; width: auto; padding: 0; margin: 0; float: none; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; -webkit-border-radius: 0; -moz-border-radis: 0; -border-radius: 0; }
+#header #contentHeader #inicioCliente ul li #SesionUsuario li { display: none; }
+#header #contentHeader #inicioCliente ul li #SesionUsuario li:first-child { display: block; }
+#header #contentHeader #inicioCliente ul li #SesionUsuario li:hover { background: transparent; text-indent: inherit; }
+#header #contentHeader #inicioCliente ul li #SesionUsuario li:first-child a { width: auto; float: none; font-size: 16px; font-family: "Montserrat", sans-serif; font-weight: 300; padding: 0 10px; line-height: 24pt; display: none; color: #fff; }
+@media only screen and (min-width: 992px) { #header #contentHeader #inicioCliente ul li #SesionUsuario li:first-child a { display: block; } }
+#header #contentHeader #inicioCliente ul li #SesionUsuario li:first-child a:hover { background: transparent; color: #e75353; }
+#header #contentHeader #inicioCliente ul li #arrowCliente { display: none !important; }
+
+#header_nav { background: #f2f2f2; height: 46px; color: #6a6a6a; float: none; }
+#header_nav #MenuPrincipal { height: auto; background: transparent; padding: 0; }
+#header_nav .NavProduct a.back-shopping { color: #6a6a6a; font-size: 12px; display: table !important; padding: 15px 12px; border-right: solid 1px #e8e8e8; text-decoration: none; }
+
+#main_content_wrapper { display: block; width: auto; float: none; margin: 0; overflow: hidden; box-sizing: border-box; }
+
+#main_content_wrapper .miCuenta { background: #f7f7f7; width: 100%; display: block; position: inherit; top: inherit; left: inherit; right: inherit; bottom: inherit; margin: 0 0 15px; padding: 0; float: none; overflow: hidden; box-sizing: border-box; -webkit-border-radius: 4px; -moz-border-radis: 4px; -border-radius: 4px; }
+@media only screen and (min-width: 992px) { #main_content_wrapper .miCuenta { width: 255px; float: left; margin: 0 15px 15px 0; } }
+@media only screen and (min-width: 1200px) { #main_content_wrapper .miCuenta { width: 295px; } }
+#main_content_wrapper .miCuenta .left_nav_container { width: 100%; background: transparent; }
+#main_content_wrapper .miCuenta .TitleMiCuenta { width: 100%; box-sizing: border-box; background: transparent; color: #6E357C; border-bottom: solid 1px #f7f7f7; }
+#main_content_wrapper .miCuenta .left_nav_options { border: none; }
+#main_content_wrapper .miCuenta .leftnav_myaccount_dotted { border-color: #f7f7f7; }
+
+#left_nav p { padding: 0; margin: 0; }
+#left_nav p a { display: block; padding: 2px 20px; box-sizing: border-box; background: transparent; font-size: 14px; }
+#left_nav p a:hover { padding: 2px 20px; background: #ddd; font-size: 14px; }
+
+#ContentBreadCrumb { float: none; margin: 15px auto; padding-left: 15px; padding-right: 15px; box-sizing: border-box; clear: both; }
+@media only screen and (min-width: 544px) { #ContentBreadCrumb { max-width: 576px; } }
+@media only screen and (min-width: 768px) { #ContentBreadCrumb { max-width: 720px; } }
+@media only screen and (min-width: 992px) { #ContentBreadCrumb { max-width: 940px; } }
+@media only screen and (min-width: 1200px) { #ContentBreadCrumb { max-width: 1140px; } }
+
+#breadcrumb { width: 100%; box-sizing: border-box; }
+#breadcrumb .breadcrumb_current { font-size: 12px; font-weight: 300; }
+#breadcrumb span.bc_arrow { font-size: 12px; margin: 0; text-decoration: none; background: none; padding: 0 10px; color: #333; }
+#breadcrumb span.bc_arrow::after { content: ">"; }
+#breadcrumb .breadcrumb_links a, #breadcrumb #WC_MyAccountDisplay_div_1 > h1 a { font-size: 12px; }
+#breadcrumb .btnBack, #breadcrumb div#widget_breadcrumb .btnBack, #breadcrumb div#widget_breadcrumb > ul li a { font-size: 12px; }
+
+.my_account .myaccount_title { color: #e75353; font-size: 20px !important; font-family: "Montserrat", sans-serif; }
+
+#box, #box_1 { max-width: 100%; min-width: 100%; }
+
+#box .my_account { background: #fff; width: 100%; padding: 0; float: none; box-sizing: border-box; border: none; overflow: hidden; -webkit-border-radius: 4px; -moz-border-radis: 4px; -border-radius: 4px; }
+@media only screen and (min-width: 992px) { #box .my_account { width: 640px; float: right; } }
+@media only screen and (min-width: 1200px) { #box .my_account { width: 800px; } }
+#box .my_account .body { width: 100%; box-sizing: border-box; overflow: hidden; margin-bottom: 20px; padding: 0; }
+#box .my_account .body .content { border: none; }
+#box .my_account .body .content .info { padding: 0; }
+#box .my_account .body .space { height: 15px; margin: 0; padding: 0; }
+#box .my_account .body .btnTipoCuenta, #box .my_account .body .btnBuscarProdList { height: 40px; display: inline-block; padding: 0 30px; margin: 0 auto; font-size: 14px; text-decoration: none; line-height: 40px; background: transparent; color: #666; border: solid 1px #666; overflow: hidden; cursor: pointer; -webkit-border-radius: 6px; -moz-border-radis: 6px; -border-radius: 6px; }
+#box .my_account .body .btnTipoCuenta:hover, #box .my_account .body .btnBuscarProdList:hover { background: #70578b; color: #fff; border: solid 1px #70578b; }
+#box .my_account .main_header { background: transparent; padding: 0; box-sizing: border-box; height: auto; }
+#box .my_account .main_header .left { float: none; }
+#box .my_account .main_header .main_header_text { color: #6E357C; font-family: "Montserrat", sans-serif; font-size: 18px; font-weight: 300; height: auto; line-height: 18pt; }
+
+.my_account #WC_MyAccountDisplay_div_13 .contentgrad_header { display: block; box-sizing: border-box; margin: 0 0 15px; background: transparent; border-bottom: solid 1px #f7f7f7; padding: 0 0 10px; font-weight: 300; z-index: inherit !important; height: auto; overflow: hidden; }
+.my_account #WC_MyAccountDisplay_div_13 .contentgrad_header .header { font-family: "Montserrat", sans-serif; font-size: 16px; color: #6E357C; margin: 0; padding: 0; overflow: hidden; height: auto; display: block; line-height: inherit; }
+
+.my_account div.order_status_table, .item_container td > p { padding: 0 0 15px 0; }
+
+.my_account div.info_table div.row { display: block; margin: 0 0 10px; }
+.my_account div.info_table div.row div.label { font-size: 14px; }
+.my_account div.info_table div.row div.info_content { font-size: 14px; font-weight: 300; }
+
+.my_account .btnEditDirec a { border: solid 1px #666; color: #666; display: inline-block; padding: 3px 15px; width: auto; text-decoration: none; background: transparent; -webkit-border-radius: 3px; -moz-border-radis: 3px; -border-radius: 3px; }
+.my_account .btnEditDirec a:hover { background: #6E357C; color: #fff; border: solid 1px #6E357C; }
+
+/*# sourceMappingURL=responsive.css.map */
