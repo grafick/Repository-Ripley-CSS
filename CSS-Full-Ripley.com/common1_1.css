@@ -5188,12 +5188,53 @@ div#checkout_1_2 {display: none} */
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 body { font-family: 'Montserrat', sans-serif !important; background: #fff; font-size: 14px !important; }
 
 a, fieldset, form, p, li, ol, ul, body, html, tr, td, img { font-size: 14px; font-family: "Montserrat", sans-serif; }
 
-#MessageArea, #espotTop, .menu_enlaces, #WC_ContentAreaESpot_div_1_10770, #contentHeader #header-search, #shopping-cart .number, #shopping-cart .text, #quick_cart_container, #inicioCliente #welcUser, #inicioCliente .MiCuenta, #NavDepto, .NavProduct #dropdown-clubes-parent, .NavProduct #dropdown-shipping, .NavProduct a, #inicioCliente #SesionUsuarioTop { display: none !important; }
+#MessageArea, #espotTop, .menu_enlaces, #WC_ContentAreaESpot_div_1_10770, #contentHeader #header-search, #shopping-cart .number, #shopping-cart .text, #quick_cart_container, #inicioCliente #welcUser, #inicioCliente .MiCuenta, #NavDepto, .NavProduct #dropdown-clubes-parent, .NavProduct #dropdown-shipping, .NavProduct a, #inicioCliente #SesionUsuarioTop, #box .content_header .left_corner, #box .content_header .right_corner { display: none !important; }
 
 #page, #contentHeader, #MenuPrincipal { width: 100%; padding: 10px 15px; overflow: hidden; box-sizing: border-box; }
 @media only screen and (min-width: 544px) { #page, #contentHeader, #MenuPrincipal { max-width: 576px; } }
@@ -5225,14 +5266,15 @@ div.content_wrapper > div.content_left_shadow, div.content_wrapper > div.content
 #header #contentHeader #inicioCliente ul li #SesionUsuario li { display: none; }
 #header #contentHeader #inicioCliente ul li #SesionUsuario li:first-child { display: block; }
 #header #contentHeader #inicioCliente ul li #SesionUsuario li:hover { background: transparent; text-indent: inherit; }
-#header #contentHeader #inicioCliente ul li #SesionUsuario li:first-child a { width: auto; float: none; font-size: 16px; font-family: "Montserrat", sans-serif; font-weight: 300; padding: 0 10px; line-height: 24pt; display: none; color: #fff; }
+#header #contentHeader #inicioCliente ul li #SesionUsuario li:first-child a { width: auto; float: none; font-size: 16px; font-family: "Montserrat", sans-serif; font-weight: 300; padding: 0 10px; line-height: 24pt; display: none; color: #fff; background: transparent; padding: 0; }
 @media only screen and (min-width: 992px) { #header #contentHeader #inicioCliente ul li #SesionUsuario li:first-child a { display: block; } }
 #header #contentHeader #inicioCliente ul li #SesionUsuario li:first-child a:hover { background: transparent; color: #e75353; }
 #header #contentHeader #inicioCliente ul li #arrowCliente { display: none !important; }
 
 #header_nav { background: #f2f2f2; height: 46px; color: #6a6a6a; float: none; }
 #header_nav #MenuPrincipal { height: auto; background: transparent; padding: 0; }
-#header_nav .NavProduct a.back-shopping { color: #6a6a6a; font-size: 12px; display: table !important; padding: 15px 12px; border-right: solid 1px #e8e8e8; text-decoration: none; }
+#header_nav a.back-shopping { color: #6a6a6a; font-size: 12px; display: table !important; padding: 15px 12px; border-right: solid 1px #e8e8e8; text-decoration: none; float: left; }
+#header_nav a.logout { color: #6a6a6a; font-size: 12px; display: table !important; padding: 15px 12px; border-left: solid 1px #e8e8e8; text-decoration: none; float: right; }
 
 #main_content_wrapper { display: block; width: auto; float: none; margin: 0; overflow: hidden; box-sizing: border-box; }
 
@@ -5265,21 +5307,41 @@ div.content_wrapper > div.content_left_shadow, div.content_wrapper > div.content
 
 #box, #box_1 { max-width: 100%; min-width: 100%; }
 
-#box .my_account { background: #fff; width: 100%; padding: 0; float: none; box-sizing: border-box; border: none; overflow: hidden; -webkit-border-radius: 4px; -moz-border-radis: 4px; -border-radius: 4px; }
-@media only screen and (min-width: 992px) { #box .my_account { width: 640px; float: right; } }
-@media only screen and (min-width: 1200px) { #box .my_account { width: 800px; } }
-#box .my_account .body { width: 100%; box-sizing: border-box; overflow: hidden; margin-bottom: 20px; padding: 0; }
-#box .my_account .body .content { border: none; }
-#box .my_account .body .content .info { padding: 0; }
-#box .my_account .body .space { height: 15px; margin: 0; padding: 0; }
-#box .my_account .body .btnTipoCuenta, #box .my_account .body .btnBuscarProdList { height: 40px; display: inline-block; padding: 0 30px; margin: 0 auto; font-size: 14px; text-decoration: none; line-height: 40px; background: transparent; color: #666; border: solid 1px #666; overflow: hidden; cursor: pointer; -webkit-border-radius: 6px; -moz-border-radis: 6px; -border-radius: 6px; }
-#box .my_account .body .btnTipoCuenta:hover, #box .my_account .body .btnBuscarProdList:hover { background: #70578b; color: #fff; border: solid 1px #70578b; }
-#box .my_account .main_header { background: transparent; padding: 0; box-sizing: border-box; height: auto; }
-#box .my_account .main_header .left { float: none; }
-#box .my_account .main_header .main_header_text { color: #6E357C; font-family: "Montserrat", sans-serif; font-size: 18px; font-weight: 300; height: auto; line-height: 18pt; }
+#box .my_account, #box .cuponSection, #box .my_account_wishlist { background: #fff; width: 100%; padding: 0; float: none; box-sizing: border-box; border: none; overflow: hidden; -webkit-border-radius: 4px; -moz-border-radis: 4px; -border-radius: 4px; }
+@media only screen and (min-width: 992px) { #box .my_account, #box .cuponSection, #box .my_account_wishlist { width: 640px; float: right; } }
+@media only screen and (min-width: 1200px) { #box .my_account, #box .cuponSection, #box .my_account_wishlist { width: 800px; } }
+#box .my_account .body, #box .cuponSection .body, #box .my_account_wishlist .body { width: 100%; box-sizing: border-box; overflow: hidden; margin-bottom: 20px; padding: 0; }
+#box .my_account .body .content, #box .cuponSection .body .content, #box .my_account_wishlist .body .content { border: none; }
+#box .my_account .body .content .info, #box .cuponSection .body .content .info, #box .my_account_wishlist .body .content .info { padding: 0; }
+#box .my_account .body .space, #box .cuponSection .body .space, #box .my_account_wishlist .body .space { height: 15px; margin: 0; padding: 0; }
+#box .my_account .body .btnTipoCuenta, #box .my_account .body .btnBuscarProdList, #box .cuponSection .body .btnTipoCuenta, #box .cuponSection .body .btnBuscarProdList, #box .my_account_wishlist .body .btnTipoCuenta, #box .my_account_wishlist .body .btnBuscarProdList { height: 40px; display: inline-block; padding: 0 30px; margin: 0 auto; font-size: 14px; text-decoration: none; line-height: 40px; background: transparent; color: #666; border: solid 1px #666; overflow: hidden; cursor: pointer; -webkit-border-radius: 6px; -moz-border-radis: 6px; -border-radius: 6px; }
+#box .my_account .body .btnTipoCuenta:hover, #box .my_account .body .btnBuscarProdList:hover, #box .cuponSection .body .btnTipoCuenta:hover, #box .cuponSection .body .btnBuscarProdList:hover, #box .my_account_wishlist .body .btnTipoCuenta:hover, #box .my_account_wishlist .body .btnBuscarProdList:hover { background: #70578b; color: #fff; border: solid 1px #70578b; }
+#box .my_account .main_header, #box .cuponSection .main_header, #box .my_account_wishlist .main_header { background: transparent; padding: 0; box-sizing: border-box; height: auto; }
+#box .my_account .main_header .left, #box .cuponSection .main_header .left, #box .my_account_wishlist .main_header .left { float: none; }
+#box .my_account .main_header .main_header_text, #box .cuponSection .main_header .main_header_text, #box .my_account_wishlist .main_header .main_header_text { color: #6E357C; font-family: "Montserrat", sans-serif; font-size: 18px; font-weight: 300; height: auto; line-height: 18pt; }
 
 .my_account #WC_MyAccountDisplay_div_13 .contentgrad_header { display: block; box-sizing: border-box; margin: 0 0 15px; background: transparent; border-bottom: solid 1px #f7f7f7; padding: 0 0 10px; font-weight: 300; z-index: inherit !important; height: auto; overflow: hidden; }
 .my_account #WC_MyAccountDisplay_div_13 .contentgrad_header .header { font-family: "Montserrat", sans-serif; font-size: 16px; color: #6E357C; margin: 0; padding: 0; overflow: hidden; height: auto; display: block; line-height: inherit; }
+
+#cartola_rpuntos { font-family: "Montserrat", sans-serif; }
+#cartola_rpuntos h2 { font-family: "Montserrat", sans-serif; margin: 0; }
+#cartola_rpuntos p { margin: 0 0 15px; padding: 0; font-size: 14px; }
+#cartola_rpuntos #resultRP { width: auto; margin: 0 0 15px; }
+#cartola_rpuntos #resultRP th, #cartola_rpuntos #resultRP td { padding: 10px 15px; border: none; }
+#cartola_rpuntos .txtrpMoreIn { font-size: 14px; margin: 0; }
+#cartola_rpuntos .logo_rpuntos { margin: 0; }
+
+#box .my_account_wishlist > .body588WishList { display: none; }
+@media only screen and (min-width: 992px) { #box .my_account_wishlist > .body588WishList { width: 40%; display: block; margin: 0; padding: 0; box-sizing: border-box; } }
+#box .my_account_wishlist > .body588WishList > .body588WishList { width: 100%; }
+#box .my_account_wishlist > .body588WishList > .body588WishList .my_account_wishlist_container { padding: 0; margin: 0; font-size: 14px; width: 100%; box-sizing: border-box; }
+#box .my_account_wishlist > .body588WishList > .body588WishList img { display: block; max-width: 100%; }
+#box .my_account_wishlist #wishlist { width: 100%; box-sizing: border-box; border: none; }
+@media only screen and (min-width: 992px) { #box .my_account_wishlist #wishlist { width: 60%; border-left: solid 1px #ddd; padding: 0 0 0 20px; } }
+#box .my_account_wishlist #wishlist .wishlist_label { display: block; margin: 0 0 10px; overflow: hidden; }
+#box .my_account_wishlist #wishlist input { height: 34px; box-sizing: border-box; font-family: "Montserrat", sans-serif; font-size: 13px; padding: 7px 10px; margin: 0 0 15px; width: 100%; }
+#box .my_account_wishlist #wishlist #wishlist_message { width: 100%; display: block; box-sizing: border-box; padding: 7px 10px; max-width: 100%; min-width: 100%; }
+#box .my_account_wishlist #wishlist .btnTipoCuenta { font-size: 14px; height: 34px; box-sizing: border-box; display: table; margin: 0 auto; width: auto; padding: 0 15px; line-height: 34px; -webkit-border-radius: 3px; -moz-border-radis: 3px; -border-radius: 3px; }
 
 .my_account div.order_status_table, .item_container td > p { padding: 0 0 15px 0; }
 
@@ -5289,5 +5351,53 @@ div.content_wrapper > div.content_left_shadow, div.content_wrapper > div.content
 
 .my_account .btnEditDirec a { border: solid 1px #666; color: #666; display: inline-block; padding: 3px 15px; width: auto; text-decoration: none; background: transparent; -webkit-border-radius: 3px; -moz-border-radis: 3px; -border-radius: 3px; }
 .my_account .btnEditDirec a:hover { background: #6E357C; color: #fff; border: solid 1px #6E357C; }
+
+.addrbook_header { padding: 0; }
+
+.btnAgregarNewDir, .btnEliminarDir { -webkit-border-radius: 3px; -moz-border-radis: 3px; -border-radius: 3px; }
+
+.form_2column { padding: 0; }
+.form_2column > br { display: none; }
+.form_2column input { display: inline-block; width: 100%; margin: 0 0 15px; padding: 7px 15px; height: 32px; box-sizing: border-box; font-size: 14px; font-family: "Montserrat", sans-serif; }
+.form_2column select { height: 32px; box-sizing: border-box; margin: 0 10px 15px 0; overflow: hidden; clear: both; float: none; vertical-align: top; }
+.form_2column select + input { width: 70%; }
+.form_2column .column { width: 100%; height: auto; }
+.form_2column .column .input_label, .form_2column .column #Register .input_label { padding: 0; }
+.form_2column .checkbox { height: 16px; width: 16px; vertical-align: middle; padding: 0; margin: 0 10px 0 0; }
+.form_2column .checkbox_label_registration { padding: 0; vertical-align: middle; overflow: hidden; display: block; margin: 0 0 15px; }
+
+#AddressForm .form_2column .column { height: auto; }
+#AddressForm .form_2column .column div { display: block; margin: 0 0 10px; float: none; }
+
+.column_label { width: 100%; display: block; margin: 0 0 10px; }
+
+#AddressForm input { display: inline-block; width: 100%; margin: 0 0 15px; padding: 7px 15px; height: 32px; box-sizing: border-box; font-size: 14px; font-family: "Montserrat", sans-serif; }
+#AddressForm select { height: 32px; box-sizing: border-box; margin: 0 10px 15px 0; overflow: hidden; clear: both; float: none; vertical-align: top; }
+#AddressForm select + input { width: 70%; }
+
+#content_footer { padding: 0 !important; }
+
+.btnActualizarDire, #btnKey, .my_account .ContinuarShopBag { margin: 0; height: 40px; display: inline-block; padding: 0 30px; margin: 0 auto; font-size: 14px; text-decoration: none; line-height: 40px; background: transparent; color: #666; border: solid 1px #666; overflow: hidden; cursor: pointer; -webkit-border-radius: 6px; -moz-border-radis: 6px; -border-radius: 6px; }
+.btnActualizarDire:hover, #btnKey:hover, .my_account .ContinuarShopBag:hover { background: #70578b; color: #fff; border: solid 1px #70578b; }
+
+#ContentModalFacturacion { margin: 0 0 15px; }
+
+.bodyCupon { margin: 0; padding: 0; box-sizing: border-box; width: 100%; }
+
+.keyBox { float: none; margin: 0; width: auto; }
+.keyBox label { float: none; font-size: 14px; width: 100%; display: block; margin: 0 0 10px; }
+.keyBox input, .keyBox input[type="password"] { width: 100%; box-sizing: border-box; height: 32px; padding: 7px 10px; margin: 0 0 15px; }
+@media only screen and (min-width: 992px) { .keyBox input, .keyBox input[type="password"] { width: 60%; } }
+
+#btnKey { color: #666 !important; }
+#btnKey:hover { color: #fff !important; }
+
+#contentCond { float: none; padding: 0; height: auto; min-height: 10px; width: 100%; box-sizing: border-box; }
+
+#menuClaves { width: auto !important; padding: 0 !important; }
+#menuClaves li { display: block; }
+#menuClaves li a { display: block; padding: 2px 20px; box-sizing: border-box; background: transparent; font-size: 14px; text-decoration: none; height: 42px !important; background: #efefef; line-height: 42px; }
+
+.couponWallet_NoCouponsMessage { overflow: hidden; margin: 0 0 15px; }
 
 /*# sourceMappingURL=responsive.css.map */
