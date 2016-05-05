@@ -272,7 +272,7 @@ a.btnCompComparar:hover{background-position:left bottom}
 #body588{float:left;max-width:960px;min-width:588px}
 #body759{width:759px;float:left}
 #content{width:100%;float:left}
-#content588{min-width:588px;max-width:960px;float:left}
+#content588{width:auto;float:left}
 #ShopCartDisplay #content759{min-width:755px;max-width:960px;float:left;padding-top:6px}
 #content759{min-width:755px;max-width:960px;float:left}
 ul.product_specs{margin:0 0 0 15px;padding:0}
@@ -3127,7 +3127,7 @@ a.btnMiniShopBag:hover{text-decoration:none;background-color:#da3a3a}
 .huincha_principal{width:960px;height:377px;overflow:hidden;float:left;margin:3px 0 0 0; background-color: #fff;} /* csepulvedage@ripley.cl 10ABRIL2014 */
 /*.huincha_principal{width:740px;height:377px;overflow:hidden;float:left;margin:3px 9px 0 0}*/
 /* PRUEBA FULL WIDTH --- */
-#banner_medio{width:960px;height:auto;margin:10px 0 0;padding:12px 0 0;border-top:1px solid #CCC;float:left}
+#banner_medio{width:960px;height:auto;margin:10px 0 0;padding:12px 0 0;float:left}
 #banner_medio #huincha_especial{width:960px;height:auto;padding:0 0 12px;margin:0 0 16px;border-bottom:1px solid #CCC;float:left}
 #banner_medio #huincha_especial a img{border:none}
 #banner_medio #huincha_especial a img:hover{/*opacity:0.9;*/filter:alpha(opacity=90)}
@@ -5229,12 +5229,56 @@ div#checkout_1_2 {display: none} */
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* PARA OCULTAR HOMEPAGE */
+#content588 .highlight.left.ad, #content588 #right_nav, #content588 #carruselFichaProd.carruselFichaHome{
+	display:none
+}
+.highlight.huincha_principal{
+	height:auto!important
+}
+/* FIN PARA OCULTAR HOMEPAGE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 body { font-family: 'Montserrat', sans-serif !important; background: #fff; font-size: 14px !important; }
 
 a, fieldset, form, p, li, ol, ul, body, html, tr, td, img { font-size: 14px; font-family: "Montserrat", sans-serif; }
 
-#MessageArea, #espotTop, .menu_enlaces, #WC_ContentAreaESpot_div_1_10770, #contentHeader #header-search, #shopping-cart .number, #shopping-cart .text, #quick_cart_container, #inicioCliente #welcUser, #inicioCliente .MiCuenta, #NavDepto, .NavProduct #dropdown-clubes-parent, .NavProduct #dropdown-shipping, .NavProduct a, #inicioCliente #SesionUsuarioTop, #box .content_header .left_corner, #box .content_header .right_corner { display: none !important; }
+#MessageArea, #espotTop, #banBottomMenu, .menu_enlaces, #WC_ContentAreaESpot_div_1_10770, #contentHeader #header-search, #shopping-cart .number, #shopping-cart .text, #quick_cart_container, #inicioCliente #welcUser, #inicioCliente .MiCuenta, #NavDepto, .NavProduct #dropdown-clubes-parent, .NavProduct #dropdown-shipping, .NavProduct a, #inicioCliente #SesionUsuarioTop, #box .content_header .left_corner, #box .content_header .right_corner { display: none !important; }
 
 #page, #contentHeader, #MenuPrincipal { width: 100%; padding: 10px 15px; overflow: hidden; box-sizing: border-box; }
 @media only screen and (min-width: 544px) { #page, #contentHeader, #MenuPrincipal { max-width: 576px; } }
@@ -5399,5 +5443,23 @@ div.content_wrapper > div.content_left_shadow, div.content_wrapper > div.content
 #menuClaves li a { display: block; padding: 2px 20px; box-sizing: border-box; background: transparent; font-size: 14px; text-decoration: none; height: 42px !important; background: #efefef; line-height: 42px; }
 
 .couponWallet_NoCouponsMessage { overflow: hidden; margin: 0 0 15px; }
+
+#content_wrapper_box { width: 100%; box-sizing: border-box; max-width: 100%; min-width: 100%; float: none; overflow: hidden; }
+
+#content588 { float: none; overflow: hidden; }
+
+#banner_medio { width: 100%; box-sizing: border-box; margin: 0; padding: 0; float: none; }
+
+.page-center { width: 100%; margin: 0; padding: 30px 15px; text-align: center; font-family: "Montserrat", sans-serif; box-sizing: border-box; }
+@media only screen and (min-width: 992px) { .page-center { width: 700px; margin: 0 auto; } }
+.page-center img { width: 60%; display: block; margin: 0 auto 20px; }
+@media only screen and (min-width: 992px) { .page-center img { width: 300px; } }
+.page-center h2 { color: #e75252; font-size: 24px; font-weight: 300; line-height: 30pt; font-family: "Montserrat", sans-serif; margin-bottom: 20px; }
+@media only screen and (min-width: 992px) { .page-center h2 { font-size: 32px; line-height: 34pt; } }
+.page-center h3 { font-size: 16px; font-weight: 300; font-family: "Montserrat", sans-serif; margin-bottom: 20px; color: #67666a; }
+@media only screen and (min-width: 992px) { .page-center h3 { font-size: 20px; } }
+
+.btn-go-back-home { height: 40px; display: inline-block; padding: 0 30px; margin: 0 10px; font-size: 14px; text-decoration: none; line-height: 40px; background: #70578b; color: #fff; overflow: hidden; cursor: pointer; -webkit-border-radius: 6px; -moz-border-radis: 6px; -border-radius: 6px; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; }
+.btn-go-back-home:hover { background: #60467c; text-decoration: none; }
 
 /*# sourceMappingURL=responsive.css.map */

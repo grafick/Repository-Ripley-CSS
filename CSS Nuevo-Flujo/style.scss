@@ -5668,3 +5668,25 @@ opacity: .48;
 .dj_ie .dijitRtl .dijitTooltipLeft{margin-right:0;margin-left:13px}
 .dj_ie .dijitRtl .dijitTooltipRight{margin-left:26px;margin-right:-13px}
 .dijitBackgroundIframe{display:none}
+
+/* Correcciones del flujo (Mere) */
+.modalesTarjetas#payment-details{
+  .col-50:last-child{
+    background: #f1f1f1;
+    padding:10px;
+    @include border-radius(6px);
+    label{
+      color: #da3a3a;
+      font-weight: 600;
+    }
+  }
+}
+ul#payment-document li.active a{
+  color:#333 !important;
+}
+ .billing .form-group.associated .btn{
+  margin: 0 0 15px;
+  @media #{$tablet}{
+    margin:0;
+  }
+ }

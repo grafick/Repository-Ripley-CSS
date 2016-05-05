@@ -5038,3 +5038,25 @@ a.linkRegCliFC {
 
 .dijitBackgroundIframe {
   display: none; }
+
+/* Correcciones del flujo (Mere) */
+.modalesTarjetas#payment-details .col-50:last-child {
+  background: #f1f1f1;
+  padding: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radis: 6px;
+  border-radius: 6px; }
+  .modalesTarjetas#payment-details .col-50:last-child label {
+    color: #da3a3a;
+    font-weight: 600; }
+
+ul#payment-document li.active a {
+  color: #333 !important; }
+
+.billing .form-group.associated .btn {
+  margin: 0 0 15px; }
+  @media only screen and (min-width: 720px) {
+    .billing .form-group.associated .btn {
+      margin: 0; } }
+
+/*# sourceMappingURL=style0416.css.map */
