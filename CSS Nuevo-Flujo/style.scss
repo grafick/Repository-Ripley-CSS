@@ -1398,8 +1398,21 @@ body.shopping-order #shopping-bag-header h1, body.error #shopping-bag-header h1{
         &.unavaible-shipping strong{
           color:#da3a3a;
         }
+        >span:first-child{
+          display: table;
+          float:none;
+          margin:0 auto 7px;
+          @media #{$desktop}{
+            display: block;
+            float: left;
+            margin: 0 7px 0 0;
+          }
+        }
         .pull-right{
-          width:65%;
+          width:100%;
+          @media #{$desktop}{
+            width:65%;
+          }
           @media #{$wide}{
             width:80%;
           }
@@ -2803,6 +2816,9 @@ dl.subtotal-price{
           display: table-cell;
           vertical-align: middle;
           text-align: left;
+        }
+        >label{
+          cursor:pointer;
         }
       }
     }
@@ -5488,15 +5504,6 @@ div.msgpopup2 .msgpopup_content_wrapper .content .icon .exc{background:transpare
 
 .nodisplay{display:none}
 
-/* OCULTAR RETIRO POR TERCERO CITYBOX */
-section#correoschile-shipping-modal div.modal-header{border:0px; padding:0; margin:0}
-section#correoschile-shipping-modal div.account-recipient-info{display: none}
-/* FIN OCULTAR RETIRO POR TERCERO CITYBOX */
-
-/* OCULTAR RETIRO POR TERCERO TIENDA */
-section#store-shipping-modal div.modal-header{border:0px; padding:0; margin:0}
-section#store-shipping-modal div.account-recipient-info{display: none}
-/* FIN OCULTAR RETIRO POR TERCERO TIENDA */
 
 /* FONOCOMPRAS */
 #agentFonoComp {
@@ -5685,9 +5692,57 @@ opacity: .48;
 ul#payment-document li.active a{
   color:#333 !important;
 }
- .billing .form-group.associated .btn{
-  margin: 0 0 15px;
+.billing .form-group.associated .btn{
+margin: 0 0 15px;
   @media #{$tablet}{
     margin:0;
   }
- }
+}
+/* Se esconde retiro a terceros para CityBox (Mere) */
+#correoschile-shipping-modal{
+  .account-recipient-info{
+    .title{
+      margin-right:10px;
+    }
+    > .col-50 > form{
+      .form-group:last-child{
+        display: none;
+      }
+    }
+  } 
+}
+
+/* Se esconde retiro a terceros para CityBox (Claudio) */
+#correoschile-shipping-modal{
+    .modal-header{
+        border-bottom: none !important;
+    }
+    .account-recipient-info{
+        display: none;
+    }
+}
+
+
+/* Correcciones nuevos celulares (Claudio) */
+.form-group-despacho div.col-80 input{
+  @media #{$desktop}{
+    width:55px;
+    display: inline-block;
+    float: left;
+    margin-left:15px;
+  }
+}
+.form-group-despacho div.col-80 input#telefono_0{
+  @media #{$desktop}{
+    width: 140px
+  }
+}
+.form-group-despacho > div.col-30{
+  @media #{$desktop}{
+    padding:0 15px 0 0;
+  }
+}
+.form-group-despacho input[type="text"]:disabled {
+    background: #e6e6e6;
+    color: #acacac
+}
