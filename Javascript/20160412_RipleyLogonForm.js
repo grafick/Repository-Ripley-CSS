@@ -22,7 +22,15 @@ if(typeof(RipleyLogonForm) == "undefined" || !RipleyLogonForm|| !RipleyLogonForm
 			 tecla = e.which || e.keyCode ;
 			    if (tecla==0||tecla==9) return true;
 			    if (tecla==8) return true; 
+			    
 			    patron =/^[a-zA-Z0-9]+$/; 
+			    
+			    //Caracteres especiales para clave provisoria (#,_,!,$)
+			    if(document.getElementById("WC_PasswordUpdateForm_FormInput_logonPasswordOld_In_Logon_1").length != 0
+			    		&& document.getElementById("WC_PasswordUpdateForm_FormInput_logonPassword_In_Logon_1").length != 0
+			    		&& document.getElementById("WC_PasswordUpdateForm_FormInput_logonPasswordVerify_In_Logon_1").length != 0){
+			    	patron =/^[a-zA-Z0-9\#\_\!\$]+$/; 
+			    }
 			    te = String.fromCharCode(tecla); 
 			    return patron.test(te); 
 		},
