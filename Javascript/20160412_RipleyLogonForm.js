@@ -29,7 +29,7 @@ if(typeof(RipleyLogonForm) == "undefined" || !RipleyLogonForm|| !RipleyLogonForm
 			    if(document.getElementById("WC_PasswordUpdateForm_FormInput_logonPasswordOld_In_Logon_1").length != 0
 			    		&& document.getElementById("WC_PasswordUpdateForm_FormInput_logonPassword_In_Logon_1").length != 0
 			    		&& document.getElementById("WC_PasswordUpdateForm_FormInput_logonPasswordVerify_In_Logon_1").length != 0){
-			    	patron =/^[a-zA-Z0-9\#\_\!\$]+$/; 
+			    	patron =/^[a-zA-Z0-9\#\_\!\$\%\&\/\(\)\=\"\·\?\¿]+$/;
 			    }
 			    te = String.fromCharCode(tecla); 
 			    return patron.test(te); 

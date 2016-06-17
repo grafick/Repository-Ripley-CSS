@@ -3506,8 +3506,7 @@ ul#payment-document {
       -webkit-border-radius: 0 6px 6px 0;
       -moz-border-radis: 0 6px 6px 0;
       border-radius: 0 6px 6px 0;
-      border-left: none;
-      color: #ccc; }
+      border-left: none;}
       @media only screen and (min-width: 960px) {
         ul#payment-document li#facturaLi a {
           -webkit-border-radius: 0;
@@ -5090,3 +5089,13 @@ ul#payment-document li.active a {
   color: #acacac; }
 
 /*# sourceMappingURL=style0516.css.map */
+
+
+
+/* OCULTAR RETIRO EN TIENDA */
+a#DESP_DOMICILIO_RT,
+#shopping-bag-items ul li.avaible-shipping:nth-child(3){
+    display: none !important;
+}
+#shipping-method > ul li, #payment-method > ul li, #confirmation-step > ul li {float:left !important},
+/* FIN OCULTAR RETIRO EN TIENDA */

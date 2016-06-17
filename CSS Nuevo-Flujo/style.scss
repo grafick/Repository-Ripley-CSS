@@ -3972,7 +3972,6 @@ ul#payment-document{
     &#facturaLi a{
       @include border-radius(0 6px 6px 0);
       border-left:none;
-      color:#ccc;
       @media #{$desktop}{
         @include border-radius(0);
       }
@@ -5746,3 +5745,13 @@ margin: 0 0 15px;
     background: #e6e6e6;
     color: #acacac
 }
+
+
+
+/* OCULTAR RETIRO EN TIENDA */
+a#DESP_DOMICILIO_RT,
+#shopping-bag-items ul li.avaible-shipping:nth-child(3){
+    display: none !important;
+}
+#shipping-method > ul li, #payment-method > ul li, #confirmation-step > ul li {float:left !important},
+/* FIN OCULTAR RETIRO EN TIENDA */
