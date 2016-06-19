@@ -5089,13 +5089,3 @@ ul#payment-document li.active a {
   color: #acacac; }
 
 /*# sourceMappingURL=style0516.css.map */
-
-
-
-/* OCULTAR RETIRO EN TIENDA */
-a#DESP_DOMICILIO_RT,
-#shopping-bag-items ul li.avaible-shipping:nth-child(3){
-    display: none !important;
-}
-#shipping-method > ul li, #payment-method > ul li, #confirmation-step > ul li {float:left !important},
-/* FIN OCULTAR RETIRO EN TIENDA */
