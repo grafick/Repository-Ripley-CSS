@@ -5089,14 +5089,3 @@ ul#payment-document li.active a {
   color: #acacac; }
 
 /*# sourceMappingURL=style0516.css.map */
-
-
-
-
-/* OCULTAR RETIRO CERCANO */
-a#DESP_DOMICILIO_RC,
-#shopping-bag-items ul li.avaible-shipping:nth-child(4){
-    display: none !important;
-}
-#shipping-method > ul li, #payment-method > ul li, #confirmation-step > ul li {float:left !important},
-/* FIN OCULTAR RETIRO CERCANO */
