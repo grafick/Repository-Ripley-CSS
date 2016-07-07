@@ -5088,4 +5088,8 @@ ul#payment-document li.active a {
   background: #e6e6e6;
   color: #acacac; }
 
+/* Oculta Boton Despacho y Devoluciones link roto por Avatar en OC */
+#shopping-order a.btnCambiosDevoluciones {
+    display: none;
+}
 /*# sourceMappingURL=style0516.css.map */
