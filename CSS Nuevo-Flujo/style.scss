@@ -5745,3 +5745,8 @@ margin: 0 0 15px;
     background: #e6e6e6;
     color: #acacac
 }
+
+
+/* Ocultar sólo Retiro Por Terceros (PUNTO RETIRO) */
+#correoschile-shipping-modal .modal-header{border-bottom: none !important}
+#correoschile-shipping-modal .account-recipient-info{display:none}

@@ -5093,3 +5093,8 @@ ul#payment-document li.active a {
     display: none;
 }
 /*# sourceMappingURL=style0516.css.map */
+
+
+/* Ocultar sólo Retiro Por Terceros (PUNTO RETIRO) */
+#correoschile-shipping-modal .modal-header{border-bottom: none !important}
+#correoschile-shipping-modal .account-recipient-info{display:none}
