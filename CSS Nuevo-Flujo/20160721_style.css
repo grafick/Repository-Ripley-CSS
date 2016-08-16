@@ -32,7 +32,7 @@ only screen and (min-resolution: 240dpi)";
 @mixin border-radius ($radius){
 -webkit-border-radius: $radius;
 -moz-border-radis: $radius;
--border-radius: $radius;
+border-radius: $radius;
 }
 
 @mixin box-shadow ($string) {
@@ -183,7 +183,7 @@ h4 {
   border: dashed 1px #ff9b9b;
   -webkit-border-radius: 6px;
   -moz-border-radis: 6px;
-  -border-radius: 6px; }
+  border-radius: 6px; }
   .service-alert p {
     margin: 0;
     padding: 0; }
@@ -307,7 +307,7 @@ hr {
   width: 100%;
   -webkit-border-radius: 6px;
   -moz-border-radis: 6px;
-  -border-radius: 6px; }
+  border-radius: 6px; }
   .alert .fa {
     display: block;
     text-align: center;
@@ -396,7 +396,7 @@ hr {
     line-height: 16pt;
     -webkit-border-radius: 0;
     -moz-border-radis: 0;
-    -border-radius: 0; }
+    border-radius: 0; }
     @media only screen and (min-width: 960px) {
       .alert.alert-gift, .alert.alert-promo {
         line-height: 38pt;
@@ -408,14 +408,14 @@ hr {
       font-family: "montserratsemi_bold";
       -webkit-border-radius: 6px;
       -moz-border-radis: 6px;
-      -border-radius: 6px; }
+      border-radius: 6px; }
       @media only screen and (min-width: 960px) {
         .alert.alert-gift .btn, .alert.alert-promo .btn {
           margin: 0;
           float: right;
           -webkit-border-radius: 0;
           -moz-border-radis: 0;
-          -border-radius: 0; } }
+          border-radius: 0; } }
   .alert.alert-promo {
     text-align: center;
     border-top: solid 1px #d7d7d7;
@@ -468,7 +468,7 @@ hr {
   .alert .btn {
     -webkit-border-radius: 0;
     -moz-border-radis: 0;
-    -border-radius: 0;
+    border-radius: 0;
     font-size: 12px;
     float: right;
     display: table; }
@@ -601,7 +601,7 @@ hr {
   -o-transition: all 0.1s ease-in-out;
   -webkit-border-radius: 6px;
   -moz-border-radis: 6px;
-  -border-radius: 6px; }
+  border-radius: 6px; }
   .btn:hover {
     background: #6E357C;
     border-color: #6E357C;
@@ -809,7 +809,7 @@ input[type="checkbox"] {
       line-height: 14pt;
       -webkit-border-radius: 3px;
       -moz-border-radis: 3px;
-      -border-radius: 3px;
+      border-radius: 3px;
       -webkit-transition: all 0.1s ease-in-out;
       -moz-transition: all 0.1s ease-in-out;
       -ms-transition: all 0.1s ease-in-out;
@@ -831,7 +831,7 @@ select {
   font-size: 13px;
   -webkit-border-radius: 0;
   -moz-border-radis: 0;
-  -border-radius: 0; }
+  border-radius: 0; }
 
 .custom-select {
   width: 100%;
@@ -903,7 +903,7 @@ select {
     opacity: 0.5;
     -webkit-border-radius: 20px;
     -moz-border-radis: 20px;
-    -border-radius: 20px;
+    border-radius: 20px;
     animation: Cuncuna 1s infinite ease-in-out;
     -moz-animation: Cuncuna 1s infinite ease-in-out;
     -webkit-animation: Cuncuna 1s infinite ease-in-out;
@@ -973,7 +973,7 @@ select {
     box-shadow: -2px -2px 25px #ccc;
     -webkit-border-radius: 8px;
     -moz-border-radis: 8px;
-    -border-radius: 8px;
+    border-radius: 8px;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
@@ -1513,7 +1513,7 @@ dl.subtotal-price {
   line-height: 24pt;
   -webkit-border-radius: 20px;
   -moz-border-radis: 20px;
-  -border-radius: 20px;
+  border-radius: 20px;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;
@@ -1714,7 +1714,7 @@ dl.subtotal-price {
     margin-bottom: 15px;
     -webkit-border-radius: 6px;
     -moz-border-radis: 6px;
-    -border-radius: 6px; }
+    border-radius: 6px; }
     #shopping-bag-total #collapsediscount p, #shopping-bag-total #collapsegift p {
       padding: 20px;
       margin: 0 0 20px;
@@ -2360,7 +2360,7 @@ dl.subtotal-price {
         box-shadow: -2px -2px 25px #ccc;
         -webkit-border-radius: 8px;
         -moz-border-radis: 8px;
-        -border-radius: 8px; } }
+        border-radius: 8px; } }
     @media only screen and (min-width: 1280px) {
       #display-login .modal-dialog {
         width: 1000px; } }
@@ -2428,7 +2428,7 @@ dl.subtotal-price {
       list-style-type: none;
       margin: 0;
       display: block;
-      float: left;
+      float: right;
       width: 33%;
       font-size: 13px; }
       #shipping-method > ul li:last-child, #payment-method > ul li:last-child, #confirmation-step > ul li:last-child {
@@ -2450,7 +2450,7 @@ dl.subtotal-price {
         #shipping-method > ul li a.selected, #payment-method > ul li a.selected, #confirmation-step > ul li a.selected {
           color: #474747; }
           #shipping-method > ul li a.selected .shipping-method-type, #payment-method > ul li a.selected .shipping-method-type, #confirmation-step > ul li a.selected .shipping-method-type {
-            background: #474747; }
+            background: #79568e; }
             #shipping-method > ul li a.selected .shipping-method-type .retiro-icon, #payment-method > ul li a.selected .shipping-method-type .retiro-icon, #confirmation-step > ul li a.selected .shipping-method-type .retiro-icon {
               background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) 0 -29px no-repeat; }
             #shipping-method > ul li a.selected .shipping-method-type .casa-icon, #payment-method > ul li a.selected .shipping-method-type .casa-icon, #confirmation-step > ul li a.selected .shipping-method-type .casa-icon {
@@ -2481,7 +2481,7 @@ dl.subtotal-price {
         margin: 0 auto 10px;
         -webkit-border-radius: 25px;
         -moz-border-radis: 25px;
-        -border-radius: 25px; }
+        border-radius: 25px; }
         #shipping-method > ul li .shipping-method-type .retiro-icon, #payment-method > ul li .shipping-method-type .retiro-icon, #confirmation-step > ul li .shipping-method-type .retiro-icon {
           background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) 0 0 no-repeat;
           height: 29px;
@@ -2650,7 +2650,7 @@ dl.subtotal-price {
       margin: 0;
       -webkit-border-radius: 15px;
       -moz-border-radis: 15px;
-      -border-radius: 15px; }
+      border-radius: 15px; }
       @media only screen and (min-width: 960px) {
         #shipping-steps ul li span {
           height: 22px;
@@ -2702,7 +2702,7 @@ dl.subtotal-price {
       margin: -10px 10px 0 0;
       -webkit-border-radius: 0;
       -moz-border-radis: 0;
-      -border-radius: 0; }
+      border-radius: 0; }
 
 @media only screen and (min-width: 960px) {
   .recipient-info, .account-recipient-info {
@@ -2739,7 +2739,7 @@ dl.subtotal-price {
       border-left: none;
       -webkit-border-radius: 0 6px 6px 0;
       -moz-border-radis: 0 6px 6px 0;
-      -border-radius: 0 6px 6px 0; }
+      border-radius: 0 6px 6px 0; }
   .recipient-info form label.radio, .account-recipient-info form label.radio {
     background: #fff;
     border: solid 2px #ccc;
@@ -2749,7 +2749,7 @@ dl.subtotal-price {
     text-align: center;
     -webkit-border-radius: 6px 0 0 6px;
     -moz-border-radis: 6px 0 0 6px;
-    -border-radius: 6px 0 0 6px; }
+    border-radius: 6px 0 0 6px; }
     .recipient-info form label.radio::before, .account-recipient-info form label.radio::before {
       display: none; }
     @media only screen and (min-width: 960px) {
@@ -2760,7 +2760,7 @@ dl.subtotal-price {
         text-align: left;
         -webkit-border-radius: 0;
         -moz-border-radis: 0;
-        -border-radius: 0; }
+        border-radius: 0; }
         .recipient-info form label.radio::before, .account-recipient-info form label.radio::before {
           display: block; } }
   .recipient-info form input[type="radio"]:checked + label.radio, .account-recipient-info form input[type="radio"]:checked + label.radio {
@@ -2841,7 +2841,7 @@ dl.subtotal-price {
     padding: 0;
     -webkit-border-radius: 0;
     -moz-border-radis: 0;
-    -border-radius: 0; }
+    border-radius: 0; }
     .recipient-info .form-group.shipping-info label.radio::before, .account-recipient-info .form-group.shipping-info label.radio::before {
       display: block; }
 .recipient-info .section, .account-recipient-info .section {
@@ -2938,7 +2938,7 @@ dl.subtotal-price {
         line-height: 14pt;
         -webkit-border-radius: 3px;
         -moz-border-radis: 3px;
-        -border-radius: 3px;
+        border-radius: 3px;
         -webkit-transition: all 0.1s ease-in-out;
         -moz-transition: all 0.1s ease-in-out;
         -ms-transition: all 0.1s ease-in-out;
@@ -2958,7 +2958,7 @@ dl.subtotal-price {
         height: 18px;
         -webkit-border-radius: 3px;
         -moz-border-radis: 3px;
-        -border-radius: 3px;
+        border-radius: 3px;
         -webkit-transition: all 0.1s ease-in-out;
         -moz-transition: all 0.1s ease-in-out;
         -ms-transition: all 0.1s ease-in-out;
@@ -3078,9 +3078,9 @@ dl.subtotal-price {
     background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) 0 -167px no-repeat;
     height: 33px;
     width: 34px;
-    display: block;
+    display: inline-block;
     float: left;
-    margin: 0 10px 0 0; }
+    margin: 0 10px 0 0 !important; }
   #no-avaible-shipping .alert-danger, .no-avaible-shipping-sidebar .alert-danger {
     line-height: 24pt;
     font-family: "montserratlight", sans-serif; }
@@ -3095,7 +3095,7 @@ dl.subtotal-price {
     text-align: left;
     -webkit-border-radius: 0;
     -moz-border-radis: 0;
-    -border-radius: 0; }
+    border-radius: 0; }
   .no-avaible-shipping-sidebar .alert-icon {
     margin: 0 10px 25px 0; }
   .no-avaible-shipping-sidebar h4 {
@@ -3155,16 +3155,38 @@ dl.subtotal-price {
         display: table;
         float: right; }
   .shopping-item-sidebar.no-avaible-shipping-sidebar {
-    border: solid 1px #cc3b3b;
-    padding: 0 0 15px; }
+    padding: 0 0 15px;
+    padding: 15px 0;
+    display: block; }
     .shopping-item-sidebar.no-avaible-shipping-sidebar > p {
       clear: both;
       font-size: 12px;
-      padding: 10px 15px 0; }
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      border: solid 1px #ddd;
+      border-top: none; }
     .shopping-item-sidebar.no-avaible-shipping-sidebar .shopping-item-image {
-      padding: 0 10px 0 15px; }
+      width: 28%;
+    }
     .shopping-item-sidebar.no-avaible-shipping-sidebar .shopping-item-info {
-      padding: 0 15px 0 0; }
+      width: 68%; }
+  .shopping-item-sidebar.no-avaible-shipping-sidebar .alert-danger{
+    padding: 10px;
+    line-height: 14pt;
+    text-align: left;
+    background: #a9a9a9;
+    margin: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radis: 0;
+    border-radius: 0;
+  }
+  .shopping-item-sidebar.no-avaible-shipping-sidebar .shopping-item-sidebar {
+    padding: 15px 10px;
+    display: block;
+    border: solid 1px #ddd;
+    margin: 0;
+    border-top: none;
+  }
 
 #change-shipping-date p {
   margin-bottom: 30px; }
@@ -3437,7 +3459,7 @@ ul#payment-document {
       text-align: center;
       -webkit-border-radius: 6px 0 0 6px;
       -moz-border-radis: 6px 0 0 6px;
-      -border-radius: 6px 0 0 6px;
+      border-radius: 6px 0 0 6px;
       -webkit-transition: all 0.1s ease-in-out;
       -moz-transition: all 0.1s ease-in-out;
       -ms-transition: all 0.1s ease-in-out;
@@ -3449,7 +3471,7 @@ ul#payment-document {
           color: #333;
           -webkit-border-radius: 0;
           -moz-border-radis: 0;
-          -border-radius: 0; } }
+          border-radius: 0; } }
       @media only screen and (min-width: 960px) {
         ul#payment-document li a::before {
           content: "\f111";
@@ -3479,13 +3501,13 @@ ul#payment-document {
     ul#payment-document li:last-child a {
       -webkit-border-radius: 0 6px 6px 0;
       -moz-border-radis: 0 6px 6px 0;
-      -border-radius: 0 6px 6px 0;
+      border-radius: 0 6px 6px 0;
       border-left: none; }
       @media only screen and (min-width: 960px) {
         ul#payment-document li:last-child a {
           -webkit-border-radius: 0;
           -moz-border-radis: 0;
-          -border-radius: 0; } }
+          border-radius: 0; } }
 
 #payment-document-detail p strong {
   font-family: "montserratsemi_bold";
@@ -3588,7 +3610,7 @@ ul#payment-document {
   margin-bottom: 15px;
   -webkit-border-radius: 6px;
   -moz-border-radis: 6px;
-  -border-radius: 6px; }
+  border-radius: 6px; }
   #collapse-vcode p, #collapse-titular-name p {
     margin: 0 0 10px;
     text-align: left;
@@ -4301,7 +4323,7 @@ ul#payment-document {
       border: solid 1px #757575;
       -webkit-border-radius: 6px;
       -moz-border-radis: 6px;
-      -border-radius: 6px; }
+      border-radius: 6px; }
       @media only screen and (min-width: 960px) {
         #select-store ul li .underline-link, #change-shipping-store ul li .underline-link {
           float: none;
@@ -4309,7 +4331,7 @@ ul#payment-document {
           border: none;
           -webkit-border-radius: 0;
           -moz-border-radis: 0;
-          -border-radius: 0; } }
+          border-radius: 0; } }
 
 #view-details-modal .col-50 {
   margin-bottom: 50px; }
@@ -4533,7 +4555,7 @@ ul#payment-document {
     width: 100%;
     -webkit-border-radius: 0;
     -moz-border-radis: 0;
-    -border-radius: 0; }
+    border-radius: 0; }
     #shopping-order-reserved-product .alert .fa {
       color: #fff;
       display: inline-block;
@@ -5155,8 +5177,10 @@ opacity: .48;
 	background: #e6e6e6;
 	color: #acacac
 }
-
-
 /* Ocultar sólo Retiro Por Terceros (PUNTO RETIRO) */
-#correoschile-shipping-modal .modal-header{border-bottom: none !important}
-#correoschile-shipping-modal .account-recipient-info{display:none}
+#correoschile-shipping-modal .modal-header{
+	border-bottom: none !important
+}
+#correoschile-shipping-modal .account-recipient-info{
+	display:none
+}

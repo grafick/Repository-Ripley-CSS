@@ -5697,31 +5697,6 @@ margin: 0 0 15px;
     margin:0;
   }
 }
-/* Se esconde retiro a terceros para CityBox (Mere) */
-#correoschile-shipping-modal{
-  .account-recipient-info{
-    .title{
-      margin-right:10px;
-    }
-    > .col-50 > form{
-      .form-group:last-child{
-        display: none;
-      }
-    }
-  } 
-}
-
-/* Se esconde retiro a terceros para CityBox (Claudio) */
-#correoschile-shipping-modal{
-    .modal-header{
-        border-bottom: none !important;
-    }
-    .account-recipient-info{
-        display: none;
-    }
-}
-
-
 /* Correcciones nuevos celulares (Claudio) */
 .form-group-despacho div.col-80 input{
   @media #{$desktop}{
@@ -5745,8 +5720,25 @@ margin: 0 0 15px;
     background: #e6e6e6;
     color: #acacac
 }
-
-
-/* Ocultar sólo Retiro Por Terceros (PUNTO RETIRO) */
-#correoschile-shipping-modal .modal-header{border-bottom: none !important}
-#correoschile-shipping-modal .account-recipient-info{display:none}
+/* Se esconde retiro a terceros para CityBox (Mere) */
+#correoschile-shipping-modal{
+  .account-recipient-info{
+    .title{
+      margin-right:10px;
+    }
+    > .col-50 > form{
+      .form-group:last-child{
+        display: none;
+      }
+    }
+  }
+}
+/* Se esconde retiro a terceros para CityBox (Claudio) */
+#correoschile-shipping-modal{
+    .modal-header{
+        border-bottom: none !important;
+    }
+    .account-recipient-info{
+        display: none;
+    }
+}
