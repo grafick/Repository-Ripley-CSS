@@ -5177,8 +5177,6 @@ opacity: .48;
 	background: #e6e6e6;
 	color: #acacac
 }
-
-
 /* Ocultar sólo Retiro Por Terceros (PUNTO RETIRO) */
 #correoschile-shipping-modal .modal-header{
 	border-bottom: none !important
@@ -5186,10 +5184,3 @@ opacity: .48;
 #correoschile-shipping-modal .account-recipient-info{
 	display:none
 }
-
-
-/* OCULTAR RETIRO TIENDA */
-.shopping-bag-item-info ul #BOPIS_FORM_2 li:nth-child(3){display:none}
-a#RET_TIENDA_RT, a#DESP_DOMICILIO_RT, a#RET_CASILLA_RT{display:none !important}
-#shipping-method > ul li, #payment-method > ul li, #confirmation-step > ul li {float: left !important}
-/* FIN OCULTAR RETIRO TIENDA */
