@@ -5187,7 +5187,6 @@ opacity: .48;
 	display:none
 }
 
-
 /* OCULTAR RETIRO TIENDA */
 .shopping-bag-item-info ul #BOPIS_FORM_2 li:nth-child(3){display:none}
 a#RET_TIENDA_RT, a#DESP_DOMICILIO_RT, a#RET_CASILLA_RT{display:none !important}
