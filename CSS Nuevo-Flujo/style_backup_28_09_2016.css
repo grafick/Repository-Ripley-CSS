@@ -10,7 +10,6 @@
   src: url("../../images/colors/color1/flujoDeCompra/fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../images/colors/color1/flujoDeCompra/fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../../images/colors/color1/flujoDeCompra/fonts/montserrat-regular-webfont.woff") format("woff"), url("../../images/colors/color1/flujoDeCompra/fonts/montserrat-regular-webfont.ttf") format("truetype"), url("../../images/colors/color1/flujoDeCompra/fonts/montserrat-regular-webfont.svg#montserratsemi_bold") format("svg");
   font-weight: normal;
   font-style: normal; }
-  
 /*--------*/  
 $primary-font: "montserratlight", sans-serif;
 $secondary-font: Helvetica, Arial, sans-serif;
@@ -241,48 +240,48 @@ hr {
 	right:0;
 	bottom:0;
 	z-index:99999;
-overflow:hidden;}
-	.loading .loading-inner{
+	overflow:hidden;
+	.loading-inner{
 		width:110px;
 		height:40px;
 		position:absolute;
 		top:50%;
 		left:50%;
-	margin:-20px 0 0 -55px;}
-		.loading .loading-inner span{
+		margin:-20px 0 0 -55px;
+		span{
 		    position:absolute;
 		    width:20px;
 		    height:20px;
 		    background:#bf0122;
 		    opacity:0.5;
-              -webkit-border-radius: 20px;
-      -moz-border-radis: 20px;
 		    @include border-radius(20px);
 		    animation: Cuncuna 1s infinite ease-in-out;
 		    -moz-animation: Cuncuna 1s infinite ease-in-out;
-		-webkit-animation: Cuncuna 1s infinite ease-in-out;}
-		    .loading .loading-inner span:nth-child(2) {
+		    -webkit-animation: Cuncuna 1s infinite ease-in-out;
+		    &:nth-child(2){
 			    left:30px;
 			    background: #dbdcdd;
 			    animation-delay: .2s;
 			    -moz-animation-delay: .2s;
 			    -webkit-animation-delay: .2s;
 			}
-			.loading .loading-inner span:nth-child(3){
+			&:nth-child(3){
 			    left:60px;
 			    background: #fcd32f;
 			    animation-delay: .4s;
 			    -webkit-animation-delay: .4s;
 			    -moz-animation-delay: .4s;
 			}
-			 .loading .loading-inner span:nth-child(4){
+			&:nth-child(4){
 			    left:90px;
 			    background: #782769;
 			    animation-delay: .6s;
 			    -webkit-animation-delay: .6s;
 			    -moz-animation-delay: .6s;
 			}
-		
+		}
+	}
+}
 @keyframes Cuncuna {
     0% {opacity: 0.3; transform:translateY(0px);    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);}
     50% {opacity: 1; transform: translateY(-10px); background:$primary-color;  box-shadow: 0px 20px 3px rgba(0, 0, 0, 0.05);}
@@ -339,8 +338,6 @@ overflow:hidden;}
     color: #79568e;
     margin-bottom: 15px;
     background: #fff; }
-   .alert.alert-info strong {
-      font-family: "montserratsemi_bold"; }
   .alert.alert-danger {
     background: #cc3b3b;
     color: #fff;
@@ -376,8 +373,6 @@ overflow:hidden;}
         font-size: 32px;
         width: 32px;
         height: 32px; }
-        .alert.alert-error strong {
-      font-family: "montserratsemi_bold"; }
   .alert.alert-success {
     background: #dff0d8;
     border: dashed 1px #227133;
@@ -424,7 +419,7 @@ overflow:hidden;}
   .alert.alert-promo {
     text-align: center;
     border-top: solid 1px #d7d7d7;
-    background: #f1e9f6; }
+    background: #fcfafd; }
     .alert.alert-promo .fa {
       display: inline;
       font-size: 20px;
@@ -508,76 +503,6 @@ overflow:hidden;}
     .alert.alert-payment p, .alert.purple-alert p {
       margin: 0 !important; }
 
-.alert-use-ripleypuntos {
-  background: #f2eaf7;
-  padding: 10px 15px;
-  display: block;
-  overflow: hidden;
-  margin: 15px 0 0;
-  clear: both;
-  -webkit-border-radius: 5px;
-  -moz-border-radis: 5px;
-  border-radius: 5px; }
-  .alert-use-ripleypuntos .ripleypuntos-icon {
-    margin: 0 0 0 15px; }
-  .alert-use-ripleypuntos strong {
-    font-family: "montserratsemi_bold";
-    color: #6E357C; }
-  .alert-use-ripleypuntos .col-50 {
-    overflow: hidden;
-    text-align: center;
-    margin: 0 0 15px; }
-    @media only screen and (min-width: 960px) {
-      .alert-use-ripleypuntos .col-50 {
-        text-align: left;
-        margin: 0; } }
-    .alert-use-ripleypuntos .col-50:last-child {
-      margin: 0; }
-  .alert-use-ripleypuntos .btn {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    line-height: 24pt; }
-    @media only screen and (min-width: 960px) {
-      .alert-use-ripleypuntos .btn {
-        float: right;
-        display: table; } }
-  .alert-use-ripleypuntos .disclaimer {
-    font-size: 12px; }
-
-#ripleypuntos-modal h4 {
-  font-size: 12px;
-  text-align: center; }
-#ripleypuntos-modal .form-group strong {
-  font-family: "montserratsemi_bold";
-  color: #6E357C; }
-#ripleypuntos-modal .form-group label span {
-  display: block;
-  font-size: 11px; }
-#ripleypuntos-modal dl {
-  overflow: hidden;
-  display: block;
-  margin: 0 0 15px; }
-  #ripleypuntos-modal dl dd, #ripleypuntos-modal dl dt {
-    display: block;
-    width: 50%;
-    float: left; }
-  #ripleypuntos-modal dl dd {
-    color: #6E357C;
-    font-family: "montserratsemi_bold"; }
-    #ripleypuntos-modal dl dd.red {
-      color: #d0313c; }
-#ripleypuntos-modal .featured {
-  color: #6E357C; }
-
-div.msgpopup1 .msgpopup_content_wrapper .content .icon, div.msgpopup2 .msgpopup_content_wrapper .content .icon {
-  display: inline-block;
-  vertical-align: middle; }
-
-div.msgpopup1 .msgpopup_content_wrapper .content .message_text, div.msgpopup2 .msgpopup_content_wrapper .content .message_text {
-  display: inline-block;
-  padding: 0;
-  margin: 0; }
 .col-50 {
   width: 100%;
   float: none;
@@ -809,10 +734,6 @@ input {
     background-repeat: no-repeat;
     background-position: right center;
     padding-right: 50px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-      input.invalid-code {
-        background-image: url(../../images/colors/color1/flujoDeCompra/img/icon-invalid-form@2x.png);
-        background-size: 35px; } }
 
 input, textarea {
   border: solid 1px #e4e4e4;
@@ -921,10 +842,6 @@ select {
   background: #fff url(../../images/colors/color1/flujoDeCompra/img/select-arrow.jpg) right 15px no-repeat;
   border: solid 1px #e4e4e4;
   padding-right: 40px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .custom-select {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/select-arrow@2x.png);
-      background-size: 25px; } }
   .custom-select select {
     width: 160% !important;
     height: 34px;
@@ -1028,7 +945,6 @@ select {
   overflow: auto;
   min-height: 100%;
   -webkit-overflow-scrolling: touch;
-height: auto;
   outline: 0;
   opacity: 0;
   -webkit-opacity: 0;
@@ -1038,10 +954,6 @@ height: auto;
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out; }
- @media only screen and (min-width: 960px) {
-    .modal {
-      overflow: hidden;
-      height: 100%; } }
   .modal.in {
     display: block;
     opacity: 1;
@@ -1057,7 +969,6 @@ height: auto;
     height: auto;
     min-height: 100%;
     overflow: hidden;
-    -webkit-overflow-scrolling: touch;
     display: block;
     box-shadow: -2px -2px 25px #ccc;
     -webkit-border-radius: 8px;
@@ -1072,17 +983,10 @@ height: auto;
         width: 750px;
         height: auto;
         min-height: 10px;
-         padding: 40px;
         position: absolute;
-        overflow: hidden;
         top: 50px;
         left: 50%;
-        margin-bottom: 50px;
-        margin-left: -375px;
-        box-shadow: -2px -2px 25px #ccc;
-        -webkit-border-radius: 8px;
-        -moz-border-radis: 8px;
-        border-radius: 8px; } }
+        margin-left: -375px; } }
     .modal .modal-dialog:focus {
       outline: none;
       box-shadow: none;
@@ -1142,11 +1046,7 @@ height: auto;
     .modal .modal-header.visible-tablet button.close {
       margin: 20px 20px 5px; }
   .modal .modal-body {
-    overflow: hidden; height: auto;
-    -webkit-overflow-scrolling: touch; }
-    @media only screen and (min-width: 960px) {
-      .modal .modal-body {
-        overflow: hidden; } }
+    overflow: hidden; }
     .modal .modal-body h3 {
       font-size: 20px;
       display: block;
@@ -1192,7 +1092,7 @@ height: auto;
       background: transparent url(../../images/colors/color1/flujoDeCompra/img/60.png) repeat; } }
 
 .collapse {
-  height: 0 !important;
+  height: 0;
   display: none;
   overflow: hidden;
   opacity: 0;
@@ -1249,11 +1149,6 @@ table {
   display: block;
   float: left;
   margin: 0 7px 0 0; }
-  
-
-
-
-
 
 .tienda-small-icon {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) -27px -415px no-repeat;
@@ -1264,6 +1159,7 @@ table {
   display: block;
   float: left;
   margin: 0 7px 0 0; }
+
 .retiro-small-icon {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) -55px -415px no-repeat;
   height: 21px;
@@ -1273,57 +1169,18 @@ table {
   display: block;
   float: left;
   margin: 0 7px 0 0; }
-.ripleypuntos-icon {
-  background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) -84px -172px no-repeat;
-  height: 24px;
-  width: 92px;
-  overflow: hidden;
-  display: inline-block;
-  text-indent: -9999px;
-  margin: 0 10px 0 0; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .ripleypuntos-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-      background-size: 175px; } }
 
-#avaible-ripleypuntos {
-  background: #f0f0f0;
-  padding: 10px 15px;
-  color: #6E357C;
-  display: block;
-  overflow: hidden;
-  margin: 20px 0 0;
-  text-align: center;
-  -webkit-border-radius: 5px;
-  -moz-border-radis: 5px;
-  border-radius: 5px; }
-  #avaible-ripleypuntos span {
-    font-family: "montserratsemi_bold"; }
 #shopping-bag-header h1 {
   margin: 0;
   padding: 0; }
-@media only screen and (min-width: 960px) {
-    #shopping-bag-header h1 {
-      display: table;
-      float: left; } }
   #shopping-bag-header h1 img#logo-ripley-chile {
-	/*Redmine #164 given css Changes*/
-    /*background: transparent url(../../images/colors/color1/flujoDeCompra/img/logo-header.png) 0 0 no-repeat;*/
-	background:none !important;
-	/*Redmine #164 given css Changes*/
+    background: transparent url(../../images/colors/color1/flujoDeCompra/img/logo-header.png) 0 0 no-repeat;
     height: 56px;
     width: 180px;
     overflow: hidden;
     text-indent: -9999px;
     margin: 25px auto;
     display: block; }
-  @media only screen and (min-width: 960px) {
-
-      #shopping-bag-header h1 img#logo-ripley-chile {
-        margin: 20px auto; } }
-    @media only print {
-      #shopping-bag-header h1 img#logo-ripley-chile {
-        text-align: center; } }
   @media only print {
     #shopping-bag-header h1 img {
       text-align: center; } }
@@ -1373,7 +1230,7 @@ body.shopping-order #shopping-bag-header h1, body.error #shopping-bag-header h1 
     border-top: solid 1px #e4e4e4; }
     @media only screen and (min-width: 960px) {
       #shopping-bag-items ul > li {
-        margin: 0 0 0px;
+        margin: 0 0 15px;
         padding: 0;
         width: 100%;
         border: none; } }
@@ -1467,94 +1324,88 @@ body.shopping-order #shopping-bag-header h1, body.error #shopping-bag-header h1 
           color: #54b268; }
         #shopping-bag-items ul > li ul li.unavaible-shipping strong {
           color: #da3a3a; }
-    #shopping-bag-items ul > li ul li .pull-right, #shopping-bag-items ul .group > li ul li .pull-right {
-          width: 100%; }
-          @media only screen and (min-width: 960px) {
-            #shopping-bag-items ul > li ul li .pull-right, #shopping-bag-items ul .group > li ul li .pull-right {
-              width: 65%; } }
+        #shopping-bag-items ul > li ul li .pull-right {
+          width: 65%; }
           @media only screen and (min-width: 1280px) {
-            #shopping-bag-items ul > li ul li .pull-right, #shopping-bag-items ul .group > li ul li .pull-right {
+            #shopping-bag-items ul > li ul li .pull-right {
               width: 80%; } }
-        #shopping-bag-items ul > li ul li:last-child .pull-right, #shopping-bag-items ul .group > li ul li:last-child .pull-right {
-          width: 100%; }
-          @media only screen and (min-width: 960px) {
-            #shopping-bag-items ul > li ul li:last-child .pull-right, #shopping-bag-items ul .group > li ul li:last-child .pull-right {
-              width: 75%; } }
+        #shopping-bag-items ul > li ul li:last-child .pull-right {
+          width: 75%; }
           @media only screen and (min-width: 1280px) {
-            #shopping-bag-items ul > li ul li:last-child .pull-right, #shopping-bag-items ul .group > li ul li:last-child .pull-right {
+            #shopping-bag-items ul > li ul li:last-child .pull-right {
               width: 85%; } }
-    #shopping-bag-items ul > li .guaranty-item, #shopping-bag-items ul .group > li .guaranty-item {
+    #shopping-bag-items ul > li .guaranty-item {
       padding: 30px 15px;
       display: block;
       clear: both; }
       @media only screen and (min-width: 960px) {
-        #shopping-bag-items ul > li .guaranty-item, #shopping-bag-items ul .group > li .guaranty-item {
+        #shopping-bag-items ul > li .guaranty-item {
           padding: 15px;
           border-top: solid 1px #d7d7d7;
           background: #fcfafd; } }
       @media only screen and (min-width: 960px) {
-        #shopping-bag-items ul > li .guaranty-item .guaranty-holder, #shopping-bag-items ul .group > li .guaranty-item .guaranty-holder {
+        #shopping-bag-items ul > li .guaranty-item .guaranty-holder {
           display: table; } }
-      #shopping-bag-items ul > li .guaranty-item h4, #shopping-bag-items ul .group > li .guaranty-item h4 {
+      #shopping-bag-items ul > li .guaranty-item h4 {
         text-transform: lowercase;
         font-family: "montserratsemi_bold";
         color: #999; }
-        #shopping-bag-items ul > li .guaranty-item h4 span, #shopping-bag-items ul .group > li .guaranty-item h4 span {
+        #shopping-bag-items ul > li .guaranty-item h4 span {
           color: #79568e; }
-      #shopping-bag-items ul > li .guaranty-item p, #shopping-bag-items ul .group > li .guaranty-item p {
+      #shopping-bag-items ul > li .guaranty-item p {
         margin-bottom: 15px;
         text-align: center; }
         @media only screen and (min-width: 960px) {
-          #shopping-bag-items ul > li .guaranty-item p, #shopping-bag-items ul .group > li .guaranty-item p {
+          #shopping-bag-items ul > li .guaranty-item p {
             text-align: left;
             color: #79568e; } }
-      #shopping-bag-items ul > li .guaranty-item .underline-link, #shopping-bag-items ul .group > li .guaranty-item .underline-link {
+      #shopping-bag-items ul > li .guaranty-item .underline-link {
         margin-bottom: 25px;
         font-size: 12px;
         padding-bottom: 8px; }
         @media only screen and (min-width: 960px) {
-          #shopping-bag-items ul > li .guaranty-item .underline-link, #shopping-bag-items ul .group > li .guaranty-item .underline-link {
+          #shopping-bag-items ul > li .guaranty-item .underline-link {
             margin: 0; } }
-      #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-info, #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-price, #shopping-bag-items ul > li .guaranty-item .shopping-bag-delete, #shopping-bag-items ul .group > li .guaranty-item .shopping-bag-guaranty-info, #shopping-bag-items ul .group > li .guaranty-item .shopping-bag-guaranty-price, #shopping-bag-items ul .group > li .guaranty-item .shopping-bag-delete {
+      #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-info, #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-price, #shopping-bag-items ul > li .guaranty-item .shopping-bag-delete {
         display: block; }
         @media only screen and (min-width: 960px) {
-          #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-info, #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-price, #shopping-bag-items ul > li .guaranty-item .shopping-bag-delete, #shopping-bag-items ul .group > li .guaranty-item .shopping-bag-guaranty-info, #shopping-bag-items ul .group > li .guaranty-item .shopping-bag-guaranty-price, #shopping-bag-items ul .group > li .guaranty-item .shopping-bag-delete {
+          #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-info, #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-price, #shopping-bag-items ul > li .guaranty-item .shopping-bag-delete {
             display: table-cell;
             vertical-align: middle; } }
       @media only screen and (min-width: 960px) {
-        #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-info, #shopping-bag-items ul .group > li .guaranty-item .shopping-bag-guaranty-info {
+        #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-info {
           width: 530px;
           padding-right: 15px; } }
       @media only screen and (min-width: 1280px) {
-        #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-info, #shopping-bag-items ul .group > li .guaranty-item .shopping-bag-guaranty-info {
+        #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-info {
           width: 765px; } }
-      #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-price, #shopping-bag-items ul .group > li .guaranty-item .shopping-bag-guaranty-price {
+      #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-price {
         display: table;
         margin: 0 auto; }
         @media only screen and (min-width: 960px) {
-          #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-price, #shopping-bag-items ul .group > li .guaranty-item .shopping-bag-guaranty-price {
+          #shopping-bag-items ul > li .guaranty-item .shopping-bag-guaranty-price {
             width: 355px;
             padding-right: 30px;
             display: table-cell;
             vertical-align: middle; } }
-      #shopping-bag-items ul > li .guaranty-item .guaranty-price, #shopping-bag-items ul .group > li .guaranty-item .guaranty-price {
+      #shopping-bag-items ul > li .guaranty-item .guaranty-price {
         font-family: "montserratsemi_bold";
         margin-bottom: 15px;
         overflow: hidden; }
         @media only screen and (min-width: 960px) {
-          #shopping-bag-items ul > li .guaranty-item .guaranty-price, #shopping-bag-items ul .group > li .guaranty-item .guaranty-price {
+          #shopping-bag-items ul > li .guaranty-item .guaranty-price {
             margin-bottom: 0; } }
-        #shopping-bag-items ul > li .guaranty-item .guaranty-price dt, #shopping-bag-items ul .group > li .guaranty-item .guaranty-price dt {
+        #shopping-bag-items ul > li .guaranty-item .guaranty-price dt {
           display: table;
           float: left; }
           @media only screen and (min-width: 720px) {
-            #shopping-bag-items ul > li .guaranty-item .guaranty-price dt, #shopping-bag-items ul .group > li .guaranty-item .guaranty-price dt {
+            #shopping-bag-items ul > li .guaranty-item .guaranty-price dt {
               max-width: 135px; } }
-        #shopping-bag-items ul > li .guaranty-item .guaranty-price dd, #shopping-bag-items ul .group > li .guaranty-item .guaranty-price dd {
+        #shopping-bag-items ul > li .guaranty-item .guaranty-price dd {
           display: table;
           float: right; }
           @media only screen and (min-width: 720px) {
-            #shopping-bag-items ul > li .guaranty-item .guaranty-price dd, #shopping-bag-items ul .group > li .guaranty-item .guaranty-price dd {
+            #shopping-bag-items ul > li .guaranty-item .guaranty-price dd {
               margin-top: 10px; } }
   @media only screen and (min-width: 960px) {
     #shopping-bag-items ul .shopping-bag-item-info {
@@ -1593,8 +1444,8 @@ body.shopping-order #shopping-bag-header h1, body.error #shopping-bag-header h1 
       line-height: 12pt; }
     #shopping-bag-items ul .shopping-bag-item-cuantity input {
       margin-left: 0;
-      width: 30px !important;
-      height: 34px;
+      width: 30px;
+      height: 30px;
       display: block;
       float: left;
       padding: 8px 0;
@@ -1900,30 +1751,9 @@ dl.subtotal-price {
     #shopping-bag-total #collapsegift {
       margin-bottom: 0;
       margin-top: 15px; } }
-#shopping-bag-total #collapsegift .close-collapse {
-    border: none;
-    display: table;
-    background: none;
-    font-size: 13px;
-    font-family: "montserratlight", sans-serif;
-    text-transform: uppercase;
-    margin: 0 auto 20px;
-    color: #97703d;
-    cursor: pointer;
-    -webkit-transition: color 0.1s ease-in-out;
-    -moz-transition: color 0.1s ease-in-out;
-    -ms-transition: color 0.1s ease-in-out;
-    -o-transition: color 0.1s ease-in-out; }
-    @media only screen and (min-width: 960px) {
-      #shopping-bag-total #collapsegift .close-collapse {
-        margin: 42px 20px;
-        float: right; } }
-    #shopping-bag-total #collapsegift .close-collapse:hover, #shopping-bag-total #collapsegift .close-collapse:active, #shopping-bag-total #collapsegift .close-collapse:visited {
-      color: #6b4410; }
   #shopping-bag-total .shopping-total {
     overflow: hidden;
-    font-size: 14px;
-    display: block; }
+    font-size: 14px; }
     @media only screen and (min-width: 720px) {
       #shopping-bag-total .shopping-total {
         display: table;
@@ -2306,10 +2136,6 @@ dl.subtotal-price {
   #choose-gift-modal .free-gift:last-child {
     border: none;
     margin-bottom: 20px; }
- @media only screen and (min-width: 960px) {
-    #choose-gift-modal .free-gift {
-      display: table;
-      width: 100%; } }
   #choose-gift-modal .free-gift .section {
     display: table-cell;
     vertical-align: middle;
@@ -2325,11 +2151,9 @@ dl.subtotal-price {
     #choose-gift-modal .free-gift dl dt {
       display: table;
       float: left;
-       max-width: 50%;
       margin-right: 5px; }
     #choose-gift-modal .free-gift dl dd {
       display: table;
-       max-width: 50%;
       float: right; }
   #choose-gift-modal .free-gift input {
     width: auto;
@@ -2348,9 +2172,6 @@ dl.subtotal-price {
     text-transform: uppercase;
     font-size: 1em;
     margin: 0 0 15px 0; }
-@media only screen and (min-width: 960px) {
-      #choose-gift-modal .free-gift p {
-        font-size: 1em; } }
     #choose-gift-modal .free-gift p strong {
       display: block;
       color: #7e7e7e;
@@ -2592,9 +2413,6 @@ dl.subtotal-price {
           float: left;
           max-width: 70%;
           margin: 0; } }
- @media only screen and (min-width: 960px) {
-      #shipping-method h3, #payment-method h3, #confirmation-step h3 {
-        font-size: 20px; } }
     #shipping-method h3 .btn, #payment-method h3 .btn, #confirmation-step h3 .btn {
       display: block;
       margin: 0; }
@@ -2610,7 +2428,7 @@ dl.subtotal-price {
       list-style-type: none;
       margin: 0;
       display: block;
-      float: left;
+      float: right;
       width: 33%;
       font-size: 13px; }
       #shipping-method > ul li:last-child, #payment-method > ul li:last-child, #confirmation-step > ul li:last-child {
@@ -2635,42 +2453,16 @@ dl.subtotal-price {
             background: #79568e; }
             #shipping-method > ul li a.selected .shipping-method-type .retiro-icon, #payment-method > ul li a.selected .shipping-method-type .retiro-icon, #confirmation-step > ul li a.selected .shipping-method-type .retiro-icon {
               background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) 0 -29px no-repeat; }
-          @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-                #shipping-method > ul li a.selected .shipping-method-type .retiro-icon, #payment-method > ul li a.selected .shipping-method-type .retiro-icon, #confirmation-step > ul li a.selected .shipping-method-type .retiro-icon {
-                  background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-                  background-size: 175px; } }
             #shipping-method > ul li a.selected .shipping-method-type .casa-icon, #payment-method > ul li a.selected .shipping-method-type .casa-icon, #confirmation-step > ul li a.selected .shipping-method-type .casa-icon {
               background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) -24px -28px no-repeat; }
-              @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-                #shipping-method > ul li a.selected .shipping-method-type .casa-icon, #payment-method > ul li a.selected .shipping-method-type .casa-icon, #confirmation-step > ul li a.selected .shipping-method-type .casa-icon {
-                  background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-                  background-size: 175px; } }
             #shipping-method > ul li a.selected .shipping-method-type .tienda-icon, #payment-method > ul li a.selected .shipping-method-type .tienda-icon, #confirmation-step > ul li a.selected .shipping-method-type .tienda-icon {
               background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) -56px -28px no-repeat; }
-              @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-                #shipping-method > ul li a.selected .shipping-method-type .tienda-icon, #payment-method > ul li a.selected .shipping-method-type .tienda-icon, #confirmation-step > ul li a.selected .shipping-method-type .tienda-icon {
-                  background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-                  background-size: 175px; } }
         #shipping-method > ul li a.disabled .retiro-icon, #payment-method > ul li a.disabled .retiro-icon, #confirmation-step > ul li a.disabled .retiro-icon {
           background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) 0 -58px no-repeat; }
-          @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-            #shipping-method > ul li a.disabled .retiro-icon, #payment-method > ul li a.disabled .retiro-icon, #confirmation-step > ul li a.disabled .retiro-icon {
-              background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-              background-size: 175px; } }
         #shipping-method > ul li a.disabled .casa-icon, #payment-method > ul li a.disabled .casa-icon, #confirmation-step > ul li a.disabled .casa-icon {
           background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) -24px -57px no-repeat; }
-          @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-            #shipping-method > ul li a.disabled .casa-icon, #payment-method > ul li a.disabled .casa-icon, #confirmation-step > ul li a.disabled .casa-icon {
-              background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-              background-size: 175px; } }
         #shipping-method > ul li a.disabled .tienda-icon, #payment-method > ul li a.disabled .tienda-icon, #confirmation-step > ul li a.disabled .tienda-icon {
           background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) -56px -57px no-repeat; }
-          @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-            #shipping-method > ul li a.disabled .tienda-icon, #payment-method > ul li a.disabled .tienda-icon, #confirmation-step > ul li a.disabled .tienda-icon {
-              background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-              background-size: 175px; } }
-        #shipping-method > ul li a.disabled strong, #payment-method > ul li a.disabled strong, #confirmation-step > ul li a.disabled strong {
-          color: #dd4b4c; }
       #shipping-method > ul li .shipping-method-icon, #payment-method > ul li .shipping-method-icon, #confirmation-step > ul li .shipping-method-icon {
         display: table;
         margin: 0 auto 10px; }
@@ -2700,10 +2492,6 @@ dl.subtotal-price {
           position: absolute;
           top: 13px;
           left: 16px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-            #shipping-method > ul li .shipping-method-type .retiro-icon, #payment-method > ul li .shipping-method-type .retiro-icon, #confirmation-step > ul li .shipping-method-type .retiro-icon {
-              background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-              background-size: 175px; } }
         #shipping-method > ul li .shipping-method-type .casa-icon, #payment-method > ul li .shipping-method-type .casa-icon, #confirmation-step > ul li .shipping-method-type .casa-icon {
           background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) -24px 0 no-repeat;
           height: 29px;
@@ -2714,10 +2502,6 @@ dl.subtotal-price {
           position: absolute;
           top: 14px;
           left: 11px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-            #shipping-method > ul li .shipping-method-type .casa-icon, #payment-method > ul li .shipping-method-type .casa-icon, #confirmation-step > ul li .shipping-method-type .casa-icon {
-              background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-              background-size: 175px; } }
         #shipping-method > ul li .shipping-method-type .tienda-icon, #payment-method > ul li .shipping-method-type .tienda-icon, #confirmation-step > ul li .shipping-method-type .tienda-icon {
           background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) -56px 0 no-repeat;
           height: 29px;
@@ -2769,9 +2553,6 @@ dl.subtotal-price {
   @media only screen and (min-width: 1280px) {
     #shipping-sidebar .shopping-sidebar-wrapper {
       width: 360px; } }
-#shipping-sidebar .shopping-sidebar-wrapper .alert-info {
-      border-top: solid 1px #ddd;
-      margin-bottom: 10px; }
   #shipping-sidebar .shopping-total {
     overflow: hidden;
     font-size: 14px; }
@@ -2782,11 +2563,6 @@ dl.subtotal-price {
         font-family: "montserratsemi_bold"; }
       #shipping-sidebar .shopping-total dl:last-child {
         margin: 0 0 30px; }
- #shipping-sidebar .shopping-total dl.discount-ripleypuntos {
-        color: #6E357C;
-        font-family: "montserratsemi_bold"; }
-        #shipping-sidebar .shopping-total dl.discount-ripleypuntos dd {
-          color: #6E357C; }
     #shipping-sidebar .shopping-total dt {
       display: table;
       float: left; }
@@ -2938,8 +2714,6 @@ dl.subtotal-price {
     .recipient-info h4, .account-recipient-info h4 {
       margin: 0 0 20px;
       text-align: left; } }
-.recipient-info h4 strong, .account-recipient-info h4 strong {
-    font-family: "montserratsemi_bold"; }
 .recipient-info p, .account-recipient-info p {
   margin: 0 0 25px; }
   .recipient-info p strong, .account-recipient-info p strong {
@@ -3384,21 +3158,6 @@ dl.subtotal-price {
     padding: 0 0 15px;
     padding: 15px 0;
     display: block; }
-.shopping-item-sidebar.no-avaible-shipping-sidebar .alert-danger {
-      padding: 10px;
-      line-height: 14pt;
-      text-align: left;
-      background: #a9a9a9;
-      margin: 0;
-      -webkit-border-radius: 0;
-      -moz-border-radis: 0;
-      border-radius: 0; }
-    .shopping-item-sidebar.no-avaible-shipping-sidebar .shopping-item-sidebar {
-      padding: 15px 10px;
-      display: block;
-      border: solid 1px #ddd;
-      margin: 0;
-      border-top: none; }
     .shopping-item-sidebar.no-avaible-shipping-sidebar > p {
       clear: both;
       font-size: 12px;
@@ -3428,30 +3187,7 @@ dl.subtotal-price {
     margin: 0;
     border-top: none;
   }
-.no-avaible-shipping-sidebar {
 
-  padding: 0; }
-  .no-avaible-shipping-sidebar > p {
-    clear: both;
-    font-size: 12px;
-    padding: 10px 15px 0;
-
-
-
-    margin-bottom: 0; }
-  .no-avaible-shipping-sidebar .shopping-item-sidebar {
-    border: none;
-    padding: 0;
-    margin-bottom: 0; }
-    .no-avaible-shipping-sidebar .shopping-item-sidebar .shopping-item-image {
-      padding: 0 10px 0 15px; }
-
-
-
-    .no-avaible-shipping-sidebar .shopping-item-sidebar .shopping-item-image {
-      width: 28%; }
-    .no-avaible-shipping-sidebar .shopping-item-sidebar .shopping-item-info {
-      padding: 0 15px 0 0; }
 #change-shipping-date p {
   margin-bottom: 30px; }
 
@@ -3601,8 +3337,7 @@ img.maps {
           float: right;
           display: block;
           color: #bf0a0a; }
-.modalesTarjetas .col-50:last-child label {
-  color: #da3a3a; }
+
 #PaymentForm1 #associated-mercadopago {
 overflow: hidden;
 border-bottom: solid 1px #ddd;
@@ -3644,10 +3379,6 @@ padding: 15px; }
   display: block;
   overflow: hidden;
   text-indent: -9999px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .tripley-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-      background-size: 175px; } }
 
 .mripley-icon {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) -45px -206px no-repeat;
@@ -3657,10 +3388,7 @@ padding: 15px; }
   overflow: hidden;
   text-indent: -9999px;
   margin-left: 3px; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .mripley-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-      background-size: 175px; } }
+
 .mercadopago-icon {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) -58px -440px no-repeat;
   height: 31px;
@@ -3669,10 +3397,7 @@ padding: 15px; }
   margin-bottom: 15px;
   overflow: hidden;
   text-indent: -9999px; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .mercadopago-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-      background-size: 175px; } }
+  
 .mercadopago-small {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) -92px -399px no-repeat;
   height: 31px;
@@ -3680,6 +3405,7 @@ padding: 15px; }
   display: block;
   overflow: hidden;
   text-indent: -9999px; }
+
 .webpayo-icon {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) 0 -234px no-repeat;
   height: 26px;
@@ -3687,10 +3413,7 @@ padding: 15px; }
   display: block;
   overflow: hidden;
   text-indent: -9999px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .mercadopago-small {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-      background-size: 175px; } }
+
 .webpay-icon {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) 0 -262px no-repeat;
   height: 32px;
@@ -3698,10 +3421,6 @@ padding: 15px; }
   display: block;
   overflow: hidden;
   text-indent: -9999px; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .webpayo-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-      background-size: 175px; } }
 
 .webpayc-icon {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) -63px -262px no-repeat;
@@ -3710,14 +3429,7 @@ padding: 15px; }
   display: block;
   overflow: hidden;
   text-indent: -9999px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .webpay-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-      background-size: 175px; } }
-	  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .webpayc-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-      background-size: 175px; } }
+
 .giftcard-icon {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) 0 -298px no-repeat;
   height: 35px;
@@ -3725,10 +3437,7 @@ padding: 15px; }
   display: block;
   overflow: hidden;
   text-indent: -9999px; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .giftcard-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-      background-size: 175px; } }
+
 ul#payment-document {
   display: block;
   overflow: hidden; }
@@ -3851,99 +3560,22 @@ ul#payment-document {
 #add-ripley-card-modal input.input-tripley, #edit-ripley-card-modal input.input-tripley, #mercadopago-modal input.input-tripley {
   background: #fff url(../../images/colors/color1/flujoDeCompra/img/tripley.png) right center no-repeat;
   padding-right: 55px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    #add-ripley-card-modal input.input-tripley, #edit-ripley-card-modal input.input-tripley, #mercadopago-modal input.input-tripley {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tripley@2x.png);
-      background-size: 37px; } }
 #add-ripley-card-modal input.input-tvisa, #edit-ripley-card-modal input.input-tvisa, #mercadopago-modal input.input-tvisa {
   background: #fff url(../../images/colors/color1/flujoDeCompra/img/payment/tvisa.png) right center no-repeat;
   padding-right: 55px; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    #add-ripley-card-modal input.input-tvisa, #edit-ripley-card-modal input.input-tvisa, #mercadopago-modal input.input-tvisa {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tvisa@2x.png);
-      background-size: 37px; } }
 #add-ripley-card-modal input.input-tmastercard, #edit-ripley-card-modal input.input-tmastercard, #mercadopago-modal input.input-tmastercard {
   background: #fff url(../../images/colors/color1/flujoDeCompra/img/payment/tmastercard.png) right center no-repeat;
   padding-right: 55px; }
-  
- @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    #add-ripley-card-modal input.input-tmastercard, #edit-ripley-card-modal input.input-tmastercard, #mercadopago-modal input.input-tmastercard {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tmastercard@2x.png);
-      background-size: 37px; } }
 #add-ripley-card-modal input.input-tdinners, #edit-ripley-card-modal input.input-tdinners, #mercadopago-modal input.input-tdinners {
   background: #fff url(../../images/colors/color1/flujoDeCompra/img/payment/tdinners.png) right center no-repeat;
   padding-right: 55px; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    #add-ripley-card-modal input.input-tdinners, #edit-ripley-card-modal input.input-tdinners, #mercadopago-modal input.input-tdinners {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tdinners@2x.png);
-      background-size: 37px; } }
 #add-ripley-card-modal input.input-tmagna, #edit-ripley-card-modal input.input-tmagna, #mercadopago-modal input.input-tmagna {
   background: #fff url(../../images/colors/color1/flujoDeCompra/img/payment/tmagna.png) right center no-repeat;
   padding-right: 55px; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    #add-ripley-card-modal input.input-tmagna, #edit-ripley-card-modal input.input-tmagna, #mercadopago-modal input.input-tmagna {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tmagna@2x.png);
-      background-size: 37px; } }
 #add-ripley-card-modal input.input-tamerican, #edit-ripley-card-modal input.input-tamerican, #mercadopago-modal input.input-tamerican {
   background: #fff url(../../images/colors/color1/flujoDeCompra/img/payment/tamericanexpress.png) right center no-repeat;
   padding-right: 55px; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    #add-ripley-card-modal input.input-tamerican, #edit-ripley-card-modal input.input-tamerican, #mercadopago-modal input.input-tamerican {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tamericanexpress@2x.png);
-      background-size: 37px; } }
 
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
 #mercadopago-vcode {
   display: block; }
   @media only screen and (min-width: 960px) {
@@ -4027,10 +3659,6 @@ ul#payment-document {
     @media only screen and (min-width: 960px) {
       #collapse-vcode .simple-rcard, #collapse-titular-name .simple-rcard {
         margin: 0 10px 0 0; } }
- @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-      #collapse-vcode .simple-rcard, #collapse-titular-name .simple-rcard {
-        background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-        background-size: 175px; } }
   #collapse-vcode .simple-tcard, #collapse-titular-name .simple-tcard {
     background: transparent url(../../images/colors/color1/flujoDeCompra/img/tileset.png) 0 -440px no-repeat;
     height: 42px;
@@ -4041,10 +3669,7 @@ ul#payment-document {
     @media only screen and (min-width: 960px) {
       #collapse-vcode .simple-tcard, #collapse-titular-name .simple-tcard {
         margin: 0 10px 0 0; } }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-      #collapse-vcode .simple-tcard, #collapse-titular-name .simple-tcard {
-        background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-        background-size: 175px; } }
+
 #payment-details {
   overflow: hidden;
   clear: both;
@@ -4209,8 +3834,6 @@ ul#payment-document {
   #add-giftcard-modal .btn.btn-small {
   	height: 34px;
   }
-  #giftcard-modal .giftcard-amount label small {
-  font-size: 11px; }
 #giftcard-modal .giftcard-amount input {
   color: #bf0a0a;
   text-align: right; }
@@ -4255,13 +3878,6 @@ ul#payment-document {
     #giftcard-modal #tripley-wvcode #collapse-vcode, #giftcard-modal #tripley-vcode #collapse-vcode {
       line-height: 32pt; } }
 
-#add-giftcard-modal .btn.btn-small {
-  height: 34px; }
-#add-giftcard-modal input {
-  color: #bf0a0a;
-  text-align: right; }
-#add-giftcard-modal label small {
-  font-size: 10px; }
 #add-factura-modal label, #edit-factura-modal label {
   display: block;
   width: 100%; }
@@ -4459,10 +4075,7 @@ ul#payment-document {
       #shopping-bag-footer .norton-icon {
         float: left;
         margin: 0 10px 0 0; } }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-      #shopping-bag-footer .norton-icon {
-        background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-        background-size: 175px; } }
+
 #empty-shopping-bag {
   background: #fff;
   padding: 60px 30px;
@@ -4586,13 +4199,6 @@ ul#payment-document {
     font-size: 16px;
     display: block;
     margin-bottom: 10px; }
-@media only screen and (min-width: 960px) {
-  #select-store #div_tiendas .section:first-child, #change-shipping-store #div_tiendas .section:first-child {
-    width: 276px; } }
-@media only screen and (min-width: 960px) {
-  #select-store #div_tiendas .section:last-child, #change-shipping-store #div_tiendas .section:last-child {
-    width: 180px;
-    padding: 0; } }
 #select-store .center, #change-shipping-store .center {
   display: block;
   width: 100%; }
@@ -4690,8 +4296,6 @@ ul#payment-document {
           text-align: center; } }
       #select-store ul li dd .fa, #change-shipping-store ul li dd .fa {
         font-size: 18px; }
- #select-store ul li dd .underline-link, #change-shipping-store ul li dd .underline-link {
-        padding: 5px 10px; }
       @media only screen and (min-width: 960px) {
         #select-store ul li dd .underline-link, #change-shipping-store ul li dd .underline-link {
           margin: 5px auto 0; } }
@@ -4787,45 +4391,22 @@ ul#payment-document {
 
 .visa-icon {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/payment/visa.png) 0 0 no-repeat; }
- @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .visa-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/payment/tvisa@2x.png);
-      background-size: 32px; } }
 
 .mastercard-icon {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/payment/mastercard.png) 0 0 no-repeat; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .mastercard-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/payment/tmastercard@2x.png);
-      background-size: 32px; } }
 
 .discover-icon {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/payment/discover.png) 0 0 no-repeat; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .discover-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/payment/tdiscover@2x.png);
-      background-size: 32px; } }
 
 .american-icon {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/payment/americanexpress.png) 0 0 no-repeat; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .american-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/payment/tamericanexpress@2x.png);
-      background-size: 32px; } }
 
 .magna-icon {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/payment/magna.png) 0 0 no-repeat; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .magna-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/payment/tmagna@2x.png);
-      background-size: 32px; } }
 
 .dinners-icon {
   background: transparent url(../../images/colors/color1/flujoDeCompra/img/payment/dinners.png) 0 0 no-repeat; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .dinners-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/payment/tdinners@2x.png);
-      background-size: 32px; } }
+
 @media only screen and (min-width: 960px) {
   #shopping-order .content {
     width: 660px; } }
@@ -4888,7 +4469,7 @@ ul#payment-document {
     margin: 0 0 30px; }
     #shopping-order #shopping-order-items li .section {
       display: table-cell;
-      vertical-align: top; }
+      vertical-align: middle; }
       #shopping-order #shopping-order-items li .section.with-shipping-info {
         vertical-align: top; }
     #shopping-order #shopping-order-items li img {
@@ -4959,10 +4540,7 @@ ul#payment-document {
   margin: 0 7px 0 0;
   overflow: hidden;
   text-indent: -9999px; }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
-    .shopping-bag-resume-icon {
-      background-image: url(../../images/colors/color1/flujoDeCompra/img/tileset@2x.png);
-      background-size: 175px; } }
+
 #shopping-order-reserved-product {
   overflow: hidden;
   border: solid 1px #757575;
@@ -5132,6 +4710,17 @@ body.error {
       #main-error .btn .fa.fa-mobile {
         width: 14px; }
 
+/*# sourceMappingURL=style.css.map */
+
+
+/* estilos personalizados del control de cambio flujo de Compras - RIPLEYCL-MEJORASFC-2015 */
+
+/* estilo para modal de despacho */
+.form-group-despacho{
+
+} 
+
+/* INICIO - Se agrega para mostrar el diseÒo de los mensajes que se muestran en la franja */
 #MessageArea {
     display: none;
     position: fixed;
@@ -5227,15 +4816,20 @@ div.msgpopup1 .msgpopup_content_wrapper .content .close .msgpopup1_x, div.msgpop
 #msgpopup_close_text {
     vertical-align: top;
 }
-.nodisplay {
-  display: none; }
+
 #msgpopup_close_text a#clickableErrorMessage {
     display: none;
 }
+/* FIN - Se agrega para mostrar el diseÒo de los mensajes que se muestran en la franja */
+
+/* INICIO - Se agrega para retirar los bordes de TR Y TRE */
 .modalesTarjetas{
 	padding: 0px !important;
 	border: none !important;	
 }
+/* FIN - Se agrega para retirar los bordes de TR Y TRE */
+
+/* INICIO - PARA QUE FUNCIONE LOS MODALES CON FANCYBOX */
 #fancybox-wrap {
 	position: absolute;
 	top: 0;
@@ -5258,7 +4852,7 @@ div.msgpopup1 .msgpopup_content_wrapper .content .close .msgpopup1_x, div.msgpop
 }
 /* FIN - PARA QUE FUNCIONE LOS MODALES CON FANCYBOX */
 
-/* INICIO - Se agrega este codigo para el diseÒØ†§e los toolkit de la tienda, esto en la validaciÛÆ†§e formularios */
+/* INICIO - Se agrega este codigo para el diseÒo de los toolkit de la tienda, esto en la validaciÛn de formularios */
 .dijitTooltip{position:absolute;z-index:99999;display:block;left:50%;top:-10000px;overflow:visible} 
 .dijitTooltipContainer{border:solid #000 2px;background:#b8b5b5;color:#000;font-size:small}
 .dijitTooltipFocusNode{padding:2px 2px 2px 2px}
@@ -5285,32 +4879,13 @@ div.msgpopup1 .msgpopup_content_wrapper .content .close .msgpopup1_x, div.msgpop
 .dj_ie .dijitRtl .dijitTooltipLeft{margin-right:0;margin-left:13px}
 .dj_ie .dijitRtl .dijitTooltipRight{margin-left:26px;margin-right:-13px}
 .dijitBackgroundIframe{display:none}
-/* FIN - Se agrega este codigo para el diseÒØ†§e los toolkit de la tienda, esto en la validaciÛÆ†§e formularios */
+/* FIN - Se agrega este codigo para el diseÒo de los toolkit de la tienda, esto en la validaciÛn de formularios */
 
 /* INICIO - Elementos que se ocultan por que no calzan con la grafica */
 #conoceServicioCorreos{
 	display: none;
 }
 /* FIN - Elementos que se ocultan por que no calzan con la grafica */
-section#correoschile-shipping-modal div.modal-header {
-  border: 0px;
-  padding: 0;
-  margin: 0; }
-
-section#correoschile-shipping-modal div.account-recipient-info {
-  display: none; }
-
-/* FIN OCULTAR RETIRO POR TERCERO CITYBOX */
-/* OCULTAR RETIRO POR TERCERO TIENDA */
-section#store-shipping-modal div.modal-header {
-  border: 0px;
-  padding: 0;
-  margin: 0; }
-
-
-
-/*section#store-shipping-modal div.account-recipient-info {
-  display: none; } */
 
 loading{
 	width: 44px;
@@ -5401,7 +4976,7 @@ loading{
 	margin-bottom: 20px;
 }
 
-/* Ocultar mensaje de validaciÛÆ†§el Registro */
+/* Ocultar mensaje de validaciÛn del Registro */
 #mensajesErrorVal{
 	display: none;
 }
@@ -5411,7 +4986,7 @@ loading{
 	display: none;
 }	
 
-/* Ocultar mensaje de validaciÛÆ†åogin */
+/* Ocultar mensaje de validaciÛn Login */
 #loginPrincipal{
 	display: none;
 }
@@ -5461,16 +5036,6 @@ label.checkbox {
 #loading_popup .footer .bot_right{background-image:url('../images/colors/color1/popup_botright.png');background-repeat:no-repeat;background-position:bottom right;height:11px;width:51px;float:left}
 
 /*--- Para Usuario Fonocompras ---*/
-
-/*Redmine #164 given css Changes*/
-#agentFonoCompBanner{
-	min-height: auto !important;
-	border:none !important;
-	background: none !important;
-	margin: 0 auto !important;
-	padding: 0 !important;
-}
-/*Redmine #164 given css Changes*/
 
 #agentFonoComp {
 	width: 934px;
@@ -5612,565 +5177,12 @@ opacity: .48;
 	background: #e6e6e6;
 	color: #acacac
 }
-/*added*/
-.div_space{
-margin-bottom:15px;
-}
-.shopping-item-sidebar.marketplace .alert {
-    background: #f1e9f6 none repeat scroll 0 0;
-    color: #79568e;
-    margin: -10px -10px 10px;
-    width: auto;
-}
-.marketplace-recipient-info .shopping-item-sidebar.marketplace {
-    background: transparent none repeat scroll 0 0;
-    padding: 0 0 10px;
-	margin-bottom:15px;
-}
-.shopping-item-sidebar.marketplace {
-    background: #f3f0f7 none repeat scroll 0 0;
-    padding: 10px;
-}
-.shopping-item-sidebar.marketplace .shopping-item-image {
-    border: 1px solid #ddd;
-    overflow: hidden;
-    padding: 0;
-    width: 20%;
-	border-radius:200px;
-}
-.shopping-item-sidebar.marketplace .shopping-item-info {
-    padding: 0 10px;
-    width: 80%;
-}
-.marketplace-recipient-info .alert-promo {
-    border: medium none;
-    overflow: visible;
-    padding-right: 30px;
-    position: relative;
-}
-.alert.alert-promo p {
-    display: table;
-    /*margin: 0 auto;*/
-    overflow: hidden;
-}
-.marketplace-recipient-info .alert-promo .tooltip-parent {
-    top: 15px;
-}
-.tooltip-parent {
-    display: table;
-    height: 20px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 20px;
-}
-.tooltip-parent .tooltip {
-    background: #efefef none repeat scroll 0 0;
-    bottom: 24px;
-    color: #757575;
-    display: none;
-    font-size: 12px;
-    line-height: 14pt;
-    padding: 15px 20px;
-    position: absolute;
-    right: -20px;
-    text-align: center;
-    width: 200px;
-    z-index: 20;
-}
-#shopping-bag-items .content .alert.alert-promo.marketplace-alert {
-      text-align: left;
-    position:relative;
-   
-    border-top: none;
-    
-     }
-     
-    #shopping-bag-items .content .alert.alert-promo.marketplace-alert p {
-    display: block;
-    margin: 0;
-    top:0;
-    }
-
-.alert.alert-promo.marketplace-alert {
-      text-align: center;
-    position: relative;
-    border-top: none;
-    margin: -10px 0px 0px;
-    width: auto;  }
-  .alert.alert-promo.marketplace-alert p {
-    display: block;
-    margin: 0;
-    position: relative;
-    top: 6px; }
-    .alert.alert-promo.marketplace-alert p a {
-      font-family: "montserratsemi_bold";
-      color: #79568e; }
-    .alert.alert-promo.marketplace-alert p img {
-      width: 16px;
-      display: inline;
-      margin: 0 5px 0 0;
-      vertical-align: middle; }
-
-.tooltip-parent {
-  display: table;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 10px;
-  right: 10px; }
-  .tooltip-parent .tooltip {
-    background: #efefef;
-    padding: 15px 20px;
-    color: #757575;
-    display: none;
-    text-align: center;
-    font-size: 12px;
-    line-height: 14pt;
-    width: 200px;
-    position: absolute;
-    bottom: 24px;
-    right: -20px;
-    z-index: 20;
-    -webkit-border-radius: 6px;
-    -moz-border-radis: 6px;
-    -border-radius: 6px; }
-  .tooltip-parent .fa {
-    line-height: 20px !important; }
-  .tooltip-parent:hover .tooltip {
-    display: block; } 
-	
-	.product-preview-item {
-    margin: 0 0 15px;
-    min-height: 50px;
-    overflow: hidden;
-    padding-left: 60px;
-    position: relative;
-}
-.product-preview-item .thumbnail {
-display:blcok;
-height:50px;
-left:0;
-overflow:hidden;
-position:absolute;
-top:0;
-width:50px;
-
-}
-.product-preview-item .thumbnail img {
-    display: block;
-    height: auto;
-    min-height: 100%;
-    width: 100%;
-	border-radius:200px;
-}
-.product-preview-item h5{
-display:block;
-font-size:16px;
-text-transform:uppercase;
-}
-.recipient-info h4 strong, .account-recipient-info h4 strong {
-    font-family: "montserratsemi_bold";
-}
-
-.main1{
-	color:#79568e;
-	
-}
-
-#shopping-bag-items ul .group > li {
-  margin-bottom: 0; }
-  #shopping-bag-items ul .group > li:last-child {
-    margin-bottom: 15px; }
-
-.shopping-item-sidebar.marketplace {
-  background: #f3f0f7;
-  padding: 10px; }
-  .shopping-item-sidebar.marketplace .alert {
-    background: #f1e9f6;
-    color: #79568e;
-    margin: -10px -10px 10px;
-    width: auto; }
-    .shopping-item-sidebar.marketplace .alert strong {
-      font-family: "montserratsemi_bold"; }
-  .shopping-item-sidebar.marketplace .shopping-item-image {
 
 
-
-
-
-    overflow: hidden;
-    padding: 0;
-    width: 20%;
-    border: solid 1px #ddd;
-    -webkit-border-radius: 200px;
-    -moz-border-radis: 200px;
-    border-radius: 200px; }
-  .shopping-item-sidebar.marketplace .shopping-item-info {
-    width: 80%;
-    padding: 0 10px; }
-
-
-
-
-
-
-
-
-
-
-
-
-.shopping-sidebar-wrapper .group .shopping-item-sidebar {
-  margin-bottom: 0; }
-  .shopping-sidebar-wrapper .group .shopping-item-sidebar:last-child {
-    margin-bottom: 15px; }
-
-#shipping-method .recipient-info h3 {
-  font-size: 16px;
-  margin-bottom: 10px; }
-/*added*/
-/* Ocultar sÛ¨Ø†Retiro Por Terceros (PUNTO RETIRO) */
+/* Ocultar sÛlo Retiro Por Terceros (PUNTO RETIRO) */
 #correoschile-shipping-modal .modal-header{
 	border-bottom: none !important
 }
 #correoschile-shipping-modal .account-recipient-info{
 	display:none
 }
-.total-price > dt {
-    font-weight: bold;
-}
-
-marketplace-recipient-info h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: #6E357C; }
-.marketplace-recipient-info .alert-promo {
-  border: none;
-  position: relative;
-  overflow: visible;
-  padding-right: 30px; }
-  .marketplace-recipient-info .alert-promo img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 18px;
-    margin: 0 5px 0 0; }
-  .marketplace-recipient-info .alert-promo .tooltip-parent {
-    top: 15px; }
-.marketplace-recipient-info form .form-group:last-child .pull-left {
-  width: 60%; }
-.marketplace-recipient-info .shopping-item-sidebar.marketplace {
-  background: transparent;
-  padding: 0 0 10px; }
-
-.product-preview-item {
-  overflow: hidden;
-  position: relative;
-  padding-left: 60px;
-  min-height: 50px;
-  margin: 0 0 15px; }
-  .product-preview-item .thumbnail {
-    display: block;
-    overflow: hidden;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-border-radius: 200px;
-    -moz-border-radis: 200px;
-    border-radius: 200px; }
-    .product-preview-item .thumbnail img {
-
-
-
-
-
-
-      display: block;
-      width: 100%;
-      height: auto;
-      min-height: 100%; }
-  .product-preview-item h5 {
-    display: block;
-    font-size: 16px;
-    text-transform: uppercase; }
-
-
-
-
-
-.shipped-by-marketplace {
-  color: #6E357C;
-
-  font-size: 16px !important;
-  display: block;
-  margin: 20px 0 !important; }
-  .shipped-by-marketplace strong {
-    font-weight: 700; }
-}
-
-/*Redmine #164 given css Changes*/
-@media only screen and (max-width: 959px){
-	#shopping-bag-items ul > li ul li .pull-right{
-		text-align: center;
-	}
-	#shopping-bag-total #coupon-code #discount-code-btn, #shopping-bag-total #gift-code #gift-code-btn{
-		width: 90% !important
-	}
-	#shopping-bag-total{
-		padding: 15px !important
-	}
-	#shopping-bag-total > .content{
-		padding:20px 0 !important
-	}
-	#shopping-bag-header h1 img#logo-ripley-chile{
-		background:none !important;
-		height: 40px !important;
-		width: 125px !important;
-		margin: 0px auto 20px !important
-	}
-	#shopping-bag-header > .content{
-		padding: 20px 15px 0 !important;
-	}
-	#shipping-steps ul li.shopping-bag .shopping-bag-icon{
-		margin: -6px 10px 0 0 !important;
-	}
-	#shipping-steps ul{
-		margin: 0 auto !important
-	}
-	#shopping-bag-items ul > li .shopping-item-holder{
-		padding: 10px 5px !important
-	}
-	#shopping-bag-total .shopping-total{
-		margin: 20px auto 0;
-	}
-	#change-shipping-address-modal .saved-address .section:nth-child(2){
-		padding:0 !important;
-	}
-	#shopping-bag-total #applied-coupons ul li .btn{
-		width:100% !important;
-		margin:25px 0 5px;
-	}
-	#shopping-bag-total #applied-coupons ul li dl{
-		width: 100% !important
-	}
-	#shopping-bag-total #applied-coupons .coupon-name{
-		font-size: 15px;
-		text-align: center;
-	}
-	/* Modal Descuentos */
-	#discount-code-modal .modal-dialog{
-		padding:40px 20px !important
-	}
-	#discount-code-modal .modal-header{
-		padding:0 0 10px !important
-	}
-	/* Modal Codigo Evento */
-	#gift-code-modal .modal-dialog{
-		padding:40px 20px !important
-	}
-	#gift-code-modal .modal-header{
-		padding:0 0 10px !important
-	}
-	#gift-code-modal .modal-body{
-		padding:5px 0 0 !important
-	}
-	#gift-code-modal #regalosEventCode{
-		margin:10px 0 0 !important		
-	}
-	#gift-code-modal .modal-body .btn.btn-default{
-		padding: 10px 5px !important
-	}
-	#gift-code #event-code-info .btn-small{
-		width:100%;
-		text-align: center;
-	}
-	#shopping-bag-total{
-		margin-top: 0 !important
-	}
-	#shopping-bag-footer{
-		padding: 20px 15px !important
-	}
-}
-
-@media only screen and (max-width: 375px){
-	#shopping-bag-total #coupon-code #discount-code-btn, #shopping-bag-total #gift-code #gift-code-btn{
-		width: 85% !important;
-		height: 60px !important;
-		line-height: 15px;
-		margin: 0 5px 20px 0 !important;
-	}
-	#shopping-bag-items ul > li .shopping-bag-item-image img{
-		margin: 15px auto !important
-	}
-}
-
-@media only screen and (min-width:668px) and (max-width: 959px){
-	.domicilio-small-icon, .tienda-small-icon, .retiro-small-icon{
-		margin: 0 0 0 36px !important;
-	}
-}
-
-@media only screen and (min-width:569px) and (max-width: 667px){
-	.domicilio-small-icon, .tienda-small-icon, .retiro-small-icon{
-		margin: 0 0 0 92px !important;
-	}
-}
-@media only screen and (min-width:451px) and (max-width: 568px){
-	.domicilio-small-icon, .tienda-small-icon, .retiro-small-icon{
-		margin: 0 0 0 72px !important;
-	}
-}
-@media only screen and (min-width:376px) and (max-width: 450px){
-	.domicilio-small-icon, .tienda-small-icon, .retiro-small-icon{
-		margin: 0 0 0 48px !important;
-	}
-}
-@media only screen and (min-width:321px) and (max-width: 375px){
-	.domicilio-small-icon, .tienda-small-icon, .retiro-small-icon{
-		margin: 0 0 0 36px !important;
-	}
-	#shipping-steps ul li{
-		margin: 0 4px 0 0 !important;
-	}
-	#shopping-bag-actions .content{
-		padding: 20px 5px !important
-	}
-}
-@media only screen and (max-width: 320px){
-	#shipping-steps ul li{
-		margin: 0 4px 0 0 !important;
-	}
-	.domicilio-small-icon, .tienda-small-icon, .retiro-small-icon{
-		margin: 0 0 0 24px !important;
-	}
-	#shopping-bag-actions .content{
-		padding: 20px 5px !important
-	}
-}
-/* FIX TEXTO PRODUCTO REGALO */
-#ShopCartDisplay > div.content > ul > li > .alert.alert-info.alert-gift{
-	text-indent: -5000px;
-    overflow: hidden;
-}
-
-/* PASO 1 DESPACHO */
-#shipping-method > ul li {
-    float: right;
-}
-/* Bot√≥n utilizar este punto de retiro */
-#WC_ShippingAddressSelectSingle_div_1_sec1 #WC_ShippingAddressSelectSingle_btnSel{
-  background: #54b268;
-  color: #fff;
-  border-color: #54b268;
-  animation: retiro_cercano 2.72s ease infinite;
-  transform-origin: 50% 50%;
-}
-
-@keyframes retiro_cercano {
-  0% { transform:translate(0,0) }
-  4.41177% { transform:translate(5px,0) }
-  8.82353% { transform:translate(0,0) }
-  13.23529% { transform:translate(5px,0) }
-  17.64706% { transform:translate(0,0) }
-  22.05882% { transform:translate(5px,0) }
-  26.47059% { transform:translate(0,0) }
-  100% { transform:translate(0,0) }
-}
-#WC_ShippingAddressSelectSingle_div_1_sec1 #WC_ShippingAddressSelectSingle_btnSel:hover{
-  background: #6E357C;
-  color: #fff;
-  border-color: #6E357C; 
-}
-
-@media only screen and (max-width: 959px){
-	/* PASO 1 DESPACHO */
-	button#singleShipmentAddressB, #shipping-method > div.col-50.shipping-info > button, #shipping-method > div.col-50.recipient-info > button{
-		width: 100%;
-	}
-	#shipping-method > ul li a{
-		margin:0 auto;
-	}
-	#shopping-bag-header h1 img#logo-ripley-chile{
-		background:none !important;
-		height: 40px !important;
-		width: 125px !important;
-		margin: 0px auto 20px !important
-	}
-	#shopping-bag-header > .content{
-		padding: 20px 15px 0 !important;
-	}
-	#shipping-steps ul li.shopping-bag .shopping-bag-icon{
-		margin: -6px 10px 0 0 !important;
-	}
-	#shipping-steps ul{
-		margin: 0 auto !important
-	}
-	#shopping-bag-items ul > li .shopping-item-holder{
-		padding: 10px 5px !important
-	}
-	/* MODAL GENERAL */
-	.modal .modal-dialog{
-		padding:15px !important;
-	}
-	.modal .modal-header{
-		margin-bottom: 8px !important;
-	}
-	.modal .modal-header h3{
-		margin-bottom:15px !important;
-	}
-	/* MODAL DIRECCIONES */
-	#change-shipping-address-modal .saved-address{
-		padding:15px 0px !important;
-	}
-	#change-shipping-address-modal .saved-address .section:nth-child(1){
-		width:55px;
-	}
-	#change-shipping-address-modal .saved-address .section:nth-child(2){
-		padding:0 !important;
-	}
-	/* PASO 2 PAGO */
-	#payment-method{
-		padding: 0 !important
-	}
-	#payment-method h3{
-		text-align: center !important
-	}
-	/* ARREGLO TOOLTIP MODAL TARJETA RIPLEY - Codigo Verificaci√≥n */
-	.boxPayTre #collapse-vcode{
-		height: auto !important
-	}
-	/* BOX PAGO TRIPLEY */
-	.modalesTarjetas#payment-details{
-		padding: 10px !important;
-		margin: 20px 0;
-	}
-}
-@media only screen and (max-width: 374px){
-	/* MODAL GENERAL */
-	.modal .modal-footer .btn{
-		width: 100%;
-    	text-align: center;
-	}
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, only screen and (min-resolution: 240dpi){
-	.custom-select {
-		background-image:url(../../images/colors/color1/flujoDeCompra/img/select-arrow@2x.jpg) !important;
-	}
-}
-
-@media only screen and (min-width: 960px){
-  #change-shipping-address-modal .modal-dialog,
-  #edit-shipping-address-modal .modal-dialog,
-  #new-shipping-address-modal .modal-dialog,
-  #mercadopago-modal .modal-dialog{
-    max-height: 550px !important;
-    overflow:auto !important;
-  }
-}
-
-
-
-/*Redmine #164 given css Changes*/
