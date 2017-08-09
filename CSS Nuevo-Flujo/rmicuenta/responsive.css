@@ -116,7 +116,7 @@ div.content_wrapper > div.content_left_shadow, div.content_wrapper > div.content
   #header #contentHeader {
     height: auto; }
     #header #contentHeader #header_logo a#LogoRipley, #header #contentHeader #header_logo_FC a#LogoRipley {
-      background: transparent url("../img/ripley-logo.svg") center center no-repeat;
+      background: transparent url("img/ripley-logo.svg") center center no-repeat;
       width: 80px;
       height: 30px;
       background-size: 100%; }
