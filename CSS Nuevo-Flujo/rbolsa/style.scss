@@ -1329,7 +1329,7 @@ table{
 }
 
 .domicilio-small-icon{
-	background:transparent url(images/tileset.png) 0 -415px no-repeat;
+	background:transparent url('images/tileset.png') 0 -415px no-repeat;
 	height:21px;
 	width:26px;
 	overflow:hidden;
@@ -1341,12 +1341,12 @@ table{
 		margin:0 7px 0 0;
 	}
 	@media #{$retina}{
-		background-image: url(images/tileset@2x.png);
+		background-image: url('images/tileset@2x.png');
 		background-size: 175px;
 	}
 }
 .tienda-small-icon{
-	background:transparent url(images/tileset.png) -27px -415px no-repeat;
+	background:transparent url('images/tileset.png') -27px -415px no-repeat;
 	height:21px;
 	width:26px;
 	overflow:hidden;
@@ -1358,12 +1358,12 @@ table{
 		margin:0 7px 0 0;
 	}
 	@media #{$retina}{
-		background-image: url(images/tileset@2x.png);
+		background-image: url('images/tileset@2x.png');
 		background-size: 175px;
 	}
 }
 .retiro-small-icon{
-	background:transparent url(images/tileset.png) -55px -415px no-repeat;
+	background:transparent url('images/tileset.png') -55px -415px no-repeat;
 	height:21px;
 	width:16px;
 	overflow:hidden;
@@ -1375,12 +1375,12 @@ table{
 		margin:0 7px 0 0;
 	}
 	@media #{$retina}{
-		background-image: url(images/tileset@2x.png);
+		background-image: url('images/tileset@2x.png');
 		background-size: 175px;
 	}
 }
 .ripleypuntos-icon{
-	background:transparent url(images/tileset.png) -84px -172px no-repeat;
+	background:transparent url('images/tileset.png') -84px -172px no-repeat;
 	height:24px;
 	width:92px;
 	overflow:hidden;
@@ -1388,7 +1388,7 @@ table{
 	text-indent:-9999px;
 	margin:0 10px 0 0;
 	@media #{$retina}{
-		background-image: url(images/tileset@2x.png);
+		background-image: url('images/tileset@2x.png');
 		background-size:175px;
 	}
 }
@@ -2940,23 +2940,23 @@ dl.subtotal-price{
 					.shipping-method-type{
 						background: #79568e;
 						.retiro-icon{
-							background:transparent url(images/tileset.png) 0 -29px no-repeat;
+							background:transparent url('images/tileset.png') 0 -29px no-repeat;
 							@media #{$retina}{
-								background-image: url(images/tileset@2x.png);
+								background-image: url('images/tileset@2x.png');
 								background-size: 175px;
 							}
 						}
 						.casa-icon{
-							background: transparent url(images/tileset.png) -24px -28px no-repeat;
+							background: transparent url('images/tileset.png') -24px -28px no-repeat;
 							@media #{$retina}{
-								background-image: url(images/tileset@2x.png);
+								background-image: url('images/tileset@2x.png');
 								background-size: 175px;
 							}
 						}
 						.tienda-icon{
-							background: transparent url(images/tileset.png) -56px -28px no-repeat;
+							background: transparent url('images/tileset.png') -56px -28px no-repeat;
 							@media #{$retina}{
-								background-image: url(images/tileset@2x.png);
+								background-image: url('images/tileset@2x.png');
 								background-size: 175px;
 							}
 						}
@@ -2964,23 +2964,23 @@ dl.subtotal-price{
 				}
 				&.disabled{
 					.retiro-icon{
-						background:transparent url(images/tileset.png) 0 -58px no-repeat;
+						background:transparent url('images/tileset.png') 0 -58px no-repeat;
 						@media #{$retina}{
-							background-image: url(images/tileset@2x.png);
+							background-image: url('images/tileset@2x.png');
 							background-size: 175px;
 						}
 					}
 					.casa-icon{
-						background: transparent url(images/tileset.png) -24px -57px no-repeat;
+						background: transparent url('images/tileset.png') -24px -57px no-repeat;
 						@media #{$retina}{
-							background-image: url(images/tileset@2x.png);
+							background-image: url('images/tileset@2x.png');
 							background-size: 175px;
 						}
 					}
 					.tienda-icon{
-						background: transparent url(images/tileset.png) -56px -57px no-repeat;
+						background: transparent url('images/tileset.png') -56px -57px no-repeat;
 						@media #{$retina}{
-							background-image: url(images/tileset@2x.png);
+							background-image: url('images/tileset@2x.png');
 							background-size: 175px;
 						}
 					}
@@ -3008,7 +3008,7 @@ dl.subtotal-price{
 				margin:0 auto 10px;
 				@include border-radius(25px);
 				.retiro-icon{
-					background: transparent url(images/tileset.png) 0 0 no-repeat;
+					background: transparent url('images/tileset.png') 0 0 no-repeat;
 					height:29px;
 					width:24px;
 					display:block;
@@ -3018,12 +3018,12 @@ dl.subtotal-price{
 					top:13px;
 					left:16px;
 					@media #{$retina}{
-						background-image: url(images/tileset@2x.png);
+						background-image: url('images/tileset@2x.png');
 						background-size: 175px;
 					}
 				}
 				.casa-icon{
-					background: transparent url(images/tileset.png) -24px 0 no-repeat;
+					background: transparent url('images/tileset.png') -24px 0 no-repeat;
 					height:29px;
 					width:33px;
 					display:block;
@@ -3033,12 +3033,12 @@ dl.subtotal-price{
 					top:14px;
 					left:11px;
 					@media #{$retina}{
-						background-image: url(images/tileset@2x.png);
+						background-image: url('images/tileset@2x.png');
 						background-size: 175px;
 					}
 				}
 				.tienda-icon{
-					background: transparent url(images/tileset.png) -56px 0 no-repeat;
+					background: transparent url('images/tileset.png') -56px 0 no-repeat;
 					height:29px;
 					width:31px;
 					display:block;
@@ -3048,7 +3048,7 @@ dl.subtotal-price{
 					top:13px;
 					left:11px;
 					@media #{$retina}{
-						background-image: url(images/tileset@2x.png);
+						background-image: url('images/tileset@2x.png');
 						background-size: 175px;
 					}
 				}
@@ -3206,10 +3206,21 @@ dl.subtotal-price{
 				height:30px;
 				display: block;
 				color:#d7d7d7;
+        -webkit-transition: 0.5s ease-out;
+      	-moz-transition: 0.5s ease-out;
+      	-o-transition: 0.5s ease-out;
+      	transition: 0.5s ease-out;
 				@media #{$desktop}{
 					width:auto;
 					height:22px;
 				}
+        &:hover{
+          color:#424242;
+        	-webkit-transition: 0.5s ease-out;
+        	-moz-transition: 0.5s ease-out;
+        	-o-transition: 0.5s ease-out;
+        	transition: 0.5s ease-out;
+        }
 			}
 			span{
 				background: #d7d7d7;
@@ -3239,25 +3250,29 @@ dl.subtotal-price{
 					margin:10px 0 0 10px;
 				}
 				&.shopping-bag-small-icon{
-					background:transparent url(images/tileset.png) -100px -358px no-repeat;
+					background:transparent url('images/tileset.png') -100px -358px no-repeat;
 					height:30px;
 					width:30px;
 					display: block;
 					overflow: hidden;
 					text-indent:-9999px;
 					@media #{$desktop}{
-						background:transparent url(images/tileset.png) -101px -334px no-repeat;
+						background:transparent url('images/tileset.png') -101px -334px no-repeat;
 						height:22px;
 						width:22px;
 					}
 					@media #{$retina}{
-						background-image: url(images/tileset@2x.png);
+						background-image: url('images/tileset@2x.png');
 						background-size: 175px;
 					}
 				}
 			}
 			&.active{
-				color:#424242;
+        color:#424242;
+      	-webkit-transition: 0.5s ease-out;
+      	-moz-transition: 0.5s ease-out;
+      	-o-transition: 0.5s ease-out;
+      	transition: 0.5s ease-out;
 				text-indent: 0;
 				line-height: 22pt;
 				@media #{$desktop}{
@@ -3279,7 +3294,7 @@ dl.subtotal-price{
 			}
 			&.shopping-bag{
 				.shopping-bag-icon{
-					background:transparent url(images/tileset.png) -58px -334px no-repeat;
+					background:transparent url('images/tileset.png') -58px -334px no-repeat;
 					height:39px;
 					width:39px;
 					overflow: hidden;
@@ -3287,7 +3302,7 @@ dl.subtotal-price{
 					margin:-10px 10px 0 0;
 					@include border-radius(0);
 					@media #{$retina}{
-						background-image: url(images/tileset@2x.png);
+						background-image: url('images/tileset@2x.png');
 						background-size: 175px;
 					}
 				}
@@ -3375,7 +3390,7 @@ dl.subtotal-price{
 		margin-bottom: 30px;
 	}
 	.bolsa-icon{
-		background:transparent url(images/tileset.png) 0 -91px no-repeat;
+		background:transparent url('images/tileset.png') 0 -91px no-repeat;
 		height:34px;
 		width: 32px;
 		display: block;
@@ -3384,12 +3399,12 @@ dl.subtotal-price{
 		float:left;
 		margin:0 20px 10px 0;
 		@media #{$retina}{
-			background-image: url(images/tileset@2x.png);
+			background-image: url('images/tileset@2x.png');
 			background-size: 175px;
 		}
 	}
 	.horario-icon{
-		background:transparent url(images/tileset.png) -35px -91px no-repeat;
+		background:transparent url('images/tileset.png') -35px -91px no-repeat;
 		height:34px;
 		width: 34px;
 		display: block;
@@ -3398,12 +3413,12 @@ dl.subtotal-price{
 		float:left;
 		margin:0 20px 10px 0;
 		@media #{$retina}{
-			background-image: url(images/tileset@2x.png);
+			background-image: url('images/tileset@2x.png');
 			background-size: 175px;
 		}
 	}
 	.precio-icon{
-		background:transparent url(images/tileset.png) -70px -91px no-repeat;
+		background:transparent url('images/tileset.png') -70px -91px no-repeat;
 		height:34px;
 		width: 34px;
 		display: block;
@@ -3412,12 +3427,12 @@ dl.subtotal-price{
 		float:left;
 		margin:0 20px 10px 0;
 		@media #{$retina}{
-			background-image: url(images/tileset@2x.png);
+			background-image: url('images/tileset@2x.png');
 			background-size: 175px;
 		}
 	}
 	.email-icon{
-		background:transparent url(images/tileset.png) -105px -91px no-repeat;
+		background:transparent url('images/tileset.png') -105px -91px no-repeat;
 		height:34px;
 		width: 34px;
 		display: block;
@@ -3429,7 +3444,7 @@ dl.subtotal-price{
 			margin-bottom: 60px;
 		}
 		@media #{$retina}{
-			background-image: url(images/tileset@2x.png);
+			background-image: url('images/tileset@2x.png');
 			background-size: 175px;
 		}
 	}
@@ -3712,6 +3727,9 @@ dl.subtotal-price{
 		}
 	}
 }
+#select-shipping-date0{
+  margin: 0;
+}
 #select-shipping-date .pull-right{
 	margin-top:15px;
 }
@@ -3742,14 +3760,14 @@ dl.subtotal-price{
 		margin-bottom: 10px;
 	}
 	.alert-icon{
-		background:transparent url(images/tileset.png) 0 -167px no-repeat;
+		background:transparent url('images/tileset.png') 0 -167px no-repeat;
 		height:33px;
 		width:34px;
 		display: block;
 		float:left;
 		margin:0 10px 0 0;
 		@media #{$retina}{
-			background-image: url(images/tileset@2x.png);
+			background-image: url('images/tileset@2x.png');
 			background-size: 175px;
 		}
 	}
@@ -3943,11 +3961,17 @@ img.maps{
 		}
 	}
 	.custom-select{
+    background: #fff url('images/select-arrow@2x.jpg') right 15px no-repeat;
+    background-size: 20px !important;
+    -webkit-appearance: inherit !important;
 		@media #{$desktop}{
 			width: 200px;
 			float:left;
 			display: block;
 			margin: 0 0 0 10px;
+      background: #fff url('images/select-arrow.jpg') right 15px no-repeat;
+    	background-size: 20px !important;
+    	-webkit-appearance: inherit !important;
 		}
 	}
 }
@@ -4005,7 +4029,7 @@ img.maps{
 			}
 			.name{
 				width:auto;
-				max-width: 50%;
+				max-width:100%;
 				display: table;
 				float:left;
 			}
@@ -4139,19 +4163,19 @@ img.maps{
   }
 }
 .tripley-icon{
-	background:transparent url(images/tileset.png) 0 -206px no-repeat;
+	background:transparent url('images/tileset.png') 0 -206px no-repeat;
 	height:27px;
 	width:41px;
 	display:block;
 	overflow:hidden;
 	text-indent:-9999px;
 	@media #{$retina}{
-		background-image: url(images/tileset@2x.png);
+		background-image: url('images/tileset@2x.png');
 		background-size: 175px;
 	}
 }
 .mripley-icon{
-	background:transparent url(images/tileset.png) -45px -206px no-repeat;
+	background:transparent url('images/tileset.png') -45px -206px no-repeat;
 	height:27px;
 	width:41px;
 	display:block;
@@ -4159,12 +4183,12 @@ img.maps{
 	text-indent:-9999px;
 	margin-left:3px;
 	@media #{$retina}{
-		background-image: url(images/tileset@2x.png);
+		background-image: url('images/tileset@2x.png');
 		background-size: 175px;
 	}
 }
 .mercadopago-icon{
-	background:transparent url(images/tileset.png) -58px -440px no-repeat;
+	background:transparent url('images/tileset.png') -58px -440px no-repeat;
 	height:31px;
 	width:119px;
 	display:block;
@@ -4172,67 +4196,67 @@ img.maps{
 	overflow:hidden;
 	text-indent:-9999px;
 	@media #{$retina}{
-		background-image: url(images/tileset@2x.png);
+		background-image: url('images/tileset@2x.png');
 		background-size: 175px;
 	}
 }
 .mercadopago-small{
-	background: transparent url(images/tileset.png) -92px -399px no-repeat;
+	background: transparent url('images/tileset.png') -92px -399px no-repeat;
 	height:31px;
 	width:85px;
 	display:block;
 	overflow:hidden;
 	text-indent:-9999px;
 	@media #{$retina}{
-		background-image: url(images/tileset@2x.png);
+		background-image: url('images/tileset@2x.png');
 		background-size:175px;
 	}
 }
 .webpayo-icon{
-	background:transparent url(images/tileset.png) 0 -234px no-repeat;
+	background:transparent url('images/tileset.png') 0 -234px no-repeat;
 	height:26px;
 	width:63px;
 	display:block;
 	overflow:hidden;
 	text-indent:-9999px;
 	@media #{$retina}{
-		background-image: url(images/tileset@2x.png);
+		background-image: url('images/tileset@2x.png');
 		background-size: 175px;
 	}
 }
 .webpay-icon{
-	background:transparent url(images/tileset.png) 0 -262px no-repeat;
+	background:transparent url('images/tileset.png') 0 -262px no-repeat;
 	height:32px;
 	width:63px;
 	display:block;
 	overflow:hidden;
 	text-indent:-9999px;
 	@media #{$retina}{
-		background-image: url(images/tileset@2x.png);
+		background-image: url('images/tileset@2x.png');
 		background-size: 175px;
 	}
 }
 .webpayc-icon{
-	background:transparent url(images/tileset.png) -63px -262px no-repeat;
+	background:transparent url('images/tileset.png') -63px -262px no-repeat;
 	height:32px;
 	width:63px;
 	display:block;
 	overflow:hidden;
 	text-indent:-9999px;
 	@media #{$retina}{
-		background-image: url(images/tileset@2x.png);
+		background-image: url('images/tileset@2x.png');
 		background-size: 175px;
 	}
 }
 .giftcard-icon{
-	background:transparent url(images/tileset.png) 0 0-298px no-repeat;
+	background:transparent url('images/tileset.png') 0 0-298px no-repeat;
 	height:35px;
 	width:36px;
 	display:block;
 	overflow:hidden;
 	text-indent:-9999px;
 	@media #{$retina}{
-		background-image: url(images/tileset@2x.png);
+		background-image: url('images/tileset@2x.png');
 		background-size: 175px;
 	}
 }
@@ -4454,6 +4478,9 @@ ul#payment-document{
 		}
 	}
 }
+#collapse-vcode{
+  height:auto;
+}
 #collapse-vcode, #collapse-titular-name{
 	background: #f4ebbd;
 	color: #6b4410;
@@ -4502,7 +4529,7 @@ ul#payment-document{
 		}
 	}
 	.simple-rcard{
-		background:transparent url(images/tileset.png) 0 -332px no-repeat;
+		background:transparent url('images/tileset.png') 0 -332px no-repeat;
 		height:42px;
 		width:52px;
 		display: block;
@@ -4512,12 +4539,12 @@ ul#payment-document{
 			margin:0 10px 0 0;
 		}
 		@media #{$retina}{
-			background-image: url(images/tileset@2x.png);
+			background-image: url('images/tileset@2x.png');
 			background-size: 175px;
 		}
 	}
 	.simple-tcard{
-		background:transparent url(images/tileset.png) 0 -440px no-repeat;
+		background:transparent url('images/tileset.png') 0 -440px no-repeat;
 		height:42px;
 		width:52px;
 		display: block;
@@ -4527,7 +4554,7 @@ ul#payment-document{
 			margin:0 10px 0 0;
 		}
 		@media #{$retina}{
-			background-image: url(images/tileset@2x.png);
+			background-image: url('images/tileset@2x.png');
 			background-size: 175px;
 		}
 	}
@@ -4792,7 +4819,7 @@ ul#payment-document{
 	}
 	input {
 	  color: #bf0a0a;
-	  text-align: right;
+	  text-align: left;
 	}
 	label small {
 		font-size: 10px;
@@ -5030,7 +5057,7 @@ ul#payment-document{
 		font-family: $bold-primary-font;
 	}
 	.norton-icon{
-		background: transparent url(images/tileset.png) 0 -376px no-repeat;
+		background: transparent url('images/tileset.png') 0 -376px no-repeat;
 		height:34px;
 		width:63px;
 		overflow: hidden;
@@ -5042,7 +5069,7 @@ ul#payment-document{
 			margin:0 10px 0 0;
 		}
 		@media #{$retina}{
-			background-image: url(images/tileset@2x.png);
+			background-image: url('images/tileset@2x.png');
 			background-size: 175px;
 		}
 	}
@@ -5650,7 +5677,7 @@ ul#payment-document{
 	}
 }
 .shopping-bag-resume-icon{
-	background:transparent url(images/tileset.png) -92px 0 no-repeat;
+	background:transparent url('images/tileset.png') -92px 0 no-repeat;
 	height:20px;
 	width:20px;
 	display:inline-block;
@@ -5658,7 +5685,7 @@ ul#payment-document{
 	overflow:hidden;
 	text-indent:-9999px;
 	@media #{$retina}{
-		background-image: url(images/tileset@2x.png);
+		background-image: url('images/tileset@2x.png');
 		background-size: 175px;
 	}
 }
@@ -6076,7 +6103,9 @@ loading{
 #add-giftcard-modal #claveDeTarjetaTRE label{
 	line-height:10pt;
 }
-
+#claveDeTarjetaTRE .col-40{
+  width: 100% !important
+}
 #seccionSaldoDisponible > .form-group{
 		margin-bottom: 15px;
     overflow: hidden;
@@ -6463,10 +6492,21 @@ opacity: .48;
   .contSimulaDesp {
       border-bottom: 1px solid #ddd;
       margin: 0 0 30px 0;
+      select{
+        padding:0 0 0 8px;
+        background: #fff url('images/select-arrow.jpg') right 15px no-repeat !important;
+      	background-size: 20px !important;
+      	-webkit-appearance: inherit !important;
+      }
+      @media #{$retina}{
+        background-image: url('images/select-arrow@2x.jpg');
+        background-size: 25px;
+      }
   }
 	h3{
 		font-size: 16px;
 		margin-bottom: 10px;
+    text-align: left;
 	}
 }
 .marketplace-recipient-info{
@@ -6553,4 +6593,41 @@ opacity: .48;
     &:hover{
     	color:$primary-color;
     }
+}
+
+/* Botón utilizar este punto de retiro */
+#WC_ShippingAddressSelectSingle_div_1_sec1 #WC_ShippingAddressSelectSingle_btnSel{
+  background: #54b268;
+  color: #fff;
+  border-color: #54b268;
+  animation: retiro_cercano 2.72s ease infinite;
+  transform-origin: 50% 50%;
+  &:hover{
+    background: #6E357C;
+    color: #fff;
+    border-color: #6E357C;
+  }
+}
+@keyframes retiro_cercano {
+  0% { transform:translate(0,0) }
+  4.41177% { transform:translate(5px,0) }
+  8.82353% { transform:translate(0,0) }
+  13.23529% { transform:translate(5px,0) }
+  17.64706% { transform:translate(0,0) }
+  22.05882% { transform:translate(5px,0) }
+  26.47059% { transform:translate(0,0) }
+  100% { transform:translate(0,0) }
+}
+
+#shipmentAddressDomicilioDetalle{
+  .col-50.shipping-info{
+    width:100%
+  }
+}
+
+#div_tiendas{
+  > .section:first-child{
+    > h3{
+      text-align: left !important}
+  }
 }

@@ -905,12 +905,12 @@ select {
   margin-bottom: 20px;
   display: block;
   overflow: hidden;
-  background: #fff url(images/select-arrow.jpg) right 15px no-repeat;
+  background: #fff url('images/select-arrow.jpg') right 15px no-repeat;
   border: solid 1px #e4e4e4;
   padding-right: 40px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
     .custom-select {
-      background-image: url(images/select-arrow@2x.jpg);
+      background-image: url('images/select-arrow@2x.jpg');
       background-size: 25px; } }
   .custom-select select {
     width: 160% !important;
@@ -2850,7 +2850,11 @@ dl.subtotal-price {
       width: 30px;
       height: 30px;
       display: block;
-      color: #d7d7d7; }
+      color: #d7d7d7;
+      -webkit-transition: 0.5s ease-out;
+    	-moz-transition: 0.5s ease-out;
+    	-o-transition: 0.5s ease-out;
+    	transition: 0.5s ease-out;}
       @media only screen and (min-width: 960px) {
         #shipping-steps ul li a {
           width: auto;
@@ -2899,8 +2903,12 @@ dl.subtotal-price {
           #shipping-steps ul li span.shopping-bag-small-icon {
             background-image: url(images/tileset@2x.png);
             background-size: 175px; } }
-    #shipping-steps ul li.active {
-      color: #424242;
+    #shipping-steps ul li.active{
+      color:#424242;
+    	-webkit-transition: 0.5s ease-out;
+    	-moz-transition: 0.5s ease-out;
+    	-o-transition: 0.5s ease-out;
+    	transition: 0.5s ease-out;
       text-indent: 0;
       line-height: 22pt; }
       @media only screen and (min-width: 960px) {
@@ -2915,7 +2923,13 @@ dl.subtotal-price {
         #shipping-steps ul li.active span.separador {
           background: #d7d7d7; }
       #shipping-steps ul li.active a {
-        color: #333; }
+        color: #333;}
+      #shipping-steps ul li a:hover{
+        color:#424242;
+        -webkit-transition: 0.5s ease-out;
+        -moz-transition: 0.5s ease-out;
+        -o-transition: 0.5s ease-out;
+        transition: 0.5s ease-out;}
     #shipping-steps ul li.shopping-bag .shopping-bag-icon {
       background: transparent url(images/tileset.png) -58px -334px no-repeat;
       height: 39px;
@@ -3298,7 +3312,9 @@ dl.subtotal-price {
   @media only screen and (min-width: 960px) {
     #change-shipping-address-modal .btn {
       margin-bottom: 0; } }
-
+#select-shipping-date0{
+  margin:0;
+}
 #select-shipping-date .pull-right {
   margin-top: 15px; }
 
@@ -3545,7 +3561,7 @@ img.maps {
         margin-top: 5px; }
       #PaymentForm1 .form-group label .name {
         width: auto;
-        max-width: 50%;
+        max-width: 100%;
         display: table;
         float: left; }
       #PaymentForm1 .form-group label .tripley-icon, #PaymentForm1 .form-group label .webpayo-icon, #PaymentForm1 .form-group label .webpay-icon, #PaymentForm1 .form-group label .webpayc-icon, #PaymentForm1 .form-group label .giftcard-icon, #PaymentForm1 .form-group label .mripley-icon {
@@ -3935,7 +3951,9 @@ ul#payment-document {
       float: left;
       cursor: pointer;
       margin-right: 10px; }
-
+#collapse-vcode{
+  height:auto;
+}
 #collapse-vcode, #collapse-titular-name {
   background: #f4ebbd;
   color: #6b4410;
@@ -4217,7 +4235,7 @@ ul#payment-document {
   height: 34px; }
 #add-giftcard-modal input {
   color: #bf0a0a;
-  text-align: right; }
+  text-align: left; }
 #add-giftcard-modal label small {
   font-size: 10px; }
 
@@ -5378,7 +5396,8 @@ loading {
 
 #add-giftcard-modal #claveDeTarjetaTRE label {
   line-height: 10pt; }
-
+#claveDeTarjetaTRE .col-40{
+  width: 100% !important}
 #seccionSaldoDisponible > .form-group {
   margin-bottom: 15px;
   overflow: hidden;
@@ -5791,9 +5810,21 @@ a.linkRegCliFC {
 #shipping-method .recipient-info .contSimulaDesp {
     border-bottom: 1px solid #ddd;
     margin: 0 0 30px 0;}
+#shipping-method .recipient-info .contSimulaDesp select{
+  padding:0 0 0 8px;
+  background: #fff url('images/select-arrow.jpg') right 15px no-repeat !important;
+	background-size: 20px !important;
+	-webkit-appearance: inherit !important;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+  #shipping-method .recipient-info .contSimulaDesp select{
+    background-image: url('images/select-arrow@2x.jpg');
+    background-size: 25px;} }
+
 #shipping-method .recipient-info h3 {
   font-size: 16px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  text-align: left;}
 
 .marketplace-recipient-info h3 {
   font-size: 16px;
@@ -5870,4 +5901,35 @@ a.linkRegCliFC {
   #back-first-step:hover {
     color: #6E357C; }
 
+/* Botón utilizar este punto de retiro */
+#WC_ShippingAddressSelectSingle_div_1_sec1 #WC_ShippingAddressSelectSingle_btnSel{
+  background: #54b268;
+  color: #fff;
+  border-color: #54b268;
+  animation: retiro_cercano 2.72s ease infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes retiro_cercano {
+  0% { transform:translate(0,0) }
+  4.41177% { transform:translate(5px,0) }
+  8.82353% { transform:translate(0,0) }
+  13.23529% { transform:translate(5px,0) }
+  17.64706% { transform:translate(0,0) }
+  22.05882% { transform:translate(5px,0) }
+  26.47059% { transform:translate(0,0) }
+  100% { transform:translate(0,0) }
+}
+#WC_ShippingAddressSelectSingle_div_1_sec1 #WC_ShippingAddressSelectSingle_btnSel:hover{
+  background: #6E357C;
+  color: #fff;
+  border-color: #6E357C;
+}
+
+#shipmentAddressDomicilioDetalle .col-50.shipping-info{
+  width:100%
+}
+
+#div_tiendas > .section:first-child > h3 {
+    text-align: left !important;
+}
 /*# sourceMappingURL=style.css.map */
