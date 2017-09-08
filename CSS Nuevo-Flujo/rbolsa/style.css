@@ -679,8 +679,8 @@ div.msgpopup1 .msgpopup_content_wrapper .content .message_text, div.msgpopup2 .m
         width: auto;
         display: table; } }
   .btn.btn-default {
-    padding: 10px 20px;
-    min-height: 40px;
+    padding: 5px 20px;
+    height: 40px;
     border-color: #757575;
     color: #757575;
     background: transparent;
@@ -1299,7 +1299,7 @@ table {
       display: table;
       float: left; } }
   #shopping-bag-header h1 img#logo-ripley-chile {
-    background: transparent url(images/logo-header.png) 0 0 no-repeat;
+    /* background: transparent url(images/logo-header.png) 0 0 no-repeat; */
     height: 56px;
     width: 180px;
     overflow: hidden;
@@ -1575,7 +1575,7 @@ body.shopping-order #shopping-bag-header h1, body.error #shopping-bag-header h1 
     #shopping-bag-items ul .shopping-bag-item-cuantity input {
       margin-left: 0;
       width: 30px !important;
-      height: 34px;
+      height: 30px;
       display: block;
       float: left;
       padding: 8px 0;
@@ -2547,7 +2547,7 @@ dl.subtotal-price {
 
 #shipping-method, #payment-method, #confirmation-step {
   background: #fff;
-  padding: 15px;
+  padding: 15px 0;
   overflow: visible;
   margin: 0 0 15px; }
   @media only screen and (min-width: 960px) {
@@ -2804,7 +2804,7 @@ dl.subtotal-price {
       border: none;
       height: 1px; }
   #shipping-sidebar .btn {
-    margin: 0 auto 20px;
+    margin: 10px auto 20px;
     display: block;
     width: 100%; }
     @media only screen and (min-width: 960px) {
@@ -4386,7 +4386,7 @@ ul#payment-document {
     float: left; }
 
 #shopping-bag-footer {
-  padding: 70px 15px;
+  padding: 10px;
   text-align: center;
   font-size: 12px;
   background: #f4f4f4; }
@@ -4394,7 +4394,7 @@ ul#payment-document {
     display: block;
     margin-bottom: 15px; }
     #shopping-bag-footer p.norton {
-      font-size: 14px;
+      font-size: 12px;
       font-family: "montserratsemi_bold";
       display: table;
       margin: 0 auto; }
@@ -5713,7 +5713,8 @@ a.linkRegCliFC {
 /* MARKETPLACE */
 .alert.alert-promo.marketplace-alert {
   text-align: left;
-  position: relative; }
+  position: relative;
+  margin:0 }
   .alert.alert-promo.marketplace-alert p {
     display: block;
     margin: 0; }
@@ -5785,7 +5786,11 @@ a.linkRegCliFC {
   margin-bottom: 0; }
   .shopping-sidebar-wrapper .group .shopping-item-sidebar:last-child {
     margin-bottom: 15px; }
-
+#shipping-method .recipient-info .shopping-item-sidebar{
+  border-bottom:none;}
+#shipping-method .recipient-info .contSimulaDesp {
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 30px 0;}
 #shipping-method .recipient-info h3 {
   font-size: 16px;
   margin-bottom: 10px; }
@@ -5846,6 +5851,9 @@ a.linkRegCliFC {
   margin: 20px 0 !important; }
   .shipped-by-marketplace strong {
     font-weight: 700; }
+
+#payment-document .alert.alert-warning{
+  margin: 40px 0 0 0}
 
 /* BOTON VOLVER A LA BOLSA */
 #back-first-step {
