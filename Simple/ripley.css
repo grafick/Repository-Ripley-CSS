@@ -1,1 +1,136 @@
-/* FIX Home Mundos */
+/* Arreglo Cyber */
+.catalog-header-cyber #hot-price #main-slider{background:#633F7C}
+.catalog-header-cyber #hot-price > div > div.container{max-width:1400px; padding-left:0; padding-right: 0}
+.header-cyber .ripley-header-cyber .category-menu-slideout .category-menu-spots-container{width:200px !important; right:-200px !important}
+/* MenuDescuento Cyber */
+.MenuDescuento{margin:0 0 5px; padding:0; max-width: 100% !important}
+/* fin MenuDescuento Cyber */
+
+
+/* Destacar Menu Mercado Ripley */
+.category-pearls a[href="/mercado-ripley"]{background:#868ab9 !important}
+.category-pearls a[href="/mercado-ripley"] svg[title="mercado-ripley"]{fill:#fff !important;}
+li.category-pearl.category-mercado_ripley-pearl{float: left}
+/* Fin Destacar Menu Mercado Ripley */
+
+/* Fix Menu Categorias (Oculta excedente sobre 7 subcategorías con nombre muy largo) */
+.catalog .catalog-filters-active-category{overflow:hidden;}
+
+/* OCULTAR CYBER FOOTER */
+.ripley-events{
+  display: none;
+}
+/* Fin OCULTAR CYBER FOOTER */
+
+/* FIX ACID */
+.home-carousel{
+  max-width: 1400px;
+  margin: -30px auto 0;
+}
+@media (max-width: 767px){
+  .home-carousel {
+    margin-left: 0 !important;
+    margin-right: 0 !important }
+}
+/* Fin Fix Acid */
+
+.home-carousel .huincha-desktop{
+	background-size:contain !important;
+}
+.home-carousel .huincha-mobile{
+	background-size:contain !important;
+	height:375px;
+	background-position:center !important
+}
+#eventos_home{
+  max-width:1400px;
+}
+#eventos_home .row div{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media only screen and (max-width: 490px){
+  #eventos_home .row div{
+    padding-top: 7px;
+    padding-bottom: 7px}
+}
+#corporativo_home{
+  max-width:1400px;
+  padding-top:40px;
+  padding-bottom:20px;
+}
+#corporativo_home .mini-contenidos-home a{
+	text-decoration: none;
+}
+#corporativo_home .mini-contenidos-home a img{
+	margin:0 auto;
+	display:block;
+	height: 70px;
+}
+#corporativo_home .mini-contenidos-home a p strong{
+	font-size: 16px;
+	padding: 0;
+	margin:0;
+	color: #E94E67;
+}
+#corporativo_home .mini-contenidos-home a p{
+	font-size: 12px;
+	color: #5D5D5D;
+	text-decoration: none;
+	text-align:center;
+	/* margin:0; */
+  line-height: 18px;
+}
+@media only screen and (max-width: 768px){
+	#corporativo_home .mini-contenidos-home{
+		height: 160px;
+		overflow: hidden}
+}
+@media only screen and (max-width: 490px){
+	#corporativo_home .mini-contenidos-home{
+		height: 170px;
+		overflow: hidden}
+}
+@media only screen and (max-width: 375px){
+	#corporativo_home .mini-contenidos-home{
+		height: 190px;
+		overflow: hidden}
+}
+#corporativo_home .mini-contenidos-home .eva-home{
+	animation: evaMove 2.0s ease infinite;
+	transform-origin: 50% 50%;
+	-webkit-transition: 0.3s ease-out;
+	-moz-transition: 0.3s ease-out;
+	-o-transition: 0.3s ease-out;
+	transition: 0.3s ease-out;
+}
+@keyframes evaMove {
+  0% { transform:translate(0,0) }
+  4.41177% { transform:translate(5px,0) }
+  8.82353% { transform:translate(0,0) }
+  13.23529% { transform:translate(5px,0) }
+  17.64706% { transform:translate(0,0) }
+  22.05882% { transform:translate(5px,0) }
+  26.47059% { transform:translate(0,0) }
+  100% { transform:translate(0,0) }
+}
+
+/* BARRA HEADER NEW MANIFEST */
+.barraHeader {
+  display:block;
+  height: 4px;
+}
+.coloresHeader {
+    background: #27c4f5 -webkit-gradient(linear,left top,right top,from(#27c4f5),color-stop(#a307ba),color-stop(#fd8d32),color-stop(#70c050),to(#27c4f5));
+    background: #27c4f5 -webkit-linear-gradient(left,#27c4f5,#a307ba,#fd8d32,#70c050,#27c4f5);
+    background: #27c4f5 linear-gradient(to right,#27c4f5,#a307ba,#fd8d32,#70c050,#27c4f5);
+    background-size: 500%;
+    -webkit-animation: 4s linear infinite LoadingBarProgress,.8s ease-out LoadingBarEnter;
+    animation: 4s linear infinite LoadingBarProgress,.8s ease-out LoadingBarEnter;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    width: 100%;
+}
+@-webkit-keyframes LoadingBarProgress{0%{background-position:0% 0}to{background-position:125% 0}}@keyframes LoadingBarProgress{0%{background-position:0% 0}to{background-position:125% 0}}@-webkit-keyframes LoadingBarEnter{0%{-webkit-transform:scaleX(0);transform:scaleX(0)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes LoadingBarEnter{0%{-webkit-transform:scaleX(0);transform:scaleX(0)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}._it4vx{height:3px;background:#27c4f5 -webkit-gradient(linear,left top,right top,from(#27c4f5),color-stop(#a307ba),color-stop(#fd8d32),color-stop(#70c050),to(#27c4f5));background:#27c4f5 -webkit-linear-gradient(left,#27c4f5,#a307ba,#fd8d32,#70c050,#27c4f5);background:#27c4f5 linear-gradient(to right,#27c4f5,#a307ba,#fd8d32,#70c050,#27c4f5);background-size:500%;-webkit-animation:4s linear infinite LoadingBarProgress,.8s ease-out LoadingBarEnter;animation:4s linear infinite LoadingBarProgress,.8s ease-out LoadingBarEnter;-webkit-transform-origin:left;transform-origin:left;width:100%}
+
+/* Fin BARRA HEADER NEW MANIFEST */

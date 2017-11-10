@@ -2860,7 +2860,7 @@ dl.subtotal-price{
 
 #shipping-method, #payment-method, #confirmation-step{
 	background:#fff;
-	padding:15px 0;
+	padding:15px 10px;
 	overflow:visible;
 	margin:0 0 15px;
 	@media #{$desktop}{
@@ -4165,7 +4165,7 @@ img.maps{
 .tripley-icon{
 	background:transparent url('images/tileset.png') 0 -206px no-repeat;
 	height:27px;
-	width:41px;
+	width:42px;
 	display:block;
 	overflow:hidden;
 	text-indent:-9999px;
@@ -4482,6 +4482,7 @@ ul#payment-document{
   height:auto;
 }
 #collapse-vcode, #collapse-titular-name{
+  height: 65px !important;
 	background: #f4ebbd;
 	color: #6b4410;
 	padding: 10px;
@@ -6422,9 +6423,9 @@ opacity: .48;
 	top:10px;
 	right:10px;
 	.tooltip{
-		background:#efefef;
+		background:#6e357c;
 		padding: 15px 20px;
-		color: #757575;
+		color: #fff;
 		display: none;
 		text-align: center;
 		font-size: 12px;
@@ -6491,7 +6492,8 @@ opacity: .48;
   }
   .contSimulaDesp {
       border-bottom: 1px solid #ddd;
-      margin: 0 0 30px 0;
+      margin: 0 0 40px 0;
+      padding: 0 0 20px 0;
       select{
         padding:0 0 0 8px;
         background: #fff url('images/select-arrow.jpg') right 15px no-repeat !important;
@@ -6510,6 +6512,14 @@ opacity: .48;
 	}
 }
 .marketplace-recipient-info{
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  &:first-child{
+    border-bottom:none;
+    margin-bottom:0;
+    padding-bottom:0;
+  }
 	h3{
 		font-size: 16px;
 		margin-bottom: 10px;
