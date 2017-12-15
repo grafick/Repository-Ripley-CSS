@@ -1,11 +1,21 @@
-/* Arreglo Cyber */
-.catalog-header-cyber #hot-price #main-slider{background:#633F7C}
-.catalog-header-cyber #hot-price > div > div.container{max-width:1400px; padding-left:0; padding-right: 0}
-.header-cyber .ripley-header-cyber .category-menu-slideout .category-menu-spots-container{width:200px !important; right:-200px !important}
-/* MenuDescuento Cyber */
-.MenuDescuento{margin:0 0 5px; padding:0; max-width: 100% !important}
-/* fin MenuDescuento Cyber */
-
+/* ARREGLO MENU NUEVO */
+.marketing-zone a{text-decoration:none}
+.marca_menu{width:115px; padding:15px 10px 10px; display:inline-block; overflow:hidden}
+.columna-banners-menu{width:31%; display:inline-grid; overflow:hidden}
+.category-menu-slideout.category-tree-container-expanded .tree-node.tree-node-level-0 > .tree-node-items{width:30%}
+.category-menu-slideout.category-tree-container-expanded .tree-node.tree-node-level-0 .marketing-zone{width:22%}
+@media only screen and (min-width: 769px) and (max-width: 1199px){
+  .category-menu-slideout.category-tree-container-expanded .tree-node.tree-node-level-0 > .tree-node-items{width:35%}
+  .category-menu-slideout.category-tree-container-expanded .tree-node.tree-node-level-0 .marketing-zone{width:30%}
+}
+@media only screen and (min-width: 769px){
+  .separador-banners-menu{width:100%; border-top:1px solid #f1f1f1; padding:0 0 20px; margin:20px 0 0}
+  .marca_menu{width:125px; padding:0 10px}
+  .columna-banners-menu{width: 120px; display:inline-grid} /* display:inline-block; */
+  .category-menu-slideout.category-tree-container-expanded .tree-node.tree-node-level-0>.tree-node-items a{height: 38px !important}
+  .category-tree__expanded-categories{width:100% !important}
+}
+/* Fin ARREGLO MENU NUEVO */
 
 /* Destacar Menu Mercado Ripley */
 .category-pearls a[href="/mercado-ripley"]{background:#868ab9 !important}
@@ -59,28 +69,32 @@ li.category-pearl.category-mercado_ripley-pearl{float: left}
   padding-top:40px;
   padding-bottom:20px;
 }
-#corporativo_home .mini-contenidos-home a{
-	text-decoration: none;
+
+/* COMIENZO NAVIDAD HOME*/
+#corporativo_home .mini-contenidos-home a, .navidad_home a{
+  text-decoration: none;
 }
-#corporativo_home .mini-contenidos-home a img{
-	margin:0 auto;
-	display:block;
-	height: 70px;
+#corporativo_home .mini-contenidos-home a img, .navidad_home a img{
+  margin:0 auto;
+  display:block;
+  height: 70px;
 }
-#corporativo_home .mini-contenidos-home a p strong{
-	font-size: 16px;
-	padding: 0;
-	margin:0;
-	color: #E94E67;
+#corporativo_home .mini-contenidos-home a p strong, .navidad_home a p strong{
+  font-size: 16px;
+  padding: 0;
+  margin:0;
+  color: #E94E67;
 }
-#corporativo_home .mini-contenidos-home a p{
-	font-size: 12px;
-	color: #5D5D5D;
-	text-decoration: none;
-	text-align:center;
-	/* margin:0; */
+#corporativo_home .mini-contenidos-home a p, .navidad_home a p{
+  font-size: 12px;
+  color: #5D5D5D;
+  text-decoration: none;
+  text-align:center;
+  /* margin:0; */
   line-height: 18px;
 }
+/* FIN navidad home */
+
 @media only screen and (max-width: 768px){
 	#corporativo_home .mini-contenidos-home{
 		height: 160px;
