@@ -5169,15 +5169,21 @@ div.msgpopup1 .msgpopup_content_wrapper .content .icon, div.msgpopup2 .msgpopup_
   vertical-align: middle; }
 
 div.msgpopup1 .msgpopup_content_wrapper .content .icon .exc {
-  background: transparent url("../../images/colors/color1/msgpopup1_exc.png") no-repeat scroll 0 0; }
+  background: transparent url("images/msgpopup_ok.png") no-repeat scroll 0 0;
+  background-size: 26px;
+  background-position: -2px 0;
+}
 
 div.msgpopup2 .msgpopup_content_wrapper .content .icon .exc {
-  background: transparent url("../../images/colors/color1/msgpopup2_exc.png") no-repeat scroll 0 0; }
+  background: transparent url("images/msgpopup_error.png") no-repeat scroll 0 0;
+  background-size: 26px;
+  ackground-position: -2px 0;
+}
 
 div.msgpopup1 .msgpopup_content_wrapper .content .icon .exc, div.msgpopup2 .msgpopup_content_wrapper .content .icon .exc {
   width: 24px;
   height: 24px;
-  margin: 0 15px 0 0; }
+  margin: 0 5px 0 0; }
 
 div.msgpopup1 .msgpopup_content_wrapper .content .message_text, div.msgpopup2 .msgpopup_content_wrapper .content .message_text {
   display: inline-block;
@@ -5954,3 +5960,217 @@ a.linkRegCliFC {
 
 /* MODAL GIFTCARD */
 #add-giftcard-modal .modal-content .modal-body #claveDeTarjetaTRE > div.col-60{width:100% !important; padding:0 !important; margin: 15px 0 0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE / TABLET */
+@media only screen and (max-width: 959px){
+	div#page.content{
+		padding: 10px 0px !important
+	}
+	#shopping-bag-footer{
+		padding: 0px 10px;
+	}
+	.alert.alert-warning{
+		margin: 0 auto 20px !important;
+		width: 90% !important;
+	}
+	#shipping-method h3, #payment-method h3, #confirmation-step h3{
+		text-align: center !important;
+		font-size: 18px !important;
+		padding: 0 15px;
+	}
+  	div.shopping-item-sidebar.no-avaible-shipping-sidebar > div.alert.alert-danger > p.center{
+		font-size: 12px !important
+	}
+	/* PASO 1 DESPACHO */
+	button#singleShipmentAddressB, #shipping-method > div.col-50.shipping-info > button, #shipping-method > div.col-50.recipient-info > button{
+		width: 100%;
+	}
+	#shipping-method > ul li a{
+		margin:0 auto;
+	}
+	#shopping-bag-header h1 img#logo-ripley-chile{
+		background:none !important;
+		height: 40px !important;
+		width: 125px !important;
+		margin: 0px auto 20px !important
+	}
+	#shopping-bag-header > .content{
+		padding: 20px 15px 0 !important;
+	}
+	#shipping-steps ul li.shopping-bag .shopping-bag-icon{
+		margin: -6px 10px 0 0 !important;
+	}
+	#shipping-steps ul{
+		margin: 0 auto !important
+	}
+	#shopping-bag-items ul > li .shopping-item-holder{
+		padding: 10px 5px !important
+	}
+	#paraMobile{
+		padding: 14px !important
+	}
+	#paraMobile p{
+		margin-bottom: 12px;
+		font-size: 11px;
+	}
+	#paraMobile a.general-alert-btn{
+		padding: 7px 30px !important;
+		font-size: 12px !important;
+	}
+	.shipping-info #add-address-instructions{
+		margin: 0 0 60px 0
+	}
+	/* MODAL GENERAL */
+	.modal .modal-dialog{
+		padding:15px !important;
+	}
+	.modal .modal-header{
+		margin-bottom: 8px !important;
+	}
+	.modal .modal-header h3{
+		margin-bottom:15px !important;
+	}
+	/* MODAL DIRECCIONES */
+	#change-shipping-address-modal .saved-address{
+		padding:15px 0px !important;
+	}
+	#change-shipping-address-modal .saved-address .section:nth-child(1){
+		width:55px;
+	}
+	#change-shipping-address-modal .saved-address .section:nth-child(2){
+		padding:0 !important;
+	}
+	#select-store ul li, #change-shipping-store ul li{
+		margin: 0 0 70px !important;
+	}
+	#select-store ul li h4, #select-store ul li p{
+		margin-bottom: 15px !important;
+	}
+	button#verMasTiendas{
+		background: #6E357C;
+		color: #fff;
+		border-color: #6E357C
+	}
+	#select-store ul{
+		margin: 0 !important;
+	}
+	#tiendas_jsp .section .btn.btn-default{
+	width: 100%;
+}
+	/* PASO 2 PAGO */
+	#payment-method{
+		padding: 0 !important
+	}
+	ul#payment-document, div#factura_info, .billing_address .tab-pane#factura{
+		padding: 0 15px !important;
+	}
+	ul#payment-document #facturaLi a, ul#payment-document #facturaLi2 a{
+		-webkit-border-radius: 0 6px 6px 0 !important;
+		-moz-border-radius: 0 6px 6px 0 !important;
+		border-radius: 0 6px 6px 0 !important;
+		width: 100%
+	}
+	ul#payment-document li a{
+		color:#4b4b4b;
+	}
+	button#btnEditarFactura {
+		width: 100%;
+		padding: 6px 0;
+		margin: 15px 0 !important
+	}
+	div#page.CheckoutContainer .content{
+		padding: 20px 0px !important
+	}
+	/* ARREGLO TOOLTIP MODAL TARJETA RIPLEY - Codigo Verificación */
+	.boxPayTre #collapse-vcode{
+		height: auto !important
+	}
+	/* BOX PAGO TRIPLEY */
+	.modalesTarjetas#payment-details{
+		padding: 10px !important;
+		margin: 20px 0;
+	}
+	#PaymentForm1 .form-group label .name{
+		max-width: 50% !important;
+	}
+
+	/* PASO 3 CONFIRMACION */
+	body.shipping > div.content{
+		padding: 20px 0 0 !important;
+	}
+	.alert.alert-warning strong{
+		margin: 0 !important
+	}
+	#shipping-payment-resume h3{
+		text-align: left !important;
+		margin: 20px 0 0 !important;
+		padding: 0 0 10px !important
+	}
+	#confirmation-step #shipping-payment-resume h5.main{
+		margin: 10px 0 0;
+	}
+
+@media only screen and (max-width: 374px){
+	/* MODAL GENERAL */
+	.modal .modal-footer .btn{
+		width: 100%;
+    	text-align: center;
+	}
+}
