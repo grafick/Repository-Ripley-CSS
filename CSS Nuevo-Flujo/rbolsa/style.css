@@ -1024,8 +1024,8 @@ select {
     -moz-opacity: 1;
     filter: alpha(opacity=100); }
   .modal .modal-margin {
-    margin-bottom: 30px !important; }
-  .modal .modal-dialog {
+    margin-bottom: 30px !important}
+  .modal .modal-dialog{
     background: #fff;
     padding: 25px;
     width: 100%;
@@ -1039,13 +1039,14 @@ select {
     -ms-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out; }
     @media only screen and (min-width: 960px) {
-      .modal .modal-dialog {
+      .modal .modal-dialog{
         width: 750px;
         height: auto;
         min-height: 10px;
-        padding: 40px;
+        max-height:560px;
+        overflow: scroll;
+        padding: 20px 25px;
         position: absolute;
-        overflow: hidden;
         top: 50px;
         left: 50%;
         margin-bottom: 50px;
@@ -6088,6 +6089,9 @@ a.linkRegCliFC {
 		margin-bottom:15px !important;
 	}
 	/* MODAL DIRECCIONES */
+  #change-shipping-address-modal .modal .modal-dialog{
+
+  }
 	#change-shipping-address-modal .saved-address{
 		padding:15px 0px !important;
 	}
