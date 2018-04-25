@@ -1043,8 +1043,6 @@ select {
         width: 750px;
         height: auto;
         min-height: 10px;
-        max-height:560px;
-        overflow: scroll;
         padding: 20px 25px;
         position: absolute;
         top: 50px;
@@ -1059,6 +1057,7 @@ select {
       outline: none;
       box-shadow: none;
       border: none; }
+
     @media only screen and (min-width: 960px) {
       .modal .modal-dialog.modal-wide {
         width: 960px;
@@ -3238,6 +3237,13 @@ dl.subtotal-price {
       height: 100px;
       resize: vertical;
       margin-bottom: 15px; }
+
+@media only screen and (min-width: 960px){
+  #change-shipping-address-modal.modal .modal-dialog{
+    max-height:560px;
+    overflow: scroll;
+  }
+}
 
 #change-shipping-address-modal .saved-address {
   display: table;
@@ -6177,4 +6183,11 @@ a.linkRegCliFC {
 		width: 100%;
     	text-align: center;
 	}
+}
+
+/* FIX */
+@media only screen and (max-width: 720px){
+  #_hj-f5b2a1eb-9b07_feedback[data-minimized-position="middle_left"] #_hj-f5b2a1eb-9b07_feedback_minimized{
+    bottom: 100px !important
+  }
 }
