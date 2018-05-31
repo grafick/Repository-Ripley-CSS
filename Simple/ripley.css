@@ -6,7 +6,7 @@
   width:115px; padding:15px 10px 10px; display:inline-block; overflow:hidden
 }
 .columna-banners-menu{
-  width:31%; display:inline-grid; overflow:hidden
+  width:31%; display:inline-grid; overflow:hidden; float: left;
 }
 .category-menu-slideout.category-tree-container-expanded .tree-node.tree-node-level-0 > .tree-node-items{
   width:30%
@@ -31,7 +31,7 @@
   }
   .columna-banners-menu{
     width: 120px; display:inline-grid
-    } /* display:inline-block; */
+    }
   .category-menu-slideout.category-tree-container-expanded .tree-node.tree-node-level-0>.tree-node-items a{
     height: 38px !important
   }
@@ -76,8 +76,15 @@ li.category-pearl.category-mercado_ripley-pearl{float: left}
 /* FIX ACID */
 .home-carousel{
   max-width: 1400px;
-  margin: -30px auto 0;
+  margin: 0 auto !important;
 }
+#home-mkt-1{
+  margin-bottom:0 !important
+}
+
+@media (max-width: 360px){
+}
+
 @media (max-width: 767px){
   .home-carousel {
     margin-left: 0 !important;
@@ -194,3 +201,123 @@ li.category-pearl.category-mercado_ripley-pearl{float: left}
     height: 20px;
     margin: 15px -5px 10px 0
   }
+
+
+
+
+/* FIX MODA HOMBRE FOTO */
+@media only screen and (min-width: 1200px){
+  .catalog-wrapper.catalog-3-columns .catalog-moda-hombre .product-image {
+      min-height: 490px;
+  }
+}
+@media only screen and (max-width: 1200px){
+  .catalog-wrapper.catalog-3-columns .catalog-moda-hombre .product-image {
+      min-height: 410px !important;
+  }
+}
+@media only screen and (max-width: 991px){
+  .catalog-wrapper.catalog-3-columns .catalog-moda-hombre .product-image {
+      min-height: 459px !important;
+  }
+}
+@media only screen and (max-width: 767px){
+  .catalog-wrapper.catalog-3-columns .catalog-moda-hombre .product-image {
+      min-height: 363px !important;
+  }
+}
+@media only screen and (max-width: 544px){
+  .catalog-wrapper.catalog-3-columns .catalog-moda-hombre .product-image {
+      min-height: 694px !important;
+  }
+}
+@media only screen and (max-width: 444px){
+  .catalog-wrapper.catalog-3-columns .catalog-moda-hombre .product-image {
+      min-height: 520px !important;
+  }
+}
+@media only screen and (max-width: 400px){
+  .catalog-wrapper.catalog-3-columns .catalog-moda-hombre .product-image {
+      min-height: 466px !important;
+  }
+}
+@media only screen and (max-width: 344px){
+  .catalog-wrapper.catalog-3-columns .catalog-moda-hombre .product-image {
+      min-height: 390px !important;
+  }
+}
+
+
+/* MODA HOMBRE LAYOUT */
+@media only screen and (max-width: 991px){
+  .catalog-3-columns .catalog-moda-hombre .catalog-product {
+      width: 50%;
+  }
+}
+@media only screen and (max-width: 544px){
+  .catalog-3-columns .catalog-moda-hombre .catalog-product{
+    width: 100%;
+    clear: left !important;
+  }
+}
+
+
+/* FIX LOGOS EN CATALOGOS  */
+.catalog-product .brand-logo img{
+    max-width: 46%;
+}
+@media (max-width: 767px){
+  .catalog-product .brand-logo img{
+      max-width: 70%;
+  }
+}
+
+
+/* BARILLIANCE - MENSAJES EVA */
+@media (max-width: 767px){
+  .cbar_bubble{
+      display:none !important
+  }
+}
+.cbar_bubble{
+  width:auto !important;
+  height:auto !important;
+  position: fixed !important;
+  top: 500px !important;
+  right: 30px !important;
+  padding: 11px 28px 11px 15px !important;
+  opacity: 0.98 !important;
+  z-index: 200000 !important;
+  color:#53337A !important;
+  background:#F7F1FF !important;
+  box-sizing: content-box !important;
+  box-shadow:#dbcdef 0 0 50px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  border-radius: 10px !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  font-stretch: normal !important;
+  line-height: normal !important;
+  border:none !important;
+  text-align: right !important;
+  font-family:'montserrat' , sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+}
+.cbar_trust_qm{
+  position: absolute !important;
+  width:40px !important;
+  height:40px !important;
+  bottom:-2px !important;
+  right:-20px !important;
+  opacity: 1 !important;
+  background:url('https://home.ripley.cl/front/public/images/eva_rostro.svg') 0 0 no-repeat !important;
+  background-size:35px 35px !important;
+  cursor: pointer !important;
+  float: none !important;
+}
+.cbar_trust_qm img{
+  display: none !important
+}
+/* FIN BARILLIANCE */
