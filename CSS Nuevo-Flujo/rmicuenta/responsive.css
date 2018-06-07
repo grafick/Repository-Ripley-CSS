@@ -480,7 +480,16 @@ div.content_wrapper > div.content_left_shadow, div.content_wrapper > div.content
     font-size: 14px;
     margin: 0; }
   #cartola_rpuntos .logo_rpuntos {
-    margin: 0; }
+    background: url('https://home.ripley.cl/assets-styles/rbolsa/images/tileset@2x_2018.png') no-repeat;
+    width: 130px;
+    height: 40px;
+    background-position: -110px -232px;
+    background-size: 240px;
+    margin:0;
+    padding:0;}
+    #cartola_rpuntos .logo_rpuntos img{
+      display: none;}
+
 
 #box .my_account_wishlist > .body588WishList {
   display: none; }
