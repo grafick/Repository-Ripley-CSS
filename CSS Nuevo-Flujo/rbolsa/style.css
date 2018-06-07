@@ -3682,17 +3682,20 @@ img.maps {
       background-size: 175px; } }
 
 .mripley-icon {
-  background: transparent url('images/tileset_2018.png') 0 -227px no-repeat;
+  background: transparent url('images/tileset_2018.png') no-repeat;
+  background-position: 0 -202px;
   height: 32px;
-  width: 51px;
+  width: 46px;
   display: block;
   overflow: hidden;
   text-indent: -9999px;
-  margin-left: 3px; }
+  margin-left: 3px;}
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
     .mripley-icon {
       background-image: url('images/tileset@2x_2018.png');
-      background-size: 195px; } }
+      background-size: 195px;
+      background-position: 0px -228px;
+      width: 50px} }
 
 .mercadopago-icon {
   background: transparent url('images/tileset_2018.png') -58px -440px no-repeat;

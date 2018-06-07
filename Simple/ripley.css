@@ -283,8 +283,9 @@ li.category-pearl.category-mercado_ripley-pearl{float: left}
   width:auto !important;
   height:auto !important;
   position: fixed !important;
-  top: 500px !important;
-  right: 30px !important;
+  top: auto !important;
+  bottom: 80px !important;
+  right: 80px !important;
   padding: 11px 28px 11px 15px !important;
   opacity: 0.98 !important;
   z-index: 200000 !important;
