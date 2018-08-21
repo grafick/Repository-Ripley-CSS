@@ -322,3 +322,28 @@ li.category-pearl.category-mercado_ripley-pearl{float: left}
   display: none !important
 }
 /* FIN BARILLIANCE */
+
+/* POWER REVIEWS */
+#pr-engine-holder-1{display:none}
+/* FIN POWER REVIEWS */
+
+/* Modificación tamaño tarjeta ripley en catálogos */
+.catalog-product-card-price img{
+  height: 14px !important
+}
+
+/* Ocultar Punto de Retiro en Fichas */
+section.product-shipping-information ul.product-shipping-details li.delivery-method:nth-child(3){
+  display:none
+}
+section.product-shipping-information ul.product-shipping-details li:nth-child(2){
+  border-bottom:none
+}
+
+
+/* OCULTAR PRECIOS TARJETA R */
+section.catalog .catalog-container a[href*="2000321704940001p"] .best-price,
+section.catalog .catalog-container a[href*="2000321704940002p"] .best-price,
+section.catalog .catalog-container a[href*="2000321704940003p"] .best-price,
+section.catalog .catalog-container a[href*="2000321704940004p"] .best-price,
+section.catalog .catalog-container a[href*="2000321704940005p"] .best-price{display:none}
