@@ -2600,7 +2600,7 @@ dl.subtotal-price {
       list-style-type: none;
       margin: 0;
       display: block;
-      float: right;
+      float: left;
       width: 33%;
       font-size: 13px; }
       #shipping-method > ul li:last-child, #payment-method > ul li:last-child, #confirmation-step > ul li:last-child {
@@ -6316,6 +6316,18 @@ span.tipDctos[title*="DESPACHO GRATIS PARA CLIENTES SILVER"]:after{content:'Desc
   }
 }
 /* fin ARREGLO CLUBES */
+
+
+/* OCULTAR PUNTO RETIRO */
+  /* Bolsa */
+#shopping-bag-items .shopping-bag-item-info ul form li:last-child{
+  display:none;
+}
+  /* Paso Despacho */
+#shipping-method #RET_TIENDA_RC, #shipping-method #DESP_DOMICILIO_RC{
+  display:none;
+}
+/* fin OCULTAR PUNTO RETIRO */
 
 
 /* OCULTAR WEBPAY - DEBITO Y CREDITO
