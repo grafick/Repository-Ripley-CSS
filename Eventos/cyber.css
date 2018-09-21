@@ -1,0 +1,81 @@
+@media (min-width: 1200px){
+  .active-parent-category-NO_cyber2018 .slideout .container,
+  .active-parent-category-cyber2018 .slideout .container{
+    max-width: 1140px;
+  }
+  .active-parent-category-NO_cyber2018 .container,
+  .active-parent-category-cyber2018 .container{
+      max-width: 1400px;
+  }
+}
+.active-parent-category-NO_cyber2018 .catalog-header-event-container,
+.active-parent-category-cyber2018 .catalog-header-event-container {
+  background:#FFF !important
+}
+/* MERE - FIX ALTO SLIDER MOBILE */
+.catalog-header-event{
+  min-height: 0 !important;
+}
+/* MERE - FIX ANCHO DE ICONOS A 320PX RESOLUCIÓN */
+@media (max-width: 320px){
+  .event-menu .event-menu-categories .event-menu-item {
+      width: 40px;
+  }
+}
+/* MERE - GRADIENTE FONDO SLIDER */
+#cyber-mayo .slider{
+    background: #512177;
+    background: linear-gradient(to bottom, #512177 76%,#683e8a 100%);
+    background: -moz-linear-gradient(to bottom, #512177 76%,#683e8a 100%);
+    background: -webkit-linear-gradient(to bottom, #512177 76%,#683e8a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#512177', endColorstr='#683e8a',GradientType=0 );
+}
+/* MERE - CIRCULOS DE PÁGINACIÓN SOBRE SLIDER */
+#cyber-mayo .owl-pagination{
+  bottom:0 !important;
+  padding-bottom:10px !important;
+}
+@media (max-width: 544px){
+  #cyber-mayo .owl-pagination{
+    display: none;
+  }
+}
+/* MERE - MENOS PADDING ENTRE SUBCATEGORIAS */
+.event-menu .event-menu-item{
+  padding-left:10px;
+  padding-right:10px;
+}
+/* MERE - FLECHITA Y GRADIENTE EN MOBILE */
+@media (max-width: 544px){
+  .event-menu-container .event-menu .event-menu-category-children .container{
+    position: relative;
+  }
+  .event-menu-container .event-menu .event-menu-category-children .container::before{
+    content:"";
+    background:transparent url("https://home.ripley.cl/assets-email/img/caret-right.svg") center center no-repeat;
+    background-size: 100% 100%;
+    display:block;
+    height:12px;
+    width:20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 99999;
+    margin-top: -6px;
+    opacity: .7;
+  }
+  .event-menu-container .event-menu .event-menu-category-children .container::after{
+    content: "";
+    background: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));
+    background: -moz-linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));
+    background: -webkit-linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+  }
+  /* OCULTAR DOTS SLIDER */
+  #cyber-mayo .slider .owl-pagination{display:none !important}
+}

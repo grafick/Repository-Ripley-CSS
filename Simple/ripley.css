@@ -283,19 +283,19 @@ li.category-pearl.category-mercado_ripley-pearl{float: left}
   width:auto !important;
   height:auto !important;
   position: fixed !important;
-  top: auto !important;
+  top: inherit !important;
   bottom: 80px !important;
-  right: 80px !important;
+  right: inherit !important;
   padding: 11px 28px 11px 15px !important;
   opacity: 0.98 !important;
   z-index: 200000 !important;
   color:#53337A !important;
-  background:#F7F1FF !important;
+  background:#ffffff !important;
   box-sizing: content-box !important;
   box-shadow:#dbcdef 0 0 50px !important;
-  -webkit-border-radius: 10px !important;
-  -moz-border-radius: 10px !important;
-  border-radius: 10px !important;
+  -webkit-border-radius: 100px !important;
+  -moz-border-radius: 100px !important;
+  border-radius: 100px !important;
   font-style: normal !important;
   font-variant: normal !important;
   font-stretch: normal !important;
@@ -308,13 +308,13 @@ li.category-pearl.category-mercado_ripley-pearl{float: left}
 }
 .cbar_trust_qm{
   position: absolute !important;
-  width:40px !important;
-  height:40px !important;
+  width:45px !important;
+  height:45px !important;
   bottom:-2px !important;
   right:-20px !important;
   opacity: 1 !important;
-  background:url('https://home.ripley.cl/front/public/images/eva_rostro.svg') 0 0 no-repeat !important;
-  background-size:35px 35px !important;
+  background:url('https://home.ripley.cl/front/public/images/eva_rostro-chupalla.svg') 0 0 no-repeat !important;
+  background-size:45px 45px !important;
   cursor: pointer !important;
   float: none !important;
 }
@@ -347,3 +347,13 @@ section.catalog .catalog-container a[href*="2000321704940002p"] .best-price,
 section.catalog .catalog-container a[href*="2000321704940003p"] .best-price,
 section.catalog .catalog-container a[href*="2000321704940004p"] .best-price,
 section.catalog .catalog-container a[href*="2000321704940005p"] .best-price{display:none}
+
+/* ALTO 100% EN MENÚ */
+.category-menu-slideout.category-tree-container-expanded .tree-node.tree-node-level-0 .tree-node-items{
+  height:100%;
+}
+
+/* FIX BOLSA DE COMPRAS */
+.shopping-bag-slideout{
+ z-index: 10000 !important;
+}

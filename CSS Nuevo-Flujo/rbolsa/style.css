@@ -2118,6 +2118,11 @@ dl.subtotal-price {
               #gift-code-modal #coupon-list ul li .btn + .btn, #discount-code-modal #coupon-list ul li .btn + .btn, .modal-gift #coupon-list ul li .btn + .btn, #gift-code-modal-s4 #coupon-list ul li .btn + .btn {
                 margin-top: 0; } }
 
+        #gift-code-modal .modal-dialog{
+          background: #fff url('https://home.ripley.cl/assets-email/img/clubes-logo.svg') no-repeat;
+          background-position: center 22px;
+        }
+
 #sent-as-gift-modal #event-search-results, .modal-gift #event-search-results {
   max-height: 300px;
   overflow: auto; }
@@ -3241,13 +3246,6 @@ dl.subtotal-price {
       height: 100px;
       resize: vertical;
       margin-bottom: 15px; }
-
-@media only screen and (min-width: 960px){
-  #change-shipping-address-modal.modal .modal-dialog{
-    max-height:560px;
-    overflow: scroll;
-  }
-}
 
 #change-shipping-address-modal .saved-address {
   display: table;
@@ -6112,9 +6110,6 @@ a.linkRegCliFC {
 		margin-bottom:15px !important;
 	}
 	/* MODAL DIRECCIONES */
-  #change-shipping-address-modal .modal .modal-dialog{
-
-  }
 	#change-shipping-address-modal .saved-address{
 		padding:15px 0px !important;
 	}
@@ -6335,3 +6330,16 @@ span.tipDctos[title*="DESPACHO GRATIS PARA CLIENTES SILVER"]:after{content:'Desc
   display:none !important
 }
 */
+
+
+/* FIX MODAL */
+@media only screen and (min-width: 960px){
+  #change-shipping-address-modal,
+  #edit-shipping-address-modal,
+  #new-shipping-address-modal,
+  #view-details-modal,
+  #mercadopago-modal{
+    overflow:scroll !important;
+  }
+}
+/* fin FIX MODAL */
